@@ -1,0 +1,59 @@
+/**
+ * 
+ */
+package com.narss.warproduction.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.narss.warproduction.entity.CityCode;
+import com.narss.warproduction.service.CityCodeService;
+
+/**
+ * @author ahmed.kotb
+ *
+ */
+@Controller
+public class CityCodeController {
+
+	@Autowired
+	CityCodeService ccs;
+
+	@GetMapping("/list")
+	public ModelAndView getAllCityCodes() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("show_citycodes");
+		List<CityCode> cityCodes = ccs.getAllCityCodes();
+		mv.addObject("msg", cityCodes);
+		return mv;
+	}
+
+	@PostMapping(value = "/addcitycode")
+	public String addCityCode(CityCode cityCode) {
+		ccs.addCityCode(cityCode);
+
+		return "redirect:/";
+	}
+
+	@GetMapping("/showadditionform")
+	public String showAdditionForm() {
+		return "add_citycode";
+	}
+
+	@GetMapping("/deletecitycode")
+	public String deleteCityCode(@RequestParam("cc") String cityCode) {
+		ccs.deleteCityCode(cityCode);
+		return "redirect:/";
+	}
+
+	@GetMapping("/backtoindex")
+	public String backToIndexPage() {
+		return "redirect:/";
+	}
+}
