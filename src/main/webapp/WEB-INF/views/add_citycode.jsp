@@ -10,7 +10,7 @@
 <div align="center">
 <form method="POST" action="addcitycode">
 <table style="align: center; background-color:#F1E6E6; border=0; cellpadding=5">
-<caption><h2>Add New Product</h2></caption>
+<caption><h2>Add New City Code</h2></caption>
 <tr> <td> Enter City Code:</td><td><input type="text" name="cityCode"></td>   </tr>
 <tr> <td> Enter City Name:</td><td><input type="text" name="cityName"></td>   </tr>
 </table>
