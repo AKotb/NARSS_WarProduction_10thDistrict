@@ -37,8 +37,7 @@ public class CityCodeController {
 	@PostMapping(value = "/addcitycode")
 	public String addCityCode(CityCode cityCode) {
 		ccs.addCityCode(cityCode);
-
-		return "redirect:/";
+		return "redirect:/list";
 	}
 
 	@GetMapping("/showadditionform")
@@ -49,11 +48,16 @@ public class CityCodeController {
 	@GetMapping("/deletecitycode")
 	public String deleteCityCode(@RequestParam("cc") String cityCode) {
 		ccs.deleteCityCode(cityCode);
-		return "redirect:/";
+		return "redirect:/list";
 	}
 
 	@GetMapping("/backtoindex")
 	public String backToIndexPage() {
-		return "redirect:/";
+		return "redirect:/manage_city_codes";
+	}
+	
+	@GetMapping("/manage_city_codes")
+	public String manageCityCodes() {
+		return "manage_citycodes";
 	}
 }

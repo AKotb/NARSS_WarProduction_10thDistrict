@@ -8,26 +8,23 @@
 	<h2 style="text-align: center;">Welcome to System Dashboard Page</h2>
 	<div
 		style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
-		<c:url value="showadditionform" var="add_citycode" />
+		<c:url value="manage_city_codes" var="manage_citycodes" />
 		<h2>
-			<a href="${add_citycode}"> Add New City Code</a>
-		</h2>
-		<br />
-		<c:url value="list" var="show_citycodes" />
-		<h2>
-			<a href="${show_citycodes}"> Display All City Codes</a>
+			<a href="${manage_citycodes}"> City Codes Management </a>
 		</h2>
 	</div>
 	<div
 		style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
-		<c:url value="ar_showadditionform" var="add_areacode" />
+		<c:url value="manage_area_codes" var="manage_areacodes" />
 		<h2>
-			<a href="${add_areacode}"> Add New Area Code</a>
+			<a href="${manage_areacodes}"> Area Codes Management </a>
 		</h2>
-		<br />
-		<c:url value="ar_list" var="show_areacodes" />
+	</div>
+	<div
+		style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
+		<c:url value="manage_region_codes" var="manage_regioncodes" />
 		<h2>
-			<a href="${show_areacodes}"> Display All Area Codes</a>
+			<a href="${manage_regioncodes}"> Region Codes Management </a>
 		</h2>
 	</div>
 </body>

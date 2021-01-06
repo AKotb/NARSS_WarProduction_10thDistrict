@@ -38,7 +38,7 @@ public class AreaCodeController {
 	public String addAreaCode(AreaCode areaCode) {
 		acs.addAreaCode(areaCode);
 
-		return "redirect:/";
+		return "redirect:/ar_list";
 	}
 
 	@GetMapping("/ar_showadditionform")
@@ -49,11 +49,16 @@ public class AreaCodeController {
 	@GetMapping("/deleteareacode")
 	public String deleteAreaCode(@RequestParam("cc") String cityCode, @RequestParam("ac") String areaCode) {
 		acs.deleteAreaCode(cityCode, areaCode);
-		return "redirect:/";
+		return "redirect:/ar_list";
 	}
 
 	@GetMapping("/ar_backtoindex")
 	public String backToIndexPage() {
-		return "redirect:/";
+		return "redirect:/manage_area_codes";
+	}
+	
+	@GetMapping("/manage_area_codes")
+	public String manageAreaCodes() {
+		return "manage_areacodes";
 	}
 }
