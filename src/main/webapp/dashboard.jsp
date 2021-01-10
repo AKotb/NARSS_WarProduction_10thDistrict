@@ -27,5 +27,26 @@
 			<a href="${manage_regioncodes}"> Region Codes Management </a>
 		</h2>
 	</div>
+	<div
+		style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
+		<c:url value="manage_zones" var="manage_zones" />
+		<h2>
+			<a href="${manage_zones}"> Zones Management </a>
+		</h2>
+	</div>
+	<div
+		style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
+		<c:url value="manage_sub_zones" var="manage_subzones" />
+		<h2>
+			<a href="${manage_subzones}"> Sub-Zones Management </a>
+		</h2>
+	</div>
+	<div
+		style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
+		<c:url value="/" var="backtohomepage" />
+		<h2>
+			<a href="${backtohomepage}"> Back to Home </a>
+		</h2>
+	</div>
 </body>
 </html>
