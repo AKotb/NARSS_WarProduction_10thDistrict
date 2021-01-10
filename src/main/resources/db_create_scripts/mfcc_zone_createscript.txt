@@ -1,0 +1,8 @@
+CREATE TABLE `mfcc_zone` (
+  `zon_city` varchar(2) NOT NULL,
+  `area_code` varchar(2) NOT NULL,
+  `region_code` varchar(2) NOT NULL,
+  `zone_code` varchar(2) NOT NULL,
+  `zone_map` blob,
+  PRIMARY KEY (`zon_city`,`area_code`,`region_code`,`zone_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

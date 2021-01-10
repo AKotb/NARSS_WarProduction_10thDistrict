@@ -1,0 +1,9 @@
+CREATE TABLE `mfcc_area_code` (
+  `ar_city_code` varchar(2) NOT NULL,
+  `ar_area_code` varchar(2) NOT NULL,
+  `ar_area_name` varchar(90) DEFAULT NULL,
+  `ar_area_map` blob,
+  PRIMARY KEY (`ar_city_code`,`ar_area_code`),
+  KEY `ar_city_code_idx` (`ar_city_code`) /*!80000 INVISIBLE */,
+  KEY `ar_area_code_idx` (`ar_area_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='MFCC_CITY_CODE';

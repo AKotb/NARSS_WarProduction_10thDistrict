@@ -1,0 +1,5 @@
+CREATE TABLE `mfcc_city_code` (
+  `cty_code` varchar(2) NOT NULL,
+  `cty_name` varchar(80) DEFAULT NULL,
+  PRIMARY KEY (`cty_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='MFCC_CITY_CODE';
