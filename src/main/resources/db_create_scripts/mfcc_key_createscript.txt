@@ -1,0 +1,14 @@
+CREATE TABLE `mfcc_key` (
+  `key_city_code` varchar(2) DEFAULT NULL,
+  `key_area_code` varchar(2) DEFAULT NULL,
+  `key_regon_code` varchar(2) DEFAULT NULL,
+  `key_zone_code` varchar(2) DEFAULT NULL,
+  `key_sub_zose_code` varchar(2) DEFAULT NULL,
+  `key_bulding_no` varchar(8) DEFAULT NULL,
+  `key_apprt_no` varchar(8) DEFAULT NULL,
+  `key_all` varchar(80) NOT NULL,
+  `key_bulding_key` varchar(30) DEFAULT NULL,
+  PRIMARY KEY (`key_all`),
+  KEY `key_all_idx` (`key_all`) /*!80000 INVISIBLE */,
+  KEY `key_zone_code_idx` (`key_zone_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='MFCC_KEY';
