@@ -1,0 +1,12 @@
+CREATE TABLE `mfcc_authorization` (
+  `ma_barcode` varchar(80) DEFAULT NULL,
+  `ma_delegation_no` varchar(50) NOT NULL,
+  `ma_delegation_date` date DEFAULT NULL,
+  `ma_delegation_issued_place` varchar(40) DEFAULT NULL,
+  `ma_delegation_type` varchar(30) DEFAULT NULL,
+  `ma_delegator_name` varchar(80) DEFAULT NULL,
+  `ma_delegator_id` varchar(30) DEFAULT NULL,
+  `ma_delegate_to_name` varchar(80) DEFAULT NULL,
+  `ma_delegate_to_id` varchar(30) DEFAULT NULL,
+  PRIMARY KEY (`ma_delegation_no`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='MFCC_AUTHORIZATION';

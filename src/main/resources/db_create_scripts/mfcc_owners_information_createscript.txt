@@ -1,0 +1,9 @@
+CREATE TABLE `mfcc_owners_information` (
+  `oi_unit_barcode` varchar(80) DEFAULT NULL,
+  `oi_bulding_no` varchar(30) DEFAULT NULL,
+  `oi_unit_no` varchar(30) DEFAULT NULL,
+  `oi_owner_sequance` varchar(30) NOT NULL,
+  `oi_owner_name` varchar(80) DEFAULT NULL,
+  `oi_owner_id` varchar(30) DEFAULT NULL,
+  PRIMARY KEY (`oi_owner_sequance`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='MFCC_OWNERS_INFORMATION';

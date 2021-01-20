@@ -1,0 +1,13 @@
+CREATE TABLE `mfcc_external_violation` (
+  `ev_new_violation_no` varchar(30) NOT NULL,
+  `ev_related_budling_barcode` varchar(80) DEFAULT NULL,
+  `ev_violation_type` varchar(80) DEFAULT NULL,
+  `ev_violation_activy` varchar(80) DEFAULT NULL,
+  `ev_no_of_floor` varchar(10) DEFAULT NULL,
+  `ev_architectural_style` varchar(30) DEFAULT NULL,
+  `ev_status` varchar(80) DEFAULT NULL,
+  `ez_land_size` decimal(10,2) DEFAULT NULL,
+  `ex_repeted_size` decimal(10,2) DEFAULT NULL,
+  `ex_related_bulding_no` varchar(30) DEFAULT NULL,
+  PRIMARY KEY (`ev_new_violation_no`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='MFCC_EXTERNAL_VIOLATION';

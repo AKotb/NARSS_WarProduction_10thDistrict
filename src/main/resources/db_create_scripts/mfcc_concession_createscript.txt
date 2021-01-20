@@ -1,0 +1,10 @@
+CREATE TABLE `mfcc_concession` (
+  `co_unit_barcode` varchar(80) DEFAULT NULL,
+  `co_conc_serial` decimal(8,0) NOT NULL,
+  `co_conc_from_name` varchar(80) DEFAULT NULL,
+  `co_conc_from_id` varchar(30) DEFAULT NULL,
+  `co_cons_to_name` varchar(80) DEFAULT NULL,
+  `co_cons_to_id` varchar(30) DEFAULT NULL,
+  `co_cons_date` date DEFAULT NULL,
+  PRIMARY KEY (`co_conc_serial`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='MFCC_CONCESSION';

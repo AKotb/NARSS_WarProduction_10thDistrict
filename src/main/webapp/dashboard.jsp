@@ -48,6 +48,13 @@
 			<a href="${manage_keys}"> Keys Management </a>
 		</h2>
 	</div>
+	<div
+		style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
+		<c:url value="manage_buildings_information" var="manage_buildingsinformation" />
+		<h2>
+			<a href="${manage_buildingsinformation}"> Buidlings Management </a>
+		</h2>
+	</div>
 	
 	
 	
