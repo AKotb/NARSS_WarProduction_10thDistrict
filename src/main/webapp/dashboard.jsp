@@ -55,9 +55,27 @@
 			<a href="${manage_buildingsinformation}"> Buidlings Management </a>
 		</h2>
 	</div>
-	
-	
-	
+	<div
+		style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
+		<c:url value="manage_units_information" var="manage_unitsinformation" />
+		<h2>
+			<a href="${manage_unitsinformation}">Units Management </a>
+		</h2>
+	</div>
+	<div
+		style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
+		<c:url value="manage_external_violations" var="manage_externalviolations" />
+		<h2>
+			<a href="${manage_externalviolations}">External Violations Management </a>
+		</h2>
+	</div>
+	<div
+		style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
+		<c:url value="manage_owners_information" var="manage_ownersinformation" />
+		<h2>
+			<a href="${manage_ownersinformation}">Owners Management </a>
+		</h2>
+	</div>
 	<div
 		style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 		<c:url value="/" var="backtohomepage" />
