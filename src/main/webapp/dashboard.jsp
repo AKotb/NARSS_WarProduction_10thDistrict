@@ -78,6 +78,20 @@
 	</div>
 	<div
 		style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
+		<c:url value="manage_authorizations" var="manage_authorizations" />
+		<h2>
+			<a href="${manage_authorizations}">Authorizations Management </a>
+		</h2>
+	</div>
+	<div
+		style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
+		<c:url value="manage_concessions" var="manage_concessions" />
+		<h2>
+			<a href="${manage_concessions}">Concessions Management </a>
+		</h2>
+	</div>
+	<div
+		style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 		<c:url value="/" var="backtohomepage" />
 		<h2>
 			<a href="${backtohomepage}"> Back to Home </a>
