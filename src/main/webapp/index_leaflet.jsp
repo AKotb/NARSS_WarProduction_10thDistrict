@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
@@ -20,15 +20,14 @@
 <link rel="stylesheet" href="resources/css/base.css">
 <link rel="stylesheet" href="resources/css/skeleton.css">
 <link rel="stylesheet" href="resources/css/screen.css">
-<link rel="stylesheet" href="resources/css/prettyPhoto.css"
-	type="text/css" media="screen" />
-<link rel="stylesheet"
-	href="resources/css/warproductionalhayalaasher.css" />
+<link rel="stylesheet" href="resources/css/prettyPhoto.css" type="text/css"
+	media="screen" />
+<link rel="stylesheet" href="resources/css/leaflet.css" />
+<link rel="stylesheet" href="resources/css/warproductionalhayalaasher.css" />
 
 <!-- Favicons ==================================================================================================== -->
 <link rel="shortcut icon" href="resources/images/favicon.png">
-<link rel="apple-touch-icon"
-	href="resources/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="resources/images/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72"
 	href="resources/images/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114"
@@ -56,146 +55,13 @@
 <script src="resources/js/superfish.js" type="text/javascript"></script>
 <script src="resources/js/hoverIntent.js" type="text/javascript"></script>
 <!-- Flexslider -->
-<script src="resources/js/jquery.flexslider-min.js"
-	type="text/javascript"></script>
-<script type="text/javascript"
-	src="resources/js/modernizr.custom.29473.js"></script>
+<script src="resources/js/jquery.flexslider-min.js" type="text/javascript"></script>
+<script type="text/javascript" src="resources/js/modernizr.custom.29473.js"></script>
 <!-- Business js files-->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxcedr1zrD8h225vpj3hNseos5mHGEDVY&callback=initMap" async defer></script>
-<script>
-			var map;
-			var infowindow;
-			function initMap() {
-				var mapcenter = {
-					lat : 30.047793,
-					lng : 31.3712975
-				};
-				map = new google.maps.Map(
-						document.getElementById('map'), {
-							zoom : 19,
-							center : mapcenter,
-							mapTypeId : 'hybrid'
-						});
+<script src="resources/js/leaflet.js"></script>
+<script src="resources/js/esri-leaflet.js"></script>
+<script src="resources/js/leaflet.ajax.min.js"></script>
 
-				var building_geojson_layer = new google.maps.Data({
-					map : map
-				});
-				building_geojson_layer
-						.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Building.geojson');
-
-				var irregularities_geojson_layer = new google.maps.Data({
-					map : map
-				});
-				irregularities_geojson_layer
-						.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Irregularities.geojson');
-
-				infowindow = new google.maps.InfoWindow();
-
-				building_geojson_layer.setStyle(function(feature) {
-					var color = '#088da5';
-					var color_selected = 'red';
-					if (feature.getProperty('OBJECTID') == '5') {
-						return ({
-							fillColor : color_selected,
-							strokeColor : color_selected,
-							strokeWeight : 4
-						});
-					} else {
-						return ({
-							fillColor : color,
-							strokeColor : color,
-							strokeWeight : 2
-						});
-					}
-				});
-
-				irregularities_geojson_layer.setStyle(function(feature) {
-					var color = '#088da5';
-					var color_selected = 'red';
-					if (feature.getProperty('OBJECTID') == '49') {
-						return ({
-							fillColor : color_selected,
-							strokeColor : color_selected,
-							strokeWeight : 4
-						});
-					} else {
-						return ({
-							fillColor : color,
-							strokeColor : color,
-							strokeWeight : 2
-						});
-					}
-				});
-
-				building_geojson_layer
-						.addListener(
-								'click',
-								function(event) {
-									building_geojson_layer.revertStyle();
-									building_geojson_layer.overrideStyle(
-											event.feature, {
-												strokeWeight : 4,
-												strokeColor : 'red',
-												fillColor : 'green'
-											});
-									var content = "<div style=\"text-align:center; overflow:hidden;\"><h1 style=\"background-color: #17a2b8;color:#fff;\">"
-											+ "بيانات المبنى"
-											+ "</h1><br><br>"
-											+ "</div>";
-									infowindow.setContent(content);
-									infowindow.setPosition(event.latLng);
-									infowindow.open(map);
-								});
-
-				irregularities_geojson_layer
-						.addListener(
-								'click',
-								function(event) {
-									irregularities_geojson_layer.revertStyle();
-									irregularities_geojson_layer.overrideStyle(
-											event.feature, {
-												strokeWeight : 4,
-												strokeColor : 'red',
-												fillColor : 'green'
-											});
-									var content = "<div style=\"text-align:center; overflow:hidden;\"><h1 style=\"background-color: #17a2b8;color:#fff;\">"
-											+ "بيانات المخالفة"
-											+ "</h1><br><br>" + "</div>";
-									infowindow.setContent(content);
-									infowindow.setPosition(event.latLng);
-									infowindow.open(map);
-								});
-
-				building_geojson_layer.addListener('mouseover',
-						function(event) {
-							building_geojson_layer.revertStyle();
-							building_geojson_layer.overrideStyle(event.feature,
-									{
-										strokeWeight : 4,
-										fillColor : 'yellow'
-									});
-						});
-
-				building_geojson_layer.addListener('mouseout', function(event) {
-					building_geojson_layer.revertStyle();
-				});
-				
-				irregularities_geojson_layer.addListener('mouseover',
-						function(event) {
-					irregularities_geojson_layer.revertStyle();
-					irregularities_geojson_layer.overrideStyle(event.feature,
-									{
-										strokeWeight : 4,
-										fillColor : 'yellow'
-									});
-						});
-
-				irregularities_geojson_layer.addListener('mouseout', function(event) {
-					irregularities_geojson_layer.revertStyle();
-				});
-
-			}
-		</script>
 <title>NARSS_WarProduction_10thDistrict</title>
 </head>
 <body>
@@ -257,7 +123,51 @@
 
 	<!-- Home Content Part - Box One ==================================================================================================== -->
 	<div class="container" style="height: 629px; width: 100%;">
-		<div id="map"></div>
+			<div id="map"></div>
+
+			<div id="basemaps-wrapper" class="leaflet-bar">
+				<select id="basemaps">
+					<option value="Imagery">Imagery</option>
+					<option value="Topographic">Topographic</option>
+					<option value="Streets">Streets</option>
+					<option value="ImageryClarity">Imagery (Clarity)</option>
+				</select>
+			</div>
+			<script>
+				var map = L.map('map').setView([ 30.047793, 31.3712975 ], 19);
+				var layer = L.esri.basemapLayer('Imagery').addTo(map);
+				var layerLabels;
+
+				function setBasemap(basemap) {
+					if (layer) {
+						map.removeLayer(layer);
+					}
+
+					layer = L.esri.basemapLayer(basemap);
+
+					map.addLayer(layer);
+
+					if (layerLabels) {
+						map.removeLayer(layerLabels);
+					}if (basemap.includes('Imagery')) {
+						layerLabels = L.esri.basemapLayer('ImageryLabels');
+						map.addLayer(layerLabels);
+					}
+				}
+
+				document.querySelector('#basemaps').addEventListener('change',
+						function(e) {
+							var basemap = e.target.value;
+							setBasemap(basemap);
+						});
+
+				var buildinggeojsonLayer = new L.GeoJSON.AJAX(
+						"http://localhost:8080/10thDistirct_JSON/Building.geojson");
+				buildinggeojsonLayer.addTo(map);
+				var irregularitiesgeojsonLayer = new L.GeoJSON.AJAX(
+					"http://localhost:8080/10thDistirct_JSON/Irregularities.geojson");
+				irregularitiesgeojsonLayer.addTo(map);
+			</script>
 	</div>
 
 	<!-- Copyright ==================================================================================================== -->
@@ -273,18 +183,14 @@
 			<div class="five columns omega">
 				<section class="socials">
 				<ul class="socials fr">
-					<li><a href="#"><img
-							src="resources/images/socials/twitter.png" class="poshytip"
-							title="Twitter" alt="" /></a></li>
-					<li><a href="#"><img
-							src="resources/images/socials/facebook.png" class="poshytip"
-							title="Facebook" alt="" /></a></li>
-					<li><a href="#"><img
-							src="resources/images/socials/google.png" class="poshytip"
-							title="Google" alt="" /></a></li>
-					<li><a href="#"><img
-							src="resources/images/socials/dribbble.png" class="poshytip"
-							title="Dribbble" alt="" /></a></li>
+					<li><a href="#"><img src="resources/images/socials/twitter.png"
+							class="poshytip" title="Twitter" alt="" /></a></li>
+					<li><a href="#"><img src="resources/images/socials/facebook.png"
+							class="poshytip" title="Facebook" alt="" /></a></li>
+					<li><a href="#"><img src="resources/images/socials/google.png"
+							class="poshytip" title="Google" alt="" /></a></li>
+					<li><a href="#"><img src="resources/images/socials/dribbble.png"
+							class="poshytip" title="Dribbble" alt="" /></a></li>
 				</ul>
 				</section>
 			</div>
