@@ -25,3 +25,97 @@ body {
 #basemaps {
 	margin-bottom: 5px;
 }
+
+.outertable {	
+	border-collapse: collapse; 	
+	width: 100%x; 	
+	text-align: right; 	
+	padding: 5px; 	
+	border: 1px solid black; 
+}
+
+.rightcolumn {
+	font: bold 12px Arial; 
+	background-color: #bfd6e4; 	
+	color: #000; 	
+	width: 22%; 	
+	border-collapse: collapse; 	
+	text-align: right; 	
+	padding: 8px; 
+	border: 1px solid black; 	
+	border-collapse: collapse;
+}
+
+.th { 	
+	border-collapse: collapse; 	
+	width: 500px; 	
+	text-align: right; 	
+	padding: 8px; 	
+	border: 1px solid black; 
+}
+
+.td { 
+	font: bold 12px Arial; 
+	border-collapse: collapse; 	
+	width: 500px;	
+	text-align: right; 	
+	padding: 8px; 	
+	border: 1px solid black;
+	color: black; 
+}
+
+.td-button { 
+	font: bold 12px Arial; 
+	border-collapse: collapse; 	
+	text-align: right; 	
+	padding: 12px; 	
+}
+
+.innertable {	
+	border-collapse: collapse;	
+	width: 100%;	
+	text-align: right;	
+	padding: 8px;	
+	border: 1px solid black;
+}
+
+#infowindow {	
+	background-color: #eee;	
+	right: 0px;	
+	position: absolute; 	
+	top: 144px; 	
+	height: 550px; 	
+	width: 20%; 
+}
+
+.infowindowimg {
+	display: block; 	
+	margin-left: auto; 	
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.divider {
+	width: 5px; 	
+	height: auto; 	
+	display: inline-block;
+}
+
+.button {
+	font: bold 14px Arial; 	
+	text-decoration: none; 	
+	background-color: #bbffbb; 	
+	color: black; 	
+	padding: 8px;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-left: 1px solid #CCCCCC;
+}
+
+.button:hover, .button:focus, .btnsearch:hover, .btnsearch:focus {
+	background-color: #44a959;
+	color: #bbffbb;
+	text-decoration: none;
+	cursor: pointer;
+}

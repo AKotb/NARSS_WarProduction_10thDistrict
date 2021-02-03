@@ -61,141 +61,191 @@
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
 <!-- Business js files-->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxcedr1zrD8h225vpj3hNseos5mHGEDVY&callback=initMap" async defer></script>
+<script
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxcedr1zrD8h225vpj3hNseos5mHGEDVY&callback=initMap"
+	async defer></script>
 <script>
-			var map;
-			var infowindow;
-			function initMap() {
-				var mapcenter = {
-					lat : 30.047793,
-					lng : 31.3712975
-				};
-				map = new google.maps.Map(
-						document.getElementById('map'), {
-							zoom : 19,
-							center : mapcenter,
-							mapTypeId : 'hybrid'
-						});
+	var map;
+	var infowindow;
+	function initMap() {
+		var mapcenter = {
+			lat : 30.047793,
+			lng : 31.3712975
+		};
+		map = new google.maps.Map(document.getElementById('map'), {
+			zoom : 19,
+			center : mapcenter,
+			mapTypeId : 'satellite'
+		});
 
-				var building_geojson_layer = new google.maps.Data({
-					map : map
+		var building_geojson_layer = new google.maps.Data({
+			map : map
+		});
+		building_geojson_layer
+				.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Building.geojson');
+
+		var irregularities_geojson_layer = new google.maps.Data({
+			map : map
+		});
+		irregularities_geojson_layer
+				.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Irregularities.geojson');
+
+		infowindow = new google.maps.InfoWindow();
+
+		building_geojson_layer.setStyle(function(feature) {
+			var color = '#088da5';
+			var color_selected = 'red';
+			if (feature.getProperty('OBJECTID') == 5) {
+				return ({
+					fillColor : color,
+					strokeColor : color,
+					strokeWeight : 2
 				});
-				building_geojson_layer
-						.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Building.geojson');
-
-				var irregularities_geojson_layer = new google.maps.Data({
-					map : map
+			} else {
+				return ({
+					fillColor : color_selected,
+					strokeColor : color_selected,
+					strokeWeight : 2
 				});
-				irregularities_geojson_layer
-						.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Irregularities.geojson');
+			}
+		});
 
-				infowindow = new google.maps.InfoWindow();
-
-				building_geojson_layer.setStyle(function(feature) {
-					var color = '#088da5';
-					var color_selected = 'red';
-					if (feature.getProperty('OBJECTID') == '5') {
-						return ({
-							fillColor : color_selected,
-							strokeColor : color_selected,
-							strokeWeight : 4
-						});
-					} else {
-						return ({
-							fillColor : color,
-							strokeColor : color,
-							strokeWeight : 2
-						});
-					}
+		irregularities_geojson_layer.setStyle(function(feature) {
+			var color = '#088da5';
+			var color_selected = 'red';
+			if (feature.getProperty('OBJECTID') == 49) {
+				return ({
+					fillColor : color_selected,
+					strokeColor : color_selected,
+					strokeWeight : 2
 				});
-
-				irregularities_geojson_layer.setStyle(function(feature) {
-					var color = '#088da5';
-					var color_selected = 'red';
-					if (feature.getProperty('OBJECTID') == '49') {
-						return ({
-							fillColor : color_selected,
-							strokeColor : color_selected,
-							strokeWeight : 4
-						});
-					} else {
-						return ({
-							fillColor : color,
-							strokeColor : color,
-							strokeWeight : 2
-						});
-					}
+			} else {
+				return ({
+					fillColor : color,
+					strokeColor : color,
+					strokeWeight : 2
 				});
+			}
+		});
 
-				building_geojson_layer
-						.addListener(
-								'click',
-								function(event) {
-									building_geojson_layer.revertStyle();
-									building_geojson_layer.overrideStyle(
-											event.feature, {
-												strokeWeight : 4,
-												strokeColor : 'red',
-												fillColor : 'green'
-											});
-									var content = "<div style=\"text-align:center; overflow:hidden;\"><h1 style=\"background-color: #17a2b8;color:#fff;\">"
-											+ "بيانات المبنى"
-											+ "</h1><br><br>"
-											+ "</div>";
-									infowindow.setContent(content);
-									infowindow.setPosition(event.latLng);
-									infowindow.open(map);
-								});
-
-				irregularities_geojson_layer
-						.addListener(
-								'click',
-								function(event) {
-									irregularities_geojson_layer.revertStyle();
-									irregularities_geojson_layer.overrideStyle(
-											event.feature, {
-												strokeWeight : 4,
-												strokeColor : 'red',
-												fillColor : 'green'
-											});
-									var content = "<div style=\"text-align:center; overflow:hidden;\"><h1 style=\"background-color: #17a2b8;color:#fff;\">"
-											+ "بيانات المخالفة"
-											+ "</h1><br><br>" + "</div>";
-									infowindow.setContent(content);
-									infowindow.setPosition(event.latLng);
-									infowindow.open(map);
-								});
-
-				building_geojson_layer.addListener('mouseover',
+		building_geojson_layer
+				.addListener(
+						'click',
 						function(event) {
 							building_geojson_layer.revertStyle();
 							building_geojson_layer.overrideStyle(event.feature,
 									{
 										strokeWeight : 4,
-										fillColor : 'yellow'
+										strokeColor : 'red',
+										fillColor : 'green'
 									});
+							var buildingcode = event.feature
+									.getProperty('ID_Code_bu');
+							var buildingchange = event.feature
+									.getProperty("تغيير");
+							var buildingstatus = event.feature
+									.getProperty("حالة_");
+							var buildingstyle = event.feature
+									.getProperty("أسلوب");
+							var buildingusage = event.feature
+									.getProperty("استعم");
+							var buildingnoofunits = event.feature
+									.getProperty("اجمال");
+							var content = "<div style=\"text-align:center; overflow:hidden;\"><h1 style=\"background-color: #bfd6e4;color:#000;\">"
+									+ "بيانات المبنى"
+									+ "</h1><br><br>"
+									+ "<table class=\"outertable\" style=\"dir: rtl;\"><tr><td class=\'td\'>"
+									+ buildingcode
+									+ "</td><td class=\'rightcolumn\'>كود المبنى</td></tr><tr><td class=\'td\'>"
+									+ buildingchange
+									+ "</td><td class=\'rightcolumn\'>تغيير في المبنى</td></tr><tr><td class=\'td\'>"
+									+ buildingstatus
+									+ "</td><td class=\'rightcolumn\'>حالة المبنى</td></tr><tr><td class=\'td\'>"
+									+ buildingstyle
+									+ "</td><td class=\'rightcolumn\'>أسلوب البناء</td></tr><tr><td class=\'td\'>"
+									+ buildingusage
+									+ "</td><td class=\'rightcolumn\'>استعمال المبنى</td></tr><tr><td class=\'td\'>"
+									+ buildingnoofunits
+									+ "</td><td class=\'rightcolumn\'>عدد الوحدات</td></tr></table>"
+									+ "</div>";
+							infowindow.setContent(content);
+							infowindow.setPosition(event.latLng);
+							infowindow.open(map);
 						});
 
-				building_geojson_layer.addListener('mouseout', function(event) {
-					building_geojson_layer.revertStyle();
-				});
-				
-				irregularities_geojson_layer.addListener('mouseover',
+		irregularities_geojson_layer
+				.addListener(
+						'click',
 						function(event) {
-					irregularities_geojson_layer.revertStyle();
-					irregularities_geojson_layer.overrideStyle(event.feature,
-									{
+							irregularities_geojson_layer.revertStyle();
+							irregularities_geojson_layer.overrideStyle(
+									event.feature, {
 										strokeWeight : 4,
-										fillColor : 'yellow'
+										strokeColor : 'red',
+										fillColor : 'green'
 									});
+							var irregularitycode = event.feature
+									.getProperty('id_code');
+							var relatedbuildingcode = event.feature
+									.getProperty('ID_Code_bu');
+							var irregularitycomments = event.feature
+									.getProperty("ملاحظ");
+							var irregularityactivity = event.feature
+									.getProperty("نشاط_");
+							var irregularitytype = event.feature
+									.getProperty("نوع_ا");
+							var irregularitystyle = event.feature
+									.getProperty("أسلوب");
+							var content = "<div style=\"text-align:center; overflow:hidden;\"><h1 style=\"background-color: #bfd6e4;color:#000;\">"
+									+ "بيانات المخالفة"
+									+ "</h1><br><br>"
+									+ "<table class=\"outertable\" style=\"dir: rtl;\"><tr><td class=\'td\'>"
+									+ irregularitycode
+									+ "</td><td class=\'rightcolumn\'>كود المخالفة</td></tr><tr><td class=\'td\'>"
+									+ relatedbuildingcode
+									+ "</td><td class=\'rightcolumn\'>كود المبنى المتعلق بالمخالفة</td></tr><tr><td class=\'td\'>"
+									+ irregularitycomments
+									+ "</td><td class=\'rightcolumn\'>ملاحظات على المخالفة</td></tr><tr><td class=\'td\'>"
+									+ irregularityactivity
+									+ "</td><td class=\'rightcolumn\'>نشاط المخالفة</td></tr><tr><td class=\'td\'>"
+									+ irregularitytype
+									+ "</td><td class=\'rightcolumn\'>نوع المخالفة</td></tr><tr><td class=\'td\'>"
+									+ irregularitystyle
+									+ "</td><td class=\'rightcolumn\'>أسلوب البناء</td></tr></table>"
+									+ "</div>";
+							infowindow.setContent(content);
+							infowindow.setPosition(event.latLng);
+							infowindow.open(map);
 						});
 
-				irregularities_geojson_layer.addListener('mouseout', function(event) {
-					irregularities_geojson_layer.revertStyle();
-				});
+		building_geojson_layer.addListener('mouseover', function(event) {
+			building_geojson_layer.revertStyle();
+			building_geojson_layer.overrideStyle(event.feature, {
+				strokeWeight : 4,
+				fillColor : 'yellow',
+				strokeColor : 'yellow'
+			});
+		});
 
-			}
-		</script>
+		building_geojson_layer.addListener('mouseout', function(event) {
+			building_geojson_layer.revertStyle();
+		});
+
+		irregularities_geojson_layer.addListener('mouseover', function(event) {
+			irregularities_geojson_layer.revertStyle();
+			irregularities_geojson_layer.overrideStyle(event.feature, {
+				strokeWeight : 4,
+				fillColor : 'yellow',
+				strokeColor : 'yellow'
+			});
+		});
+
+		irregularities_geojson_layer.addListener('mouseout', function(event) {
+			irregularities_geojson_layer.revertStyle();
+		});
+
+	}
+</script>
 <title>NARSS_WarProduction_10thDistrict</title>
 </head>
 <body>
@@ -213,7 +263,7 @@
 					<ul class="sf-menu">
 						<li><a href="index.jsp" id="visited"><span class="home"><img
 									src="resources/images/home.png" alt="" /></span>Home</a></li>
-						<li><a href="about.html"><span class="home"><img
+						<li><a href="about.jsp"><span class="home"><img
 									src="resources/images/about.png" alt="" /></span>About</a></li>
 						<li><a href="portfolio.html"><span class="home"><img
 									src="resources/images/portfolio.png" alt="" /></span>Portfolio</a>
@@ -240,7 +290,7 @@
 					<select>
 						<option value="">Navigation</option>
 						<option value="index.jsp">Home</option>
-						<option value="about.html">About</option>
+						<option value="about.jsp">About</option>
 						<option value="portfolio.html">Portfolio</option>
 						<option value="gallery.html">Portfolio Gallery</option>
 						<option value="blog.html">Blog</option>
