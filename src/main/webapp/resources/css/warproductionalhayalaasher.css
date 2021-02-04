@@ -119,3 +119,217 @@ body {
 	text-decoration: none;
 	cursor: pointer;
 }
+
+.beh_container{
+				width:100%;
+				height:100%;
+				/*text-align: center;*/
+				font-size: 1vw;
+			}
+			
+.beh_main2{
+				width:100%;
+				height:calc(100% - 5% - 7vw); /* footer height: 5% & header height: 7vw*/
+				padding:0;
+				margin:0;
+				background-color:#eee;
+			}
+			
+.beh_main_aboutus {
+	width:100%;
+	height:100%;
+	padding: 0; 
+	margin: 0;
+	background-color:#eee;
+	float:left;
+	overflow:auto;
+}
+
+.aboutauthority_h1{
+	text-align: center;
+	margin: 0.5% 0% 0.5% 40%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3.5em;
+    padding: 15px 15px 15px 3%;
+    color: #355681;
+    box-shadow: inset 0 0 0 0.1vw rgba(53,86,129, 0.4), inset 0 0 1.5vw rgba(53,86,129, 0.5), inset -25vw 0 6vw white;
+    border-radius: 0.6vw;
+    width: 14%;
+}
+
+.supervisors_container_div{ 
+	/*changed*/
+	box-shadow: inset 0 0 0 0.1vw rgba(53,86,129, 0.4), inset 0 0 1.5vw rgba(53,86,129, 0.5), inset -25vw 0 6vw white;
+    border-radius: 0.6vw;
+    height: 22vw;
+    width: 70%;
+    margin: 2% 0 1% 15%;
+}
+
+.supervisors_row_about_main {
+	float: right;
+	width: 50%;
+}
+
+.card_about {
+	padding: 0;
+	text-align: center;
+}
+
+.photo_head {
+	width: 15vw;
+	height: 15vw;
+	border-radius: 50%;
+	transform: scale(0.8);
+	transition: transform 0.4s ease;
+	filter: saturate(1.5);
+	padding: 0.5vw;
+}
+
+.person_title {
+	color: #444;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 1.4vw;
+}
+
+.person_desc {
+	color: #aaa;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 1.4vw;
+}
+
+.team_div {
+	width: 100%;
+	margin-top: 2%;
+}
+
+.team_h1{
+	text-align: center;
+	margin: 0.5% 0% 0.5% 43%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3.5em;
+    padding: 1vw;
+    color: #355681;
+    box-shadow: inset 0 0 0 0.1vw rgba(53,86,129, 0.4), inset 0 0 1.5vw rgba(53,86,129, 0.5), inset -25vw 0 6vw white;
+    border-radius: 0.6vw;
+    width: 13%;
+}
+
+.row_about:after, .row_about_main:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.dataanalysisteam_div {
+	width:100%;
+	margin-top:2%;
+}
+
+.dataanalysisteam_h3 {
+	text-align: center;
+    margin: 0.5% 5% 0.5% 61%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3em;
+    padding: 1vw;
+    color: #355681;
+    box-shadow: inset 0 0 0 0.1vw rgba(53,86,129, 0.4), inset 0 0 1.5vw rgba(53,86,129, 0.5), inset -25vw 0 6vw white;
+    border-radius: 0.6vw;
+    width: 34%;
+}
+
+.dataanalysisteam_container_div{
+	box-shadow: inset 0 0 0 0.1vw rgba(53,86,129, 0.4), inset 0 0 1.5vw rgba(53,86,129, 0.5), inset -25vw 0 6vw white;
+    border-radius: 0.6vw;
+    height: 22vw;
+    width: 90%;
+    margin: 1% 5%;
+}
+
+.row_about {
+	width: 100%;
+	float: right;
+	margin-right: 3%;
+}
+
+.column_about {
+	float: right;
+	width: 16%;
+}
+
+.surveyteam_div {
+	width:100%;
+	margin-top:2%;
+}
+
+.surveyteam_h3 {
+	text-align: center;
+    margin: 0.5% 5% 0.5% 66%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3em;
+    padding: 1vw;
+    color: #355681;
+    box-shadow: inset 0 0 0 0.1vw rgba(53,86,129, 0.4), inset 0 0 1.5vw rgba(53,86,129, 0.5), inset -25vw 0 6vw white;
+    border-radius: 0.6vw;
+    width: 29%;
+}
+
+.surveyteam_container_div{
+	box-shadow: inset 0 0 0 0.1vw rgba(53,86,129, 0.4), inset 0 0 1.5vw rgba(53,86,129, 0.5), inset -25vw 0 6vw white;
+    border-radius: 0.6vw;
+    height: 22vw;
+    width: 90%;
+    margin: 1% 5%;
+}
+
+.governorateteam_div {
+	width:100%;
+	padding-top:2%;
+}
+
+.governorateteam_h3 {
+	text-align: center;
+    margin: 0.5% 5% 0.5% 31%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3em;
+    padding: 1vw;
+    color: #355681;
+    box-shadow: inset 0 0 0 0.1vw rgba(53,86,129, 0.4), inset 0 0 1.5vw rgba(53,86,129, 0.5), inset -25vw 0 6vw white;
+    border-radius: 0.6vw;
+    width: 64%;
+}
+
+.governorateteam_container_div{
+	box-shadow: inset 0 0 0 0.1vw rgba(53,86,129, 0.4), inset 0 0 1.5vw rgba(53,86,129, 0.5), inset -25vw 0 6vw white;
+    border-radius: 0.6vw;
+    height: 22vw;
+    width: 90%;
+    margin: 1% 5%;
+}
+
+.natronteam_div {
+	width:100%;
+	margin-top:2%;
+}
+
+.natronteam_h3 {
+	text-align: center;
+    margin: 0.5% 5% 0.5% 44%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3.5em;
+    padding: 1vw;
+    color: #355681;
+    box-shadow: inset 0 0 0 0.1vw rgba(53,86,129, 0.4), inset 0 0 1.5vw rgba(53,86,129, 0.5), inset -25vw 0 6vw white;
+    border-radius: 0.6vw;
+    width: 51%;
+}
+
+.natronteam_container_div{
+	box-shadow: inset 0 0 0 0.1vw rgba(53,86,129, 0.4), inset 0 0 1.5vw rgba(53,86,129, 0.5), inset -25vw 0 6vw white;
+    border-radius: 0.6vw;
+    height: 22vw;
+    width: 90%;
+    margin: 1% 5%;
+}

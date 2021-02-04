@@ -178,7 +178,7 @@ td {
 							<div class="card_about">
 								<div>
 									<img class="photo_head"
-										src="resources/images/mohamed_zahran.jpg">
+										src="resources/images/profil-male.png">
 								</div>
 								<h2 class="person_title">أ.د/ محمد زهران</h2>
 								<h3 class="person_desc">رئيس الهيئة القومية للإستشعار من
