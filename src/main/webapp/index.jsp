@@ -306,7 +306,7 @@
 	</div>
 
 	<!-- Home Content Part - Box One ==================================================================================================== -->
-	<div class="container" style="height: 629px; width: 100%;">
+	<div class="container" style="height: 779px; width: 100%;">
 		<div id="map"></div>
 	</div>
 

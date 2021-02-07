@@ -3,8 +3,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
 <!-- Basic Page Needs ==================================================================================================== -->
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="Documenting 10th District Nasr City">
 <meta name="author" content="NARSS Dev Team">
 
@@ -20,6 +21,7 @@
 	type="text/css" media="screen" />
 <link rel="stylesheet"
 	href="resources/css/warproductionalhayalaasher.css" />
+<link href="resources/css/bootstrap.min.3.4.1.css" rel="stylesheet" type='text/css' />
 
 <!-- Favicons ==================================================================================================== -->
 <link rel="shortcut icon" href="resources/images/favicon.png">
@@ -31,16 +33,13 @@
 	href="resources/images/apple-touch-icon-114x114.png">
 
 <!-- Google Fonts ==================================================================================================== -->
-<link
-	href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic'
-	rel='stylesheet' type='text/css'>
+<link href="resources/css/googlefonts.css" rel="stylesheet" type='text/css' />
+<link href="resources/css/fonts.css" rel="stylesheet" type="text/css" media="all" />
 
-<link rel="stylesheet" href="resources/css/bootstrap.min.3.4.1.css">
-<link href="resources/css/googlefonts.css" rel="stylesheet" />
-<link href="resources/default.css" rel="stylesheet" type="text/css"
-	media="all" />
-<link href="resources/fonts.css" rel="stylesheet" type="text/css"
-	media="all" />
+<!-- Scripts ==================================================================================================== -->
+<script src="resources/js/jquery.min.3.4.1.js"></script>
+<script src="resources/js/bootstrap.min.3.4.1.js"></script>
+
 
 <style>
 table {
@@ -66,29 +65,7 @@ td {
 	padding: 8px;
 }
 </style>
-<!-- Scripts ==================================================================================================== -->
-<script src="resources/js/jquery-1.8.0.min.js" type="text/javascript"></script>
-<!-- Main js files -->
-<script src="resources/js/screen.js" type="text/javascript"></script>
-<!-- Tooltip -->
-<script src="resources/js/poshytip-1.0/src/jquery.poshytip.min.js"
-	type="text/javascript"></script>
-<!-- Tabs -->
-<script src="resources/js/tabs.js" type="text/javascript"></script>
-<!-- Tweets -->
-<script src="resources/js/jquery.tweetable.js" type="text/javascript"></script>
-<!-- Include prettyPhoto -->
-<script src="resources/js/jquery.prettyPhoto.js" type="text/javascript"></script>
-<!-- Include Superfish -->
-<script src="resources/js/superfish.js" type="text/javascript"></script>
-<script src="resources/js/hoverIntent.js" type="text/javascript"></script>
-<!-- Flexslider -->
-<script src="resources/js/jquery.flexslider-min.js"
-	type="text/javascript"></script>
-<script type="text/javascript"
-	src="resources/js/modernizr.custom.29473.js"></script>
-<script src="resources/js/jquery.min.3.4.1.js"></script>
-<script src="resources/js/bootstrap.min.3.4.1.js"></script>
+
 <title>من نحن</title>
 </head>
 </head>
@@ -107,7 +84,7 @@ td {
 					<ul class="sf-menu">
 						<li><a href="index.jsp" id="visited"><span class="home"><img
 									src="resources/images/home.png" alt="" /></span>Home</a></li>
-						<li><a href="about.html"><span class="home"><img
+						<li><a href="about.jsp"><span class="home"><img
 									src="resources/images/about.png" alt="" /></span>About</a></li>
 						<li><a href="portfolio.html"><span class="home"><img
 									src="resources/images/portfolio.png" alt="" /></span>Portfolio</a>
@@ -134,7 +111,7 @@ td {
 					<select>
 						<option value="">Navigation</option>
 						<option value="index.jsp">Home</option>
-						<option value="about.html">About</option>
+						<option value="about.jsp">About</option>
 						<option value="portfolio.html">Portfolio</option>
 						<option value="gallery.html">Portfolio Gallery</option>
 						<option value="blog.html">Blog</option>
@@ -150,35 +127,20 @@ td {
 	</div>
 
 	<!-- Home Content Part - Box One ==================================================================================================== -->
-	<div class="container" style="height: 629px; width: 100%;">
+	<div class="container" style="width: 100%;">
 		<div class="beh_container">
 			<div class="beh_main2">
 				<div class="beh_main_aboutus">
-					<h1 class="aboutauthority_h1">عن الهيئة</h1>
+					<h1 class="aboutauthority_h1">عن المشروع</h1>
 					<p dir="rtl">
-						بدأ نشاط الإستشعار من البعد فى مصر مع بداية السبعينات وتحديدا عام
-						1971 من خلال مشروع بحثى مشترك بأكاديمية البحث العلمى والتكنولوجيا
-						مع جامعة أكلاهوما الأمريكية ثم تطور إلى إنشاء مركز للاستشعار من
-						البعد تابعا لأكاديمية البحث العلمى والتكنولوجيا عام 1972. أنشئت
-						الهيئة القومية للاستشعار من البعد وعلوم الفضاء عام 1991 كهيئة عامة
-						تتبع وزارة البحث العلمى، ثم أعيد تنظيمها عام 1994 كهيئة قومية <span
-							style='color: blue'> بقرار رئيس الجمهورية رقم 261 لسنة
-							1994 .</span> <br>
-						<br> تهدف الهيئة القومية للاستشعار من البعد وعلوم الفضاء إلى
-						متابعة ونقل وتقديم أحدث التقنيات فى مجالات الاستشعار من البعد
-						والتطبيقات السلمية لعلوم الفضاء، وبناء القدرات الذاتية لتطبيقها
-						ونشر الاستفادة منها والتعاون مع مختلف مؤسسات الدولة لخدمة خطط
-						وأهداف التنمية <a
-							style="font-weight: 600; font-family: 'Titillium Web', sans-serif; font-size: 29px; line-height: 40px;"
-							href="https://www.narss.sci.eg/" target="_blank">للمزيد اضغط
-							هنا</a>
+					ملخص عن مشروع توثيق أراضي الحي العاشر يمدينة نصر بالتعاون بين وزراة الإنتاج الحربي و الهئية القومية للاستشعار من البعد وعلوم الفضاء
 					</p>
 					<div class="supervisors_container_div">
 						<div class="supervisors_row_about_main">
 							<div class="card_about">
 								<div>
 									<img class="photo_head"
-										src="resources/images/profil-male.png">
+										src="resources/images/mohamed_zahran.jpg">
 								</div>
 								<h2 class="person_title">أ.د/ محمد زهران</h2>
 								<h3 class="person_desc">رئيس الهيئة القومية للإستشعار من
@@ -189,10 +151,10 @@ td {
 						<div class="supervisors_row_about_main">
 							<div class="card_about">
 								<div>
-									<img class="photo_head" src="resources/images/profil-male.png">
+									<img class="photo_head" src="resources/images/mohamed_ahmed_morsy.jpg">
 								</div>
-								<h2 class="person_title">اللواء/ </h2>
-								<h3 class="person_desc">وزارة الإنتاج الحربي</h3>
+								<h2 class="person_title">اللواء مهندس / محمد أحمد مرسي</h2>
+								<h3 class="person_desc">وزير الإنتاج الحربي</h3>
 							</div>
 						</div>
 					</div>
@@ -205,7 +167,7 @@ td {
 					<div class="row_about_main">
 						<div class="card_about">
 							<div>
-								<img class="photo_head" src="resources/images/profile-female.png">
+								<img class="photo_head" src="resources/images/safaa_hassan.jpg">
 							</div>
 							<h2 class="person_title">أ.د / صفاء محمد حسن</h2>
 							<h3 class="person_desc">المدير التنفيذي للمشروع</h3>
@@ -311,36 +273,6 @@ td {
 										<h4 class="person_desc">الوظيفة</h4>
 									</div>
 								</div>
-								<div class="column_about">
-									<div class="card_about">
-										<div>
-											<img class="photo_member"
-												src="resources/images/profil-male.png">
-										</div>
-										<h3 class="person_title">الاسم</h3>
-										<h4 class="person_desc">الوظيفة</h4>
-									</div>
-								</div>
-								<div class="column_about">
-									<div class="card_about">
-										<div>
-											<img class="photo_member"
-												src="resources/images/profil-male.png">
-										</div>
-										<h3 class="person_title">الاسم</h3>
-										<h4 class="person_desc">الوظيفة</h4>
-									</div>
-								</div>
-								<div class="column_about">
-									<div class="card_about">
-										<div>
-											<img class="photo_member"
-												src="resources/images/profil-male.png">
-										</div>
-										<h3 class="person_title">الاسم</h3>
-										<h4 class="person_desc">الوظيفة</h4>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -382,36 +314,6 @@ td {
 										<h4 class="person_desc">الوظيفة</h4>
 									</div>
 								</div>
-								<div class="column_about">
-									<div class="card_about">
-										<div>
-											<img class="photo_member"
-												src="resources/images/profil-male.png">
-										</div>
-										<h3 class="person_title">الاسم</h3>
-										<h4 class="person_desc">الوظيفة</h4>
-									</div>
-								</div>
-								<div class="column_about">
-									<div class="card_about">
-										<div>
-											<img class="photo_member"
-												src="resources/images/profil-male.png">
-										</div>
-										<h3 class="person_title">الاسم</h3>
-										<h4 class="person_desc">الوظيفة</h4>
-									</div>
-								</div>
-								<div class="column_about">
-									<div class="card_about">
-										<div>
-											<img class="photo_member"
-												src="resources/images/profil-male.png">
-										</div>
-										<h3 class="person_title">الاسم</h3>
-										<h4 class="person_desc">الوظيفة</h4>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -422,6 +324,16 @@ td {
 						</div>
 						<div class="natronteam_container_div">
 							<div class="row_about">
+								<div class="column_about">
+									<div class="card_about">
+										<div>
+											<img class="photo_member"
+												src="resources/images/profil-male.png">
+										</div>
+										<h3 class="person_title">الاسم</h3>
+										<h4 class="person_desc">الوظيفة</h4>
+									</div>
+								</div>
 								<div class="column_about">
 									<div class="card_about">
 										<div>

@@ -75,7 +75,7 @@
 					<ul class="sf-menu">
 						<li><a href="index.jsp" id="visited"><span class="home"><img
 									src="resources/images/home.png" alt="" /></span>Home</a></li>
-						<li><a href="about.html"><span class="home"><img
+						<li><a href="about.jsp"><span class="home"><img
 									src="resources/images/about.png" alt="" /></span>About</a></li>
 						<li><a href="portfolio.html"><span class="home"><img
 									src="resources/images/portfolio.png" alt="" /></span>Portfolio</a>
@@ -102,7 +102,7 @@
 					<select>
 						<option value="">Navigation</option>
 						<option value="index.jsp">Home</option>
-						<option value="about.html">About</option>
+						<option value="about.jsp">About</option>
 						<option value="portfolio.html">Portfolio</option>
 						<option value="gallery.html">Portfolio Gallery</option>
 						<option value="blog.html">Blog</option>
