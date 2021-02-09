@@ -61,66 +61,16 @@
 <title>Show All Units</title>
 </head>
 <body>
-	<!-- Home - Content Part ==================================================================================================== -->
-	<div id="header">
-		<div class="container header">
-			<!-- Header | Logo, Menu
-		================================================== -->
-			<header>
-			<div class="logo">
-				<a href="index.jsp"><img src="resources/images/logo.png" alt="" /></a>
-			</div>
-			<div class="mainmenu">
-				<div id="mainmenu">
-					<ul class="sf-menu">
-						<li><a href="index.jsp" id="visited"><span class="home"><img
-									src="resources/images/home.png" alt="" /></span>Home</a></li>
-						<li><a href="about.jsp"><span class="home"><img
-									src="resources/images/about.png" alt="" /></span>About</a></li>
-						<li><a href="portfolio.html"><span class="home"><img
-									src="resources/images/portfolio.png" alt="" /></span>Portfolio</a>
-							<ul>
-								<li><a href="gallery.html">Portfolio Gallery</a></li>
-							</ul></li>
-						<li><a href="blog.html"><span class="home"><img
-									src="resources/images/blog.png" alt="" /></span>Blog</a>
-							<ul>
-								<li><a href="singleblog.html">Single Post</a></li>
-							</ul></li>
-						<li><a href="features.html"><span class="home"><img
-									src="resources/images/features.png" alt="" /></span>features</a></li>
-						<li><a href="contact.html"><span class="home"><img
-									src="resources/images/contact.png" alt="" /></span>Contact</a></li>
-						<li><a href="dashboard.jsp"><span class="home"><img
-									src="resources/images/dashboard.png" alt="" /></span>DashBoard</a></li>
-					</ul>
-				</div>
 
-				<!-- Responsive Menu -->
+	<!-- Header ============================================================================================================ -->
+	<jsp:include page="../../_header.jsp"></jsp:include>
+	<!-- Header ends here ================================================================================================== -->
 
-				<form id="responsive-menu" action="#" method="post">
-					<select>
-						<option value="">Navigation</option>
-						<option value="index.jsp">Home</option>
-						<option value="about.jsp">About</option>
-						<option value="portfolio.html">Portfolio</option>
-						<option value="gallery.html">Portfolio Gallery</option>
-						<option value="blog.html">Blog</option>
-						<option value="singleblog.html">Single Post</option>
-						<option value="features.html">Features</option>
-						<option value="contact.html">Contact</option>
-						<option value="dashboard.jsp">DashBoard</option>
-					</select>
-				</form>
-			</div>
-			</header>
-		</div>
-	</div>
-
-	<!-- Home Content Part - Box One ==================================================================================================== -->
+	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 629px; width: 100%;">
 		<div align="center">
-			<table border="1" cellpadding="15" style="color: #000000; border-spacing: 20px; border-collapse: unset;">
+			<table border="1" cellpadding="15"
+				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
 				<caption>
 					<h2>List of Units</h2>
 				</caption>
@@ -189,39 +139,11 @@
 			<a href="${back_home}">Return to Home Page</a>
 		</div>
 	</div>
+	<!-- Content ends here ================================================================================================= -->
 
-	<!-- Copyright ==================================================================================================== -->
-	<div id="copyright">
-		<div class="container">
-			<div class="eleven columns alpha">
-				<p class="copyright">
-					&copy; Copyright 2012. &quot;Proximet&quot; by <a
-						href="http://www.anarieldesign.com/">Anariel</a>. All rights
-					reserved.
-				</p>
-			</div>
-			<div class="five columns omega">
-				<section class="socials">
-				<ul class="socials fr">
-					<li><a href="#"><img
-							src="resources/images/socials/twitter.png" class="poshytip"
-							title="Twitter" alt="" /></a></li>
-					<li><a href="#"><img
-							src="resources/images/socials/facebook.png" class="poshytip"
-							title="Facebook" alt="" /></a></li>
-					<li><a href="#"><img
-							src="resources/images/socials/google.png" class="poshytip"
-							title="Google" alt="" /></a></li>
-					<li><a href="#"><img
-							src="resources/images/socials/dribbble.png" class="poshytip"
-							title="Dribbble" alt="" /></a></li>
-				</ul>
-				</section>
-			</div>
-		</div>
-		<!-- container ends here -->
-	</div>
-	<!-- copyright ends here -->
-	<!-- End Document================================================== -->
+	<!-- Footer ============================================================================================================ -->
+	<jsp:include page="../../_footer.jsp"></jsp:include>
+	<!-- Footer ends here ================================================================================================== -->
+
 </body>
 </html>
