@@ -64,6 +64,22 @@
 <script
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxcedr1zrD8h225vpj3hNseos5mHGEDVY&callback=initMap"
 	async defer></script>
+<style type="text/css">
+#floating-panel {
+	position: absolute;
+	top: 48%;
+	left: 0.6%;
+	z-index: 5;
+	background-color: #fff;
+	padding: 5px;
+	border: 1px solid #999;
+	text-align: center;
+	font-family: 'Roboto', 'sans-serif';
+	line-height: 30px;
+	padding-left: 10px;
+	width: 10.5%
+}
+</style>
 <script>
 	var map;
 	var infowindow;
@@ -245,8 +261,50 @@
 		});
 
 	}
+
+	//load raster image (pleiades 2017)
+	function loadrasterpleiades2017() {
+		var checkbox = document.getElementById('rst_pleiades_2017');
+		if (checkbox.checked == true) {
+			rasterpleiades2017_layer = new google.maps.Data({
+				map : map
+			});
+			rasterpleiades2017_layer
+					.loadGeoJson('http://localhost:8080/JSON/centers.geojson');
+			rasterpleiades2017_layer.setStyle(function(feature) {
+				return ({
+					fillColor : 'transparent',
+					strokeColor : '#3300FF',
+					strokeWeight : 2
+				});
+			});
+		} else {
+			rasterpleiades2017_layer.setMap(null);
+		}
+	}
+
+	//load raster image (pleiades 2019)
+	function loadrasterpleiades2019() {
+		var checkbox = document.getElementById('rst_pleiades_2019');
+		if (checkbox.checked == true) {
+			rasterpleiades2019_layer = new google.maps.Data({
+				map : map
+			});
+			rasterpleiades2019_layer
+					.loadGeoJson('http://localhost:8080/JSON/centers.geojson');
+			rasterpleiades2019_layer.setStyle(function(feature) {
+				return ({
+					fillColor : 'transparent',
+					strokeColor : '#3300FF',
+					strokeWeight : 2
+				});
+			});
+		} else {
+			rasterpleiades2019_layer.setMap(null);
+		}
+	}
 </script>
-<title>NARSS_WarProduction_10thDistrict</title>
+<title>توثيق الحي العاشر - مدينة نصر</title>
 </head>
 <body>
 
@@ -256,6 +314,16 @@
 
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 779px; width: 100%;">
+
+		<div id="floating-panel">
+			<b style="float: right;">Pleiades 2017 Raster</b><input
+				type="checkbox" onclick="loadrasterpleiades2017();"
+				id="rst_pleiades_2017" style="float: left;" /> <br> <b
+				style="float: right;">Pleiades 2019 Raster</b><input type="checkbox"
+				onclick="loadrasterpleiades2019();" id="rst_pleiades_2019"
+				style="float: left;" />
+		</div>
+
 		<div id="map"></div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->
