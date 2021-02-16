@@ -64,32 +64,16 @@
 <script
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxcedr1zrD8h225vpj3hNseos5mHGEDVY&callback=initMap"
 	async defer></script>
-<style type="text/css">
-#floating-panel {
-	position: absolute;
-	top: 48%;
-	left: 0.6%;
-	z-index: 5;
-	background-color: #fff;
-	padding: 5px;
-	border: 1px solid #999;
-	text-align: center;
-	font-family: 'Roboto', 'sans-serif';
-	line-height: 30px;
-	padding-left: 10px;
-	width: 10.5%
-}
-</style>
 <script>
 	var map;
 	var infowindow;
 	function initMap() {
 		var mapcenter = {
-			lat : 30.047793,
-			lng : 31.3712975
+				lat : 30.04636339157237,
+				lng : 31.375549031553224
 		};
 		map = new google.maps.Map(document.getElementById('map'), {
-			zoom : 19,
+			zoom : 17,
 			center : mapcenter,
 			mapTypeId : 'satellite'
 		});
@@ -264,43 +248,149 @@
 
 	//load raster image (pleiades 2017)
 	function loadrasterpleiades2017() {
+		var imageBounds = {
+				north: 30.0487624164,
+		        south: 30.044237623,
+		        east: 31.3787343556,
+		        west: 31.3709786191
+		};
+		var historicalOverlay = new google.maps.GroundOverlay('http://localhost:8080/10thDistirct_RASTER/Pleiades_2017_WGS84.jpg', imageBounds);
 		var checkbox = document.getElementById('rst_pleiades_2017');
 		if (checkbox.checked == true) {
-			rasterpleiades2017_layer = new google.maps.Data({
-				map : map
-			});
-			rasterpleiades2017_layer
-					.loadGeoJson('http://localhost:8080/JSON/centers.geojson');
-			rasterpleiades2017_layer.setStyle(function(feature) {
-				return ({
-					fillColor : 'transparent',
-					strokeColor : '#3300FF',
-					strokeWeight : 2
-				});
-			});
+			historicalOverlay.setMap(map);
 		} else {
-			rasterpleiades2017_layer.setMap(null);
+			historicalOverlay.setMap(null);
 		}
 	}
 
 	//load raster image (pleiades 2019)
 	function loadrasterpleiades2019() {
+		var imageBounds = {
+				north: 30.0487624164,
+		        south: 30.044237623,
+		        east: 31.3787343556,
+		        west: 31.3709786191
+		};
+		var historicalOverlay = new google.maps.GroundOverlay('http://localhost:8080/10thDistirct_RASTER/Pleiades_2019_WGS84.jpg', imageBounds);
 		var checkbox = document.getElementById('rst_pleiades_2019');
 		if (checkbox.checked == true) {
-			rasterpleiades2019_layer = new google.maps.Data({
+			historicalOverlay.setMap(map);
+		} else {
+			historicalOverlay.setMap(null);
+		}
+	}
+	
+	//load raster image (Urban 2017)
+	function loadrasterurban2017() {
+		var imageBounds = {
+				north: 30.0486511163,
+		        south: 30.0443899312,
+		        east: 31.378659605,
+		        west: 31.3711345335
+		};
+		var historicalOverlay = new google.maps.GroundOverlay('http://localhost:8080/10thDistirct_RASTER/Urban_2017_WGS84.jpg', imageBounds);
+		var checkbox = document.getElementById('rst_urban_2017');
+		if (checkbox.checked == true) {
+			historicalOverlay.setMap(map);
+		} else {
+			historicalOverlay.setMap(null);
+		}
+	}
+	
+	//load raster image (Urban 2019)
+	function loadrasterurban2019() {
+		var imageBounds = {
+				north: 30.0486568393,
+		        south: 30.0443958975,
+		        east: 31.3786590817,
+		        west: 31.3711344398
+		};
+		var historicalOverlay = new google.maps.GroundOverlay('http://localhost:8080/10thDistirct_RASTER/Urban_2019_WGS84.jpg', imageBounds);
+		var checkbox = document.getElementById('rst_urban_2019');
+		if (checkbox.checked == true) {
+			historicalOverlay.setMap(map);
+		} else {
+			historicalOverlay.setMap(null);
+		}
+	}
+	
+	//load raster image (Urban Changes)
+	function loadrasterurbanchanges() {
+		var imageBounds = {
+				north: 30.0484928525,
+		        south: 30.0447005475,
+		        east: 31.3786989565,
+		        west: 31.371194692
+		};
+		var historicalOverlay = new google.maps.GroundOverlay('http://localhost:8080/10thDistirct_RASTER/Changes_2017_2019_WGS84.jpg', imageBounds);
+		var checkbox = document.getElementById('rst_urban_changes');
+		if (checkbox.checked == true) {
+			historicalOverlay.setMap(map);
+		} else {
+			historicalOverlay.setMap(null);
+		}
+	}
+	
+	//load vector layer (Urban 2017)
+	function loadvectorurban2017() {
+		var checkbox = document.getElementById('vct_urban_2017');
+		if (checkbox.checked == true) {
+			vectorurban2017_layer = new google.maps.Data({
 				map : map
 			});
-			rasterpleiades2019_layer
-					.loadGeoJson('http://localhost:8080/JSON/centers.geojson');
-			rasterpleiades2019_layer.setStyle(function(feature) {
+			vectorurban2017_layer
+					.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Urban_2017_GCS84.geojson');
+			vectorurban2017_layer.setStyle(function(feature) {
 				return ({
-					fillColor : 'transparent',
+					fillColor : 'orange',
 					strokeColor : '#3300FF',
-					strokeWeight : 2
+					strokeWeight : 1
 				});
 			});
 		} else {
-			rasterpleiades2019_layer.setMap(null);
+			vectorurban2017_layer.setMap(null);
+		}
+	}
+	
+	//load vector layer (Urban 2019)
+	function loadvectorurban2019() {
+		var checkbox = document.getElementById('vct_urban_2019');
+		if (checkbox.checked == true) {
+			vectorurban2019_layer = new google.maps.Data({
+				map : map
+			});
+			vectorurban2019_layer
+					.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Urban_2019_GCS84.geojson');
+			vectorurban2019_layer.setStyle(function(feature) {
+				return ({
+					fillColor : 'green',
+					strokeColor : '#3300FF',
+					strokeWeight : 1
+				});
+			});
+		} else {
+			vectorurban2019_layer.setMap(null);
+		}
+	}
+	
+	//load vector layer (Urban Changes)
+	function loadvectorurbanchanges() {
+		var checkbox = document.getElementById('vct_urban_changes');
+		if (checkbox.checked == true) {
+			vectorurbanchanges_layer = new google.maps.Data({
+				map : map
+			});
+			vectorurbanchanges_layer
+					.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Changes_2017_2019_GCS84.geojson');
+			vectorurbanchanges_layer.setStyle(function(feature) {
+				return ({
+					fillColor : 'red',
+					strokeColor : '#3300FF',
+					strokeWeight : 1
+				});
+			});
+		} else {
+			vectorurbanchanges_layer.setMap(null);
 		}
 	}
 </script>
@@ -316,12 +406,31 @@
 	<div class="container" style="height: 779px; width: 100%;">
 
 		<div id="floating-panel">
-			<b style="float: right;">Pleiades 2017 Raster</b><input
+		<br/>
+			<b style="float: right; color: black;">Pleiades 2017</b><input
 				type="checkbox" onclick="loadrasterpleiades2017();"
-				id="rst_pleiades_2017" style="float: left;" /> <br> <b
-				style="float: right;">Pleiades 2019 Raster</b><input type="checkbox"
+				id="rst_pleiades_2017" style="float: left;" /> <br/> 
+			<b style="float: right; color: black;">Pleiades 2019</b><input type="checkbox"
 				onclick="loadrasterpleiades2019();" id="rst_pleiades_2019"
-				style="float: left;" />
+				style="float: left;" /> <br/>
+			<b style="float: right; color: black;">Urban 2017 (Raster)</b><input type="checkbox"
+				onclick="loadrasterurban2017();" id="rst_urban_2017"
+				style="float: left;" /> <br/>
+			<b style="float: right; color: black;">Urban 2019 (Raster)</b><input type="checkbox"
+				onclick="loadrasterurban2019();" id="rst_urban_2019"
+				style="float: left;" /> <br/>
+			<b style="float: right; color: black;">Urban Changes (Raster)</b><input type="checkbox"
+				onclick="loadrasterurbanchanges();" id="rst_urban_changes"
+				style="float: left;" /> <br/>
+			<b style="float: right; color: black;">Urban 2017 (Vector)</b><input type="checkbox"
+				onclick="loadvectorurban2017();" id="vct_urban_2017"
+				style="float: left;" /> <br/>
+			<b style="float: right; color: black;">Urban 2019 (Vector)</b><input type="checkbox"
+				onclick="loadvectorurban2019();" id="vct_urban_2019"
+				style="float: left;" /> <br/>
+			<b style="float: right; color: black;">Urban Changes (Vector)</b><input type="checkbox"
+				onclick="loadvectorurbanchanges();" id="vct_urban_changes"
+				style="float: left;" /> <br/>
 		</div>
 
 		<div id="map"></div>

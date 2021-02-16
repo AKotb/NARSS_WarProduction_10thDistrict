@@ -11,9 +11,9 @@
 				<div id="mainmenu">
 					<ul class="sf-menu">
 						<li><a href="index.jsp" id="visited"><span class="home"><img
-									src="resources/images/home.png" alt="" /></span>Home</a></li>
+									src="resources/images/home.png" alt="" /></span>الرئيسية</a></li>
 						<li><a href="about.jsp"><span class="home"><img
-									src="resources/images/about.png" alt="" /></span>About</a></li>
+									src="resources/images/about.png" alt="" /></span>عن المشروع</a></li>
 						<li><a href="portfolio.html"><span class="home"><img
 									src="resources/images/portfolio.png" alt="" /></span>Portfolio</a>
 							<ul>
@@ -29,7 +29,7 @@
 						<li><a href="contact.html"><span class="home"><img
 									src="resources/images/contact.png" alt="" /></span>Contact</a></li>
 						<li><a href="dashboard.jsp"><span class="home"><img
-									src="resources/images/dashboard.png" alt="" /></span>DashBoard</a></li>
+									src="resources/images/dashboard.png" alt="" /></span>الإعدادات</a></li>
 					</ul>
 				</div>
 
@@ -38,15 +38,15 @@
 				<form id="responsive-menu" action="#" method="post">
 					<select>
 						<option value="">Navigation</option>
-						<option value="index.jsp">Home</option>
-						<option value="about.jsp">About</option>
+						<option value="index.jsp">الرئيسية</option>
+						<option value="about.jsp">عن المشروع</option>
 						<option value="portfolio.html">Portfolio</option>
 						<option value="gallery.html">Portfolio Gallery</option>
 						<option value="blog.html">Blog</option>
 						<option value="singleblog.html">Single Post</option>
 						<option value="features.html">Features</option>
 						<option value="contact.html">Contact</option>
-						<option value="dashboard.jsp">DashBoard</option>
+						<option value="dashboard.jsp">الإعدادات</option>
 					</select>
 				</form>
 			</div>
