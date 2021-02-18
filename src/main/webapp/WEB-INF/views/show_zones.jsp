@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Show All Zones</title>
+<title>المربعات</title>
 </head>
 <body>
 
@@ -72,15 +72,15 @@
 			<table border="1" cellpadding="15"
 				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
 				<caption>
-					<h2>List of Zones</h2>
+					<h2>عرض المربعات المتاحة</h2>
 				</caption>
 				<tr>
-					<th>City Code</th>
-					<th>Area Code</th>
-					<th>Region Code</th>
-					<th>Zone Code</th>
-					<th>Zone Map</th>
-					<th>Action</th>
+					<th>اعدادات</th>
+					<th>كود الخريطة</th>
+					<th>كود المربع</th>
+					<th>كود المنطقة</th>
+					<th>كود الحي</th>
+					<th>كود المدينة / المحافظة</th>
 				</tr>
 				<c:forEach var="zone" items="${msg}">
 					<c:url var="deletelink" value="deletezone">
@@ -90,17 +90,20 @@
 						<c:param name="zc" value="${zone.zoneCode}"></c:param>
 					</c:url>
 					<tr>
-						<td><c:out value="${zone.zonCity}" /></td>
-						<td><c:out value="${zone.areaCode}" /></td>
-						<td><c:out value="${zone.regionCode}" /></td>
-						<td><c:out value="${zone.zoneCode}" /></td>
-						<td><c:out value="${zone.zoneMap}" /></td>
-						<td><a href="${deletelink}">Delete</a></td>
+						<td style="text-align: center"><a href="${deletelink}">حذف</a></td>
+						<td style="text-align: center"><c:out value="${zone.zoneMap}" /></td>
+						<td style="text-align: center"><c:out
+								value="${zone.zoneCode}" /></td>
+						<td style="text-align: center"><c:out
+								value="${zone.regionCode}" /></td>
+						<td style="text-align: center"><c:out
+								value="${zone.areaCode}" /></td>
+						<td style="text-align: center"><c:out value="${zone.zonCity}" /></td>
 					</tr>
 				</c:forEach>
 			</table>
 			<c:url var="back_home" value="z_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

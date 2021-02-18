@@ -59,7 +59,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>City Codes Management</title>
+<title>  اعدادات المحافظات / المدن </title>
 </head>
 <body>
 
@@ -69,18 +69,17 @@
 
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 629px; width: 100%;">
-		<h2 style="text-align: center;">Welcome to City Codes Management
-			Page</h2>
+		<h2 style="text-align: center;">مرحباً بكم في منظومة   اعدادات المحافظات / المدن </h2>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="showadditionform" var="add_citycode" />
 			<h2>
-				<a href="${add_citycode}"> Add New City Code</a>
+				<a href="${add_citycode}"> اضافة مدينة / محافظة جديدة </a>
 			</h2>
 			<br />
 			<c:url value="list" var="show_citycodes" />
 			<h2>
-				<a href="${show_citycodes}"> Display All City Codes</a>
+				<a href="${show_citycodes}">   عرض  [المدن / المحافظات] المتاحة </a>
 			</h2>
 		</div>
 	</div>

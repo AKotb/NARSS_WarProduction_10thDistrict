@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Add New Authorization</title>
+<title> اضافة توكيل جديد </title>
 </head>
 <body>
 
@@ -73,49 +73,49 @@
 				<table
 					style="align: center; background-color: #F1E6E6; color: #000000;">
 					<caption>
-						<h2>Add New Authorization</h2>
+						<h2> اضافة توكيل جديد </h2>
 					</caption>
 					<tr>
-						<td>Enter Unit Barcode:</td>
+						<td>: ادخل كود الوحدة/الشقة</td>
 						<td><input type="text" name="maUnitBarcode"></td>
 					</tr>
 					<tr>
-						<td>Enter Delegation Number:</td>
+						<td>: ادخل رقم التوكيل</td>
 						<td><input type="text" name="maDelegationNo"></td>
 					</tr>
 					<tr>
-						<td>Enter Delegation Date:</td>
+						<td>: ادخل تاريخ التوكيل</td>
 						<td><input type="text" name="maDelegationDate"></td>
 					</tr>
 					<tr>
-						<td>Enter Delegation Issued Place:</td>
+						<td>: ادخل جهة اصدار التوكيل</td>
 						<td><input type="text" name="maDelegationIssuedPlace"></td>
 					</tr>
 					<tr>
-						<td>Enter Delegation Type:</td>
+						<td>: ادخل نوع التوكيل</td>
 						<td><input type="text" name="maDelegationType"></td>
 					</tr>
 					<tr>
-						<td>Enter Delegator Name:</td>
+						<td>: ادخل اسم الموكل</td>
 						<td><input type="text" name="maDelegatorName"></td>
 					</tr>
 					<tr>
-						<td>Enter Delegator ID:</td>
+						<td>: ادخل رقم بطاقة الموكل</td>
 						<td><input type="text" name="maDelegatorId"></td>
 					</tr>
 					<tr>
-						<td>Enter Delegate to Name:</td>
+						<td>: ادخل اسم الموكل إليه</td>
 						<td><input type="text" name="maDelegateToName"></td>
 					</tr>
 					<tr>
-						<td>Enter Delegate to ID:</td>
+						<td>: ادخل رقم بطاقة الموكل إليه</td>
 						<td><input type="text" name="maDelegateToId"></td>
 					</tr>
 				</table>
-				<input type="submit" value="Add Authorization">
+				<input type="submit" value=" اضافة ">
 			</form>
 			<c:url var="back_home" value="auz_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

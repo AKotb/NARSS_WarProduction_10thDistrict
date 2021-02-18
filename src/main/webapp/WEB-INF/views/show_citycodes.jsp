@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Show All City Codes</title>
+<title>المدن / المحافظات</title>
 </head>
 <body>
 
@@ -72,26 +72,26 @@
 			<table border="1" cellpadding="15"
 				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
 				<caption>
-					<h2>List of City Codes</h2>
+					<h2>عرض [المدن / المحافظات] المتاحة</h2>
 				</caption>
 				<tr>
-					<th>City Code</th>
-					<th>City Name</th>
-					<th>Action</th>
+					<th>اعدادات</th>
+					<th>اسم المدينة / المحافظة</th>
+					<th>كود المدينة / المحافظة</th>
 				</tr>
 				<c:forEach var="cityCode" items="${msg}">
 					<c:url var="deletelink" value="deletecitycode">
 						<c:param name="cc" value="${cityCode.cityCode}"></c:param>
 					</c:url>
 					<tr>
-						<td><c:out value="${cityCode.cityCode}" /></td>
-						<td><c:out value="${cityCode.cityName}" /></td>
-						<td><a href="${deletelink}">Delete</a></td>
+						<td style="text-align: center"><a href="${deletelink}">حذف</a></td>
+						<td style="text-align: center"><c:out value="${cityCode.cityName}" /></td>
+						<td style="text-align: center"><c:out value="${cityCode.cityCode}" /></td>
 					</tr>
 				</c:forEach>
 			</table>
 			<c:url var="back_home" value="backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

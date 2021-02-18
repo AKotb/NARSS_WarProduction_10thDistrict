@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Show All Concessions</title>
+<title>التنازلات</title>
 </head>
 <body>
 
@@ -72,36 +72,43 @@
 			<table border="1" cellpadding="15"
 				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
 				<caption>
-					<h2>List of Concessions</h2>
+					<h2>عرض التنازلات المتاحة</h2>
 				</caption>
 				<tr>
-					<th>Unit Barcode</th>
-					<th>Concession Serial</th>
-					<th>Concession from Name</th>
-					<th>Concession from ID</th>
-					<th>Concession to Name</th>
-					<th>Concession to ID</th>
-					<th>Concession Date</th>
-					<th>Action</th>
+					<th>اعدادات</th>
+					<th>تاريخ التنازل</th>
+					<th>رقم بطاقة المتنازل إليه</th>
+					<th>اسم المتنازل إليه</th>
+					<th>رقم بطاقة المتنازل</th>
+					<th>اسم المتنازل</th>
+					<th>رقم مسلسل التنازل</th>
+					<th>كود الوحدة/الشقة</th>
 				</tr>
 				<c:forEach var="concession" items="${msg}">
 					<c:url var="deletelink" value="deleteconcession">
 						<c:param name="concs" value="${concession.coConcessionSerial}"></c:param>
 					</c:url>
 					<tr>
-						<td><c:out value="${concession.coUnitBarcode}" /></td>
-						<td><c:out value="${concession.coConcessionSerial}" /></td>
-						<td><c:out value="${concession.coConcessionFromName}" /></td>
-						<td><c:out value="${concession.coConcessionFromId}" /></td>
-						<td><c:out value="${concession.coConcessionToName}" /></td>
-						<td><c:out value="${concession.coConcessionToId}" /></td>
-						<td><c:out value="${concession.coConcessionDate}" /></td>
-						<td><a href="${deletelink}">Delete</a></td>
+						<td style="text-align: center"><a href="${deletelink}">حذف</a></td>
+						<td style="text-align: center"><c:out
+								value="${concession.coConcessionDate}" /></td>
+						<td style="text-align: center"><c:out
+								value="${concession.coConcessionToId}" /></td>
+						<td style="text-align: center"><c:out
+								value="${concession.coConcessionToName}" /></td>
+						<td style="text-align: center"><c:out
+								value="${concession.coConcessionFromId}" /></td>
+						<td style="text-align: center"><c:out
+								value="${concession.coConcessionFromName}" /></td>
+						<td style="text-align: center"><c:out
+								value="${concession.coConcessionSerial}" /></td>
+						<td style="text-align: center"><c:out
+								value="${concession.coUnitBarcode}" /></td>
 					</tr>
 				</c:forEach>
 			</table>
 			<c:url var="back_home" value="conc_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

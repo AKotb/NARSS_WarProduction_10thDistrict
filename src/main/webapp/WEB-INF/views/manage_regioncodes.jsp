@@ -59,7 +59,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Region Codes Management</title>
+<title> اعدادات المناطق داخل الأحياء </title>
 </head>
 <body>
 
@@ -69,18 +69,17 @@
 
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 629px; width: 100%;">
-		<h2 style="text-align: center;">Welcome to Region Codes
-			Management Page</h2>
+		<h2 style="text-align: center;"> مرحباً بكم في منظومة  اعدادات المناطق داخل الأحياء </h2>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="rc_showadditionform" var="add_regioncode" />
 			<h2>
-				<a href="${add_regioncode}"> Add New Region Code</a>
+				<a href="${add_regioncode}"> اضافة منطقة جديدة </a>
 			</h2>
 			<br />
 			<c:url value="rc_list" var="show_regioncodes" />
 			<h2>
-				<a href="${show_regioncodes}"> Display All Region Codes</a>
+				<a href="${show_regioncodes}"> عرض المناطق المتاحة </a>
 			</h2>
 		</div>
 	</div>

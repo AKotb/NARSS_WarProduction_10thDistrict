@@ -59,7 +59,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>External Violations Management</title>
+<title> اعدادات العقارات المخالفة المستقلة </title>
 </head>
 <body>
 
@@ -69,19 +69,17 @@
 
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 629px; width: 100%;">
-		<h2 style="text-align: center;">Welcome to External Violations
-			Management Page</h2>
+		<h2 style="text-align: center;"> مرحباً بكم  في منظومة  اعدادات العقارات المخالفة المستقلة </h2>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="ev_showadditionform" var="add_externalviolation" />
 			<h2>
-				<a href="${add_externalviolation}"> Add New External Violation</a>
+				<a href="${add_externalviolation}"> اضافة عقار مخالف مستقل جديد </a>
 			</h2>
 			<br />
 			<c:url value="ev_list" var="show_externalviolations" />
 			<h2>
-				<a href="${show_externalviolations}"> Display All External
-					Violations</a>
+				<a href="${show_externalviolations}"> عرض العقارات المخالفة المستقلة المتاحة </a>
 			</h2>
 		</div>
 	</div>

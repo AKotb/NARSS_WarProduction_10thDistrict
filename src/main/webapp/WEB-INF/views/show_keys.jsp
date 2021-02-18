@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Show All Keys</title>
+<title> عناصر ربط البيانات </title>
 </head>
 <body>
 
@@ -72,40 +72,48 @@
 			<table border="1" cellpadding="15"
 				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
 				<caption>
-					<h2>List of Keys</h2>
+					<h2>عرض عناصر ربط البيانات المتاحة</h2>
 				</caption>
 				<tr>
-					<th>City Code</th>
-					<th>Area Code</th>
-					<th>Region Code</th>
-					<th>Zone Code</th>
-					<th>Sub-Zone Code</th>
-					<th>Building No</th>
-					<th>Appartement No</th>
-					<th>Key All</th>
-					<th>Building Key</th>
-					<th>Action</th>
+					<th>اعدادات</th>
+					<th>كود المبنى/العقار</th>
+					<th>كود عنصر ربط البيانات</th>
+					<th>رقم الشقة/الوحدة</th>
+					<th>رقم العقار/المبنى</th>
+					<th>كود المربع الفرعي</th>
+					<th>كود المربع</th>
+					<th>كود المنطقة</th>
+					<th>كود الحي</th>
+					<th>كود المدينة / المحافظة</th>
 				</tr>
 				<c:forEach var="key" items="${msg}">
 					<c:url var="deletelink" value="deletekey">
 						<c:param name="ka" value="${key.keyAll}"></c:param>
 					</c:url>
 					<tr>
-						<td><c:out value="${key.keyCityCode}" /></td>
-						<td><c:out value="${key.keyAreaCode}" /></td>
-						<td><c:out value="${key.keyRegionCode}" /></td>
-						<td><c:out value="${key.keyZoneCode}" /></td>
-						<td><c:out value="${key.keySubZoneCode}" /></td>
-						<td><c:out value="${key.keyBuildingNo}" /></td>
-						<td><c:out value="${key.keyAppartementNo}" /></td>
-						<td><c:out value="${key.keyAll}" /></td>
-						<td><c:out value="${key.keyBuildingKey}" /></td>
-						<td><a href="${deletelink}">Delete</a></td>
+						<td style="text-align: center"><a href="${deletelink}">حذف</a></td>
+						<td style="text-align: center"><c:out
+								value="${key.keyBuildingKey}" /></td>
+						<td style="text-align: center"><c:out value="${key.keyAll}" /></td>
+						<td style="text-align: center"><c:out
+								value="${key.keyAppartementNo}" /></td>
+						<td style="text-align: center"><c:out
+								value="${key.keyBuildingNo}" /></td>
+						<td style="text-align: center"><c:out
+								value="${key.keySubZoneCode}" /></td>
+						<td style="text-align: center"><c:out
+								value="${key.keyZoneCode}" /></td>
+						<td style="text-align: center"><c:out
+								value="${key.keyRegionCode}" /></td>
+						<td style="text-align: center"><c:out
+								value="${key.keyAreaCode}" /></td>
+						<td style="text-align: center"><c:out
+								value="${key.keyCityCode}" /></td>
 					</tr>
 				</c:forEach>
 			</table>
 			<c:url var="back_home" value="k_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

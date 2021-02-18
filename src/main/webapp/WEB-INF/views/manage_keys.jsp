@@ -59,7 +59,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Keys Management</title>
+<title> اعدادات ربط البيانات </title>
 </head>
 <body>
 
@@ -69,17 +69,17 @@
 
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 629px; width: 100%;">
-		<h2 style="text-align: center;">Welcome to Keys Management Page</h2>
+		<h2 style="text-align: center;">مرحباً بكم في منظومة اعدادات ربط البيانات</h2>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="k_showadditionform" var="add_key" />
 			<h2>
-				<a href="${add_key}"> Add New Key</a>
+				<a href="${add_key}"> اضافة عنصر ربط بيانات جديد </a>
 			</h2>
 			<br />
 			<c:url value="k_list" var="show_keys" />
 			<h2>
-				<a href="${show_keys}"> Display All Keys</a>
+				<a href="${show_keys}"> عرض عناصر ربط البيانات المتاحة </a>
 			</h2>
 		</div>
 	</div>

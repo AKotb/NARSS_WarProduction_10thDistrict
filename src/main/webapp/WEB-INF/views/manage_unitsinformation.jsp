@@ -59,7 +59,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Units Management</title>
+<title> اعدادات الوحدات / الشقق </title>
 </head>
 <body>
 
@@ -69,17 +69,17 @@
 
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 629px; width: 100%;">
-		<h2 style="text-align: center;">Welcome to Units Management Page</h2>
+		<h2 style="text-align: center;"> مرحباً بكم  في منظومة  اعدادات الوحدات / الشقق </h2>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="ui_showadditionform" var="add_unitinformation" />
 			<h2>
-				<a href="${add_unitinformation}"> Add New Unit</a>
+				<a href="${add_unitinformation}"> اضافة وحدة / شقة جديدة </a>
 			</h2>
 			<br />
 			<c:url value="ui_list" var="show_unitsinformation" />
 			<h2>
-				<a href="${show_unitsinformation}"> Display All Units</a>
+				<a href="${show_unitsinformation}"> عرض الوحدات / الشقق المتاحة </a>
 			</h2>
 		</div>
 	</div>

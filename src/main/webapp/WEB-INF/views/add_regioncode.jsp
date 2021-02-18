@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Add New Region Code</title>
+<title> اضافة منطقة جديدة </title>
 </head>
 <body>
 
@@ -73,33 +73,33 @@
 				<table
 					style="align: center; background-color: #F1E6E6; color: #000000;">
 					<caption>
-						<h2>Add New Region Code</h2>
+						<h2> اضافة منطقة جديدة </h2>
 					</caption>
 					<tr>
-						<td>Enter City Code:</td>
+						<td>: ادخل كود المدينة / المحافظة </td>
 						<td><input type="text" name="rcCityCode"></td>
 					</tr>
 					<tr>
-						<td>Enter Area Code:</td>
+						<td>: ادخل كود الحي </td>
 						<td><input type="text" name="rcAreaCode"></td>
 					</tr>
 					<tr>
-						<td>Enter Region Code:</td>
+						<td>: ادخل كود المنطقة </td>
 						<td><input type="text" name="rcRegionCode"></td>
 					</tr>
 					<tr>
-						<td>Enter Region Name:</td>
+						<td>: ادخل اسم المنطقة </td>
 						<td><input type="text" name="rcRegionName"></td>
 					</tr>
 					<tr>
-						<td>Enter Region Map:</td>
+						<td>: ادخل كود الخريطة </td>
 						<td><input type="text" name="rcRegionMap"></td>
 					</tr>
 				</table>
-				<input type="submit" value="Add Region Code">
+				<input type="submit" value=" اضافة ">
 			</form>
 			<c:url var="back_home" value="rc_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

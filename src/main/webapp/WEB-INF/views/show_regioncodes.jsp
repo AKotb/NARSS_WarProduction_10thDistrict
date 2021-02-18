@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Show All Region Codes</title>
+<title> المناطق </title>
 </head>
 <body>
 
@@ -72,15 +72,15 @@
 			<table border="1" cellpadding="15"
 				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
 				<caption>
-					<h2>List of Region Codes</h2>
+					<h2> عرض المناطق المتاحة </h2>
 				</caption>
 				<tr>
-					<th>City Code</th>
-					<th>Area Code</th>
-					<th>Region Code</th>
-					<th>Region Name</th>
-					<th>Region Map</th>
-					<th>Action</th>
+					<th>اعدادات</th>
+					<th>كود الخريطة</th>
+					<th>اسم المنطقة</th>
+					<th>كود المنطقة</th>
+					<th>كود الحي</th>
+					<th>كود المدينة / المحافظة</th>
 				</tr>
 				<c:forEach var="regionCode" items="${msg}">
 					<c:url var="deletelink" value="deleteregioncode">
@@ -89,17 +89,17 @@
 						<c:param name="rc" value="${regionCode.rcRegionCode}"></c:param>
 					</c:url>
 					<tr>
-						<td><c:out value="${regionCode.rcCityCode}" /></td>
-						<td><c:out value="${regionCode.rcAreaCode}" /></td>
-						<td><c:out value="${regionCode.rcRegionCode}" /></td>
-						<td><c:out value="${regionCode.rcRegionName}" /></td>
-						<td><c:out value="${regionCode.rcRegionMap}" /></td>
-						<td><a href="${deletelink}">Delete</a></td>
+						<td style="text-align: center"><a href="${deletelink}">حذف</a></td>
+						<td style="text-align: center"><c:out value="${regionCode.rcRegionMap}" /></td>
+						<td style="text-align: center"><c:out value="${regionCode.rcRegionName}" /></td>
+						<td style="text-align: center"><c:out value="${regionCode.rcRegionCode}" /></td>
+						<td style="text-align: center"><c:out value="${regionCode.rcAreaCode}" /></td>
+						<td style="text-align: center"><c:out value="${regionCode.rcCityCode}" /></td>
 					</tr>
 				</c:forEach>
 			</table>
 			<c:url var="back_home" value="rc_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>System Dashboard</title>
+<title>لوحة الإعدادات</title>
 </head>
 <body>
 
@@ -68,47 +68,47 @@
 
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 629px; width: 100%;">
-		<h2 style="text-align: center;">Welcome to System Dashboard Page</h2>
+		<h2 style="text-align: center;">مرحباً بك في لوحة إعدادات النظام</h2>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="manage_city_codes" var="manage_citycodes" />
 			<h2>
-				<a href="${manage_citycodes}"> City Codes Management </a>
+				<a href="${manage_citycodes}">  اعدادات المحافظات / المدن </a>
 			</h2>
 		</div>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="manage_area_codes" var="manage_areacodes" />
 			<h2>
-				<a href="${manage_areacodes}"> Area Codes Management </a>
+				<a href="${manage_areacodes}"> اعدادات الأحياء </a>
 			</h2>
 		</div>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="manage_region_codes" var="manage_regioncodes" />
 			<h2>
-				<a href="${manage_regioncodes}"> Region Codes Management </a>
+				<a href="${manage_regioncodes}"> اعدادات المناطق داخل الأحياء </a>
 			</h2>
 		</div>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="manage_zones" var="manage_zones" />
 			<h2>
-				<a href="${manage_zones}"> Zones Management </a>
+				<a href="${manage_zones}"> اعدادات المربعات </a>
 			</h2>
 		</div>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="manage_sub_zones" var="manage_subzones" />
 			<h2>
-				<a href="${manage_subzones}"> Sub-Zones Management </a>
+				<a href="${manage_subzones}"> اعدادات المربعات الفرعية </a>
 			</h2>
 		</div>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="manage_keys" var="manage_keys" />
 			<h2>
-				<a href="${manage_keys}"> Keys Management </a>
+				<a href="${manage_keys}"> اعدادات ربط البيانات </a>
 			</h2>
 		</div>
 		<div
@@ -116,14 +116,14 @@
 			<c:url value="manage_buildings_information"
 				var="manage_buildingsinformation" />
 			<h2>
-				<a href="${manage_buildingsinformation}"> Buidlings Management </a>
+				<a href="${manage_buildingsinformation}"> اعدادات المباني / العقارات </a>
 			</h2>
 		</div>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="manage_units_information" var="manage_unitsinformation" />
 			<h2>
-				<a href="${manage_unitsinformation}">Units Management </a>
+				<a href="${manage_unitsinformation}"> اعدادات الوحدات / الشقق </a>
 			</h2>
 		</div>
 		<div
@@ -131,8 +131,7 @@
 			<c:url value="manage_external_violations"
 				var="manage_externalviolations" />
 			<h2>
-				<a href="${manage_externalviolations}">External Violations
-					Management </a>
+				<a href="${manage_externalviolations}"> اعدادات العقارات المخالفة المستقلة </a>
 			</h2>
 		</div>
 		<div
@@ -140,28 +139,28 @@
 			<c:url value="manage_owners_information"
 				var="manage_ownersinformation" />
 			<h2>
-				<a href="${manage_ownersinformation}">Owners Management </a>
+				<a href="${manage_ownersinformation}"> اعدادات الملاك </a>
 			</h2>
 		</div>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="manage_authorizations" var="manage_authorizations" />
 			<h2>
-				<a href="${manage_authorizations}">Authorizations Management </a>
+				<a href="${manage_authorizations}"> اعدادات التوكيلات </a>
 			</h2>
 		</div>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="manage_concessions" var="manage_concessions" />
 			<h2>
-				<a href="${manage_concessions}">Concessions Management </a>
+				<a href="${manage_concessions}"> اعدادات التنازلات </a>
 			</h2>
 		</div>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="/" var="backtohomepage" />
 			<h2>
-				<a href="${backtohomepage}"> Back to Home </a>
+				<a href="${backtohomepage}"> عودة إلى الصفحة الرئيسية </a>
 			</h2>
 		</div>
 	</div>

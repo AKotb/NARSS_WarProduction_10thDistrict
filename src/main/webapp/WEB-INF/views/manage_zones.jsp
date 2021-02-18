@@ -59,7 +59,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Zones Management</title>
+<title> اعدادات المربعات </title>
 </head>
 <body>
 
@@ -69,17 +69,17 @@
 
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 629px; width: 100%;">
-		<h2 style="text-align: center;">Welcome to Zones Management Page</h2>
+		<h2 style="text-align: center;"> مرحباً بكم في منظومة اعدادات المربعات </h2>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="z_showadditionform" var="add_zone" />
 			<h2>
-				<a href="${add_zone}"> Add New Zone</a>
+				<a href="${add_zone}"> اضافة مربع جديد </a>
 			</h2>
 			<br />
 			<c:url value="z_list" var="show_zones" />
 			<h2>
-				<a href="${show_zones}"> Display All Zones</a>
+				<a href="${show_zones}"> عرض المربعات المتاحة </a>
 			</h2>
 		</div>
 	</div>

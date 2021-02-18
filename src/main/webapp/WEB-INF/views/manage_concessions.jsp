@@ -59,7 +59,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Concessions Management</title>
+<title> اعدادات التنازلات </title>
 </head>
 <body>
 
@@ -69,18 +69,17 @@
 
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 629px; width: 100%;">
-		<h2 style="text-align: center;">Welcome to Concessions Management
-			Page</h2>
+		<h2 style="text-align: center;"> مرحباً بكم  في منظومة  اعدادات التنازلات </h2>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="conc_showadditionform" var="add_concession" />
 			<h2>
-				<a href="${add_concession}"> Add New Concession</a>
+				<a href="${add_concession}"> اضافة تنازل جديد </a>
 			</h2>
 			<br />
 			<c:url value="conc_list" var="show_concessions" />
 			<h2>
-				<a href="${show_concessions}"> Display All Concessions</a>
+				<a href="${show_concessions}"> عرض التنازلات المتاحة </a>
 			</h2>
 		</div>
 	</div>

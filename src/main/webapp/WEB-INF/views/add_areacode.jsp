@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Add New Area Code</title>
+<title> اضافة حي جديد </title>
 </head>
 <body>
 
@@ -73,29 +73,29 @@
 				<table
 					style="align: center; background-color: #F1E6E6; color: #000000;">
 					<caption>
-						<h2>Add New Area Code</h2>
+						<h2> اضافة حي جديد </h2>
 					</caption>
 					<tr>
-						<td>Enter City Code:</td>
+						<td>: ادخل كود المدينة / المحافظة </td>
 						<td><input type="text" name="arCityCode"></td>
 					</tr>
 					<tr>
-						<td>Enter Area Code:</td>
+						<td>: ادخل كود الحي </td>
 						<td><input type="text" name="arAreaCode"></td>
 					</tr>
 					<tr>
-						<td>Enter Area Name:</td>
+						<td>: ادخل اسم الحي </td>
 						<td><input type="text" name="arAreaName"></td>
 					</tr>
 					<tr>
-						<td>Enter Area Map:</td>
+						<td>: ادخل كود الخريطة </td>
 						<td><input type="text" name="arAreaMap"></td>
 					</tr>
 				</table>
-				<input type="submit" value="Add Area Code">
+				<input type="submit" value=" اضافة ">
 			</form>
 			<c:url var="back_home" value="ar_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

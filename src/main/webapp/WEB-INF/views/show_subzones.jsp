@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Show All Sub-Zones</title>
+<title>المربعات الفرعية</title>
 </head>
 <body>
 
@@ -72,16 +72,16 @@
 			<table border="1" cellpadding="15"
 				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
 				<caption>
-					<h2>List of Sub-Zones</h2>
+					<h2>عرض المربعات الفرعية المتاحة</h2>
 				</caption>
 				<tr>
-					<th>City Code</th>
-					<th>Area Code</th>
-					<th>Region Code</th>
-					<th>Zone Code</th>
-					<th>Sub-Zone Code</th>
-					<th>Sub-Zone Map</th>
-					<th>Action</th>
+					<th>اعدادات</th>
+					<th>كود الخريطة</th>
+					<th>كود المربع الفرعي</th>
+					<th>كود المربع</th>
+					<th>كود المنطقة</th>
+					<th>كود الحي</th>
+					<th>كود المدينة / المحافظة</th>
 				</tr>
 				<c:forEach var="subZone" items="${msg}">
 					<c:url var="deletelink" value="deletesubzone">
@@ -92,18 +92,24 @@
 						<c:param name="azszc" value="${subZone.azSubZoneCode}"></c:param>
 					</c:url>
 					<tr>
-						<td><c:out value="${subZone.azCity}" /></td>
-						<td><c:out value="${subZone.azAreaCode}" /></td>
-						<td><c:out value="${subZone.azRegionCode}" /></td>
-						<td><c:out value="${subZone.azZoneCode}" /></td>
-						<td><c:out value="${subZone.azSubZoneCode}" /></td>
-						<td><c:out value="${subZone.azSubZoneMap}" /></td>
-						<td><a href="${deletelink}">Delete</a></td>
+						<td style="text-align: center"><a href="${deletelink}">حذف</a></td>
+						<td style="text-align: center"><c:out
+								value="${subZone.azSubZoneMap}" /></td>
+						<td style="text-align: center"><c:out
+								value="${subZone.azSubZoneCode}" /></td>
+						<td style="text-align: center"><c:out
+								value="${subZone.azZoneCode}" /></td>
+						<td style="text-align: center"><c:out
+								value="${subZone.azRegionCode}" /></td>
+						<td style="text-align: center"><c:out
+								value="${subZone.azAreaCode}" /></td>
+						<td style="text-align: center"><c:out
+								value="${subZone.azCity}" /></td>
 					</tr>
 				</c:forEach>
 			</table>
 			<c:url var="back_home" value="sz_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

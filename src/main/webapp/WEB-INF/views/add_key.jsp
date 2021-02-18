@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Add New Key</title>
+<title> اضافة عنصر ربط بيانات جديد </title>
 </head>
 <body>
 
@@ -73,49 +73,49 @@
 				<table
 					style="align: center; background-color: #F1E6E6; color: #000000;">
 					<caption>
-						<h2>Add New Key</h2>
+						<h2> اضافة عنصر ربط بيانات جديد </h2>
 					</caption>
 					<tr>
-						<td>Enter City Code:</td>
+						<td>: ادخل كود المدينة / المحافظة</td>
 						<td><input type="text" name="keyCityCode"></td>
 					</tr>
 					<tr>
-						<td>Enter Area Code:</td>
+						<td>: ادخل كود الحي</td>
 						<td><input type="text" name="keyAreaCode"></td>
 					</tr>
 					<tr>
-						<td>Enter Region Code:</td>
+						<td>: ادخل كود المنطقة</td>
 						<td><input type="text" name="keyRegionCode"></td>
 					</tr>
 					<tr>
-						<td>Enter Zone Code:</td>
+						<td>: ادخل كود المربع</td>
 						<td><input type="text" name="keyZoneCode"></td>
 					</tr>
 					<tr>
-						<td>Enter Sub-Zone Code:</td>
+						<td>: ادخل كود المربع الفرعي</td>
 						<td><input type="text" name="keySubZoneCode"></td>
 					</tr>
 					<tr>
-						<td>Enter Building No:</td>
+						<td>: ادخل رقم المبنى/العقار</td>
 						<td><input type="text" name="keyBuildingNo"></td>
 					</tr>
 					<tr>
-						<td>Enter Appartement No:</td>
+						<td>: ادخل رقم الوحدة/الشقة</td>
 						<td><input type="text" name="keyAppartementNo"></td>
 					</tr>
 					<tr>
-						<td>Enter Key All:</td>
+						<td>: ادخل كود عنصر ربط البيانات</td>
 						<td><input type="text" name="keyAll"></td>
 					</tr>
 					<tr>
-						<td>Enter Building Key:</td>
+						<td>: ادخل كود المبنى/العقار</td>
 						<td><input type="text" name="keyBuildingKey"></td>
 					</tr>
 				</table>
-				<input type="submit" value="Add Key">
+				<input type="submit" value=" اضافة ">
 			</form>
 			<c:url var="back_home" value="k_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

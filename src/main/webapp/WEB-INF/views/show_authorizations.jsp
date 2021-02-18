@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Show All Authorizations</title>
+<title>التوكيلات</title>
 </head>
 <body>
 
@@ -72,40 +72,49 @@
 			<table border="1" cellpadding="15"
 				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
 				<caption>
-					<h2>List of Authorizations</h2>
+					<h2>عرض التوكيلات المتاحة</h2>
 				</caption>
 				<tr>
-					<th>Unit Barcode</th>
-					<th>Delegation Number</th>
-					<th>Delegation Date</th>
-					<th>Delegation Issued Place</th>
-					<th>Delegation Type</th>
-					<th>Delegator Name</th>
-					<th>Delegator ID</th>
-					<th>Delegate to Name</th>
-					<th>Delegate to ID</th>
-					<th>Action</th>
+					<th>اعدادات</th>
+					<th>رقم بطاقة الموكل إليه</th>
+					<th>اسم الموكل إليه</th>
+					<th>رقم بطاقة الموكل</th>
+					<th>اسم الموكل</th>
+					<th>نوع التوكيل</th>
+					<th>جهة اصدار التوكيل</th>
+					<th>تاريخ التوكيل</th>
+					<th>رقم التوكيل</th>
+					<th>كود الوحدة/الشقة</th>
 				</tr>
 				<c:forEach var="authorization" items="${msg}">
 					<c:url var="deletelink" value="deleteauthorization">
 						<c:param name="madn" value="${authorization.maDelegationNo}"></c:param>
 					</c:url>
 					<tr>
-						<td><c:out value="${authorization.maUnitBarcode}" /></td>
-						<td><c:out value="${authorization.maDelegationNo}" /></td>
-						<td><c:out value="${authorization.maDelegationDate}" /></td>
-						<td><c:out value="${authorization.maDelegationIssuedPlace}" /></td>
-						<td><c:out value="${authorization.maDelegationType}" /></td>
-						<td><c:out value="${authorization.maDelegatorName}" /></td>
-						<td><c:out value="${authorization.maDelegatorId}" /></td>
-						<td><c:out value="${authorization.maDelegateToName}" /></td>
-						<td><c:out value="${authorization.maDelegateToId}" /></td>
-						<td><a href="${deletelink}">Delete</a></td>
+						<td style="text-align: center"><a href="${deletelink}">حذف</a></td>
+						<td style="text-align: center"><c:out
+								value="${authorization.maDelegateToId}" /></td>
+						<td style="text-align: center"><c:out
+								value="${authorization.maDelegateToName}" /></td>
+						<td style="text-align: center"><c:out
+								value="${authorization.maDelegatorId}" /></td>
+						<td style="text-align: center"><c:out
+								value="${authorization.maDelegatorName}" /></td>
+						<td style="text-align: center"><c:out
+								value="${authorization.maDelegationType}" /></td>
+						<td style="text-align: center"><c:out
+								value="${authorization.maDelegationIssuedPlace}" /></td>
+						<td style="text-align: center"><c:out
+								value="${authorization.maDelegationDate}" /></td>
+						<td style="text-align: center"><c:out
+								value="${authorization.maDelegationNo}" /></td>
+						<td style="text-align: center"><c:out
+								value="${authorization.maUnitBarcode}" /></td>
 					</tr>
 				</c:forEach>
 			</table>
 			<c:url var="back_home" value="auz_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

@@ -280,56 +280,6 @@
 		}
 	}
 	
-	//load raster image (Urban 2017)
-	function loadrasterurban2017() {
-		var imageBounds = {
-				north: 30.0486511163,
-		        south: 30.0443899312,
-		        east: 31.378659605,
-		        west: 31.3711345335
-		};
-		var historicalOverlay = new google.maps.GroundOverlay('http://localhost:8080/10thDistirct_RASTER/Urban_2017_WGS84.jpg', imageBounds);
-		var checkbox = document.getElementById('rst_urban_2017');
-		if (checkbox.checked == true) {
-			historicalOverlay.setMap(map);
-		} else {
-			historicalOverlay.setMap(null);
-		}
-	}
-	
-	//load raster image (Urban 2019)
-	function loadrasterurban2019() {
-		var imageBounds = {
-				north: 30.0486568393,
-		        south: 30.0443958975,
-		        east: 31.3786590817,
-		        west: 31.3711344398
-		};
-		var historicalOverlay = new google.maps.GroundOverlay('http://localhost:8080/10thDistirct_RASTER/Urban_2019_WGS84.jpg', imageBounds);
-		var checkbox = document.getElementById('rst_urban_2019');
-		if (checkbox.checked == true) {
-			historicalOverlay.setMap(map);
-		} else {
-			historicalOverlay.setMap(null);
-		}
-	}
-	
-	//load raster image (Urban Changes)
-	function loadrasterurbanchanges() {
-		var imageBounds = {
-				north: 30.0484928525,
-		        south: 30.0447005475,
-		        east: 31.3786989565,
-		        west: 31.371194692
-		};
-		var historicalOverlay = new google.maps.GroundOverlay('http://localhost:8080/10thDistirct_RASTER/Changes_2017_2019_WGS84.jpg', imageBounds);
-		var checkbox = document.getElementById('rst_urban_changes');
-		if (checkbox.checked == true) {
-			historicalOverlay.setMap(map);
-		} else {
-			historicalOverlay.setMap(null);
-		}
-	}
 	
 	//load vector layer (Urban 2017)
 	function loadvectorurban2017() {
@@ -412,15 +362,6 @@
 				id="rst_pleiades_2017" style="float: left;" /> <br/> 
 			<b style="float: right; color: black;">Pleiades 2019</b><input type="checkbox"
 				onclick="loadrasterpleiades2019();" id="rst_pleiades_2019"
-				style="float: left;" /> <br/>
-			<b style="float: right; color: black;">Urban 2017 (Raster)</b><input type="checkbox"
-				onclick="loadrasterurban2017();" id="rst_urban_2017"
-				style="float: left;" /> <br/>
-			<b style="float: right; color: black;">Urban 2019 (Raster)</b><input type="checkbox"
-				onclick="loadrasterurban2019();" id="rst_urban_2019"
-				style="float: left;" /> <br/>
-			<b style="float: right; color: black;">Urban Changes (Raster)</b><input type="checkbox"
-				onclick="loadrasterurbanchanges();" id="rst_urban_changes"
 				style="float: left;" /> <br/>
 			<b style="float: right; color: black;">Urban 2017 (Vector)</b><input type="checkbox"
 				onclick="loadvectorurban2017();" id="vct_urban_2017"

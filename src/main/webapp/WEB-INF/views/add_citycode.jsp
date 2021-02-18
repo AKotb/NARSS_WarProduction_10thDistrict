@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Add New City Code</title>
+<title> اضافة مدينة / محافظة جديدة </title>
 </head>
 <body>
 
@@ -73,21 +73,21 @@
 				<table
 					style="align: center; background-color: #F1E6E6; color: #000000;">
 					<caption>
-						<h2>Add New City Code</h2>
+						<h2> اضافة مدينة / محافظة جديدة </h2>
 					</caption>
 					<tr>
-						<td>Enter City Code:</td>
 						<td><input type="text" name="cityCode"></td>
+						<td>: ادخل كود المدينة / المحافظة </td>
 					</tr>
 					<tr>
-						<td>Enter City Name:</td>
 						<td><input type="text" name="cityName"></td>
+						<td>: ادخل اسم المدينة / المحافظة </td>
 					</tr>
 				</table>
-				<input type="submit" value="Add City Code">
+				<input type="submit" value=" اضافة ">
 			</form>
 			<c:url var="back_home" value="backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

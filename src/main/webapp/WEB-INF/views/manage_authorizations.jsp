@@ -59,7 +59,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Authorizations Management</title>
+<title> اعدادات التوكيلات </title>
 </head>
 <body>
 
@@ -69,18 +69,17 @@
 
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 629px; width: 100%;">
-		<h2 style="text-align: center;">Welcome to Authorizations
-			Management Page</h2>
+		<h2 style="text-align: center;"> مرحباً بكم  في منظومة  اعدادات التوكيلات  </h2>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="auz_showadditionform" var="add_authorization" />
 			<h2>
-				<a href="${add_authorization}"> Add New Authorization</a>
+				<a href="${add_authorization}"> اضافة توكيل جديد </a>
 			</h2>
 			<br />
 			<c:url value="auz_list" var="show_authorizations" />
 			<h2>
-				<a href="${show_authorizations}"> Display All Authorizations</a>
+				<a href="${show_authorizations}"> عرض التوكيلات المتاحة </a>
 			</h2>
 		</div>
 	</div>

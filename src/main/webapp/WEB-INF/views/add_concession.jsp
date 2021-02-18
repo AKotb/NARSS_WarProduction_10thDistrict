@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Add New Concession</title>
+<title> اضافة تنازل جديد </title>
 </head>
 <body>
 
@@ -73,41 +73,41 @@
 				<table
 					style="align: center; background-color: #F1E6E6; color: #000000;">
 					<caption>
-						<h2>Add New Concession</h2>
+						<h2> اضافة تنازل جديد </h2>
 					</caption>
 					<tr>
-						<td>Enter Unit Barcode:</td>
+						<td>: ادخل كود الوحدة/الشقة</td>
 						<td><input type="text" name="coUnitBarcode"></td>
 					</tr>
 					<tr>
-						<td>Enter Concession Serial:</td>
+						<td>: ادخل رقم مسلسل التنازل</td>
 						<td><input type="text" name="coConcessionSerial"></td>
 					</tr>
 					<tr>
-						<td>Enter Concession from Name:</td>
+						<td>: ادخل اسم المتنازل</td>
 						<td><input type="text" name="coConcessionFromName"></td>
 					</tr>
 					<tr>
-						<td>Enter Concession from ID:</td>
+						<td>: ادخل رقم بطاقة المتنازل</td>
 						<td><input type="text" name="coConcessionFromId"></td>
 					</tr>
 					<tr>
-						<td>Enter Concession to Name:</td>
+						<td>: ادخل اسم المتنازل إليه</td>
 						<td><input type="text" name="coConcessionToName"></td>
 					</tr>
 					<tr>
-						<td>Enter Concession to ID:</td>
+						<td>: ادخل رقم بطاقة المتنازل إليه</td>
 						<td><input type="text" name="coConcessionToId"></td>
 					</tr>
 					<tr>
-						<td>Enter Concession Date:</td>
+						<td>: ادخل تاريخ التنازل</td>
 						<td><input type="text" name="coConcessionDate"></td>
 					</tr>
 				</table>
-				<input type="submit" value="Add Concession">
+				<input type="submit" value=" اضافة ">
 			</form>
 			<c:url var="back_home" value="conc_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

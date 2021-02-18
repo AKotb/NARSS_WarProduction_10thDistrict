@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Show All Area Codes</title>
+<title>الأحياء</title>
 </head>
 <body>
 
@@ -72,14 +72,14 @@
 			<table border="1" cellpadding="15"
 				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
 				<caption>
-					<h2>List of Area Codes</h2>
+					<h2>عرض الأحياء المتاحة</h2>
 				</caption>
 				<tr>
-					<th>City Code</th>
-					<th>Area Code</th>
-					<th>Area Name</th>
-					<th>Area Map</th>
-					<th>Action</th>
+					<th>اعدادات</th>
+					<th>كود الخريطة</th>
+					<th>اسم الحي</th>
+					<th>كود الحي</th>
+					<th>كود المدينة / المحافظة</th>
 				</tr>
 				<c:forEach var="areaCode" items="${msg}">
 					<c:url var="deletelink" value="deleteareacode">
@@ -87,16 +87,20 @@
 						<c:param name="ac" value="${areaCode.arAreaCode}"></c:param>
 					</c:url>
 					<tr>
-						<td><c:out value="${areaCode.arCityCode}" /></td>
-						<td><c:out value="${areaCode.arAreaCode}" /></td>
-						<td><c:out value="${areaCode.arAreaName}" /></td>
-						<td><c:out value="${areaCode.arAreaMap}" /></td>
-						<td><a href="${deletelink}">Delete</a></td>
+						<td style="text-align: center"><a href="${deletelink}">حذف</a></td>
+						<td style="text-align: center"><c:out
+								value="${areaCode.arAreaMap}" /></td>
+						<td style="text-align: center"><c:out
+								value="${areaCode.arAreaName}" /></td>
+						<td style="text-align: center"><c:out
+								value="${areaCode.arAreaCode}" /></td>
+						<td style="text-align: center"><c:out
+								value="${areaCode.arCityCode}" /></td>
 					</tr>
 				</c:forEach>
 			</table>
 			<c:url var="back_home" value="ar_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

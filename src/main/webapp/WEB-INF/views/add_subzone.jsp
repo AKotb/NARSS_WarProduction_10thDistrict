@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Add New Sub-Zone</title>
+<title> اضافة مربع فرعي جديد </title>
 </head>
 <body>
 
@@ -73,37 +73,37 @@
 				<table
 					style="align: center; background-color: #F1E6E6; color: #000000;">
 					<caption>
-						<h2>Add New Sub-Zone</h2>
+						<h2> اضافة مربع فرعي جديد </h2>
 					</caption>
 					<tr>
-						<td>Enter City Code:</td>
+						<td>: ادخل كود المدينة / المحافظة</td>
 						<td><input type="text" name="azCity"></td>
 					</tr>
 					<tr>
-						<td>Enter Area Code:</td>
+						<td>: ادخل كود الحي</td>
 						<td><input type="text" name="azAreaCode"></td>
 					</tr>
 					<tr>
-						<td>Enter Region Code:</td>
+						<td>: ادخل كود المنطقة</td>
 						<td><input type="text" name="azRegionCode"></td>
 					</tr>
 					<tr>
-						<td>Enter Zone Code:</td>
+						<td>: ادخل كود المربع</td>
 						<td><input type="text" name="azZoneCode"></td>
 					</tr>
 					<tr>
-						<td>Enter Sub-Zone Code:</td>
+						<td>: ادخل كود المربع الفرعي</td>
 						<td><input type="text" name="azSubZoneCode"></td>
 					</tr>
 					<tr>
-						<td>Enter Sub-Zone Map:</td>
+						<td>: ادخل كود الخريطة</td>
 						<td><input type="text" name="azSubZoneMap"></td>
 					</tr>
 				</table>
-				<input type="submit" value="Add Sub-Zone">
+				<input type="submit" value=" اضافة ">
 			</form>
 			<c:url var="back_home" value="sz_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

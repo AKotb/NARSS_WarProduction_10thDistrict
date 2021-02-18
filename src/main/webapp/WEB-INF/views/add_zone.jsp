@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Add New Zone</title>
+<title>اضافة مربع جديد</title>
 </head>
 <body>
 
@@ -73,33 +73,33 @@
 				<table
 					style="align: center; background-color: #F1E6E6; color: #000000;">
 					<caption>
-						<h2>Add New Zone</h2>
+						<h2>اضافة مربع جديد</h2>
 					</caption>
 					<tr>
-						<td>Enter City Code:</td>
+						<td>: ادخل كود المدينة / المحافظة</td>
 						<td><input type="text" name="zonCity"></td>
 					</tr>
 					<tr>
-						<td>Enter Area Code:</td>
+						<td>: ادخل كود الحي</td>
 						<td><input type="text" name="areaCode"></td>
 					</tr>
 					<tr>
-						<td>Enter Region Code:</td>
+						<td>: ادخل كود المنطقة</td>
 						<td><input type="text" name="regionCode"></td>
 					</tr>
 					<tr>
-						<td>Enter Zone Code:</td>
+						<td>: ادخل كود المربع</td>
 						<td><input type="text" name="zoneCode"></td>
 					</tr>
 					<tr>
-						<td>Enter Zone Map:</td>
+						<td>: ادخل كود الخريطة</td>
 						<td><input type="text" name="zoneMap"></td>
 					</tr>
 				</table>
-				<input type="submit" value="Add Zone">
+				<input type="submit" value=" اضافة ">
 			</form>
 			<c:url var="back_home" value="z_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

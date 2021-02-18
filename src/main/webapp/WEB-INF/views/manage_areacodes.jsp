@@ -59,7 +59,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Area Codes Management</title>
+<title> اعدادات الأحياء </title>
 </head>
 <body>
 
@@ -69,18 +69,17 @@
 
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 629px; width: 100%;">
-		<h2 style="text-align: center;">Welcome to Area Codes Management
-			Page</h2>
+		<h2 style="text-align: center;"> مرحباً بكم في منظومة   اعدادات الأحياء </h2>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="ar_showadditionform" var="add_areacode" />
 			<h2>
-				<a href="${add_areacode}"> Add New Area Code</a>
+				<a href="${add_areacode}"> اضافة حي جديد </a>
 			</h2>
 			<br />
 			<c:url value="ar_list" var="show_areacodes" />
 			<h2>
-				<a href="${show_areacodes}"> Display All Area Codes</a>
+				<a href="${show_areacodes}"> عرض الأحياء المتاحة </a>
 			</h2>
 		</div>
 	</div>

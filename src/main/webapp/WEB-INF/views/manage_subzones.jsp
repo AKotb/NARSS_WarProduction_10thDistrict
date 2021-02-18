@@ -59,7 +59,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Sub-Zones Management</title>
+<title> اعدادات المربعات الفرعية </title>
 </head>
 <body>
 
@@ -69,18 +69,17 @@
 
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 629px; width: 100%;">
-		<h2 style="text-align: center;">Welcome to Sub-Zones Management
-			Page</h2>
+		<h2 style="text-align: center;"> مرحباً بكم في اعدادات المربعات الفرعية </h2>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
 			<c:url value="sz_showadditionform" var="add_subzone" />
 			<h2>
-				<a href="${add_subzone}"> Add New Sub-Zone</a>
+				<a href="${add_subzone}"> اضافة مربع فرعي جديد </a>
 			</h2>
 			<br />
 			<c:url value="sz_list" var="show_subzones" />
 			<h2>
-				<a href="${show_subzones}"> Display All Sub-Zones</a>
+				<a href="${show_subzones}"> عرض المربعات الفرعية المتاحة </a>
 			</h2>
 		</div>
 	</div>
