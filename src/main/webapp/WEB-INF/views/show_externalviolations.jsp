@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Show All External Violations</title>
+<title>المخالفات</title>
 </head>
 <body>
 
@@ -72,20 +72,20 @@
 			<table border="1" cellpadding="15"
 				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
 				<caption>
-					<h2>List of External Violations</h2>
+					<h2> عرض العقارات المخالفة المستقلة المتاحة </h2>
 				</caption>
 				<tr>
-					<th>Violation Number</th>
-					<th>Related Building Barcode</th>
-					<th>Violation Type</th>
-					<th>Violation Activity</th>
-					<th>Number Of Floors</th>
-					<th>Architectural Style</th>
-					<th>Violation Status</th>
-					<th>Violation Land Size</th>
-					<th>Violation Repeated Size</th>
-					<th>Related Building Number</th>
-					<th>Action</th>
+					<th>اعدادات</th>
+					<th>رقم العقار / المبنى المجاور</th>
+					<th>مساحة المتكرر</th>
+					<th>مساحة الأرض</th>
+					<th>حالة العقار</th>
+					<th>الأسلوب الإنشائي</th>
+					<th>عدد طوابق المخالفة</th>
+					<th>نشاط المخالفة</th>
+					<th>نوع المخالفة</th>
+					<th>كود العقار / المبنى المجاور</th>
+					<th> رقم المخالفة </th>
 				</tr>
 				<c:forEach var="externalViolation" items="${msg}">
 					<c:url var="deletelink" value="deleteexternalviolation">
@@ -93,23 +93,22 @@
 							value="${externalViolation.evNewViolationNo}"></c:param>
 					</c:url>
 					<tr>
-						<td><c:out value="${externalViolation.evNewViolationNo}" /></td>
-						<td><c:out
-								value="${externalViolation.evRelatedBuildingBarcode}" /></td>
-						<td><c:out value="${externalViolation.evViolationType}" /></td>
-						<td><c:out value="${externalViolation.evViolationActivity}" /></td>
-						<td><c:out value="${externalViolation.evNumberOfFloors}" /></td>
-						<td><c:out value="${externalViolation.evArchitecturalStyle}" /></td>
-						<td><c:out value="${externalViolation.evStatus}" /></td>
-						<td><c:out value="${externalViolation.ezLandSize}" /></td>
-						<td><c:out value="${externalViolation.exRepeatedSize}" /></td>
-						<td><c:out value="${externalViolation.exRelatedBuildingNo}" /></td>
-						<td><a href="${deletelink}">Delete</a></td>
+						<td style="text-align: center"><a href="${deletelink}">حذف</a></td>
+						<td style="text-align: center"><c:out value="${externalViolation.exRelatedBuildingNo}" /></td>
+						<td style="text-align: center"><c:out value="${externalViolation.exRepeatedSize}" /></td>
+						<td style="text-align: center"><c:out value="${externalViolation.ezLandSize}" /></td>
+						<td style="text-align: center"><c:out value="${externalViolation.evStatus}" /></td>
+						<td style="text-align: center"><c:out value="${externalViolation.evArchitecturalStyle}" /></td>
+						<td style="text-align: center"><c:out value="${externalViolation.evNumberOfFloors}" /></td>
+						<td style="text-align: center"><c:out value="${externalViolation.evViolationActivity}" /></td>
+						<td style="text-align: center"><c:out value="${externalViolation.evViolationType}" /></td>
+						<td style="text-align: center"><c:out value="${externalViolation.evRelatedBuildingBarcode}" /></td>
+						<td style="text-align: center"><c:out value="${externalViolation.evNewViolationNo}" /></td>
 					</tr>
 				</c:forEach>
 			</table>
 			<c:url var="back_home" value="ev_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

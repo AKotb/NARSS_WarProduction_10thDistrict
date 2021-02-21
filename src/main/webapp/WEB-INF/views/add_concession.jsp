@@ -76,32 +76,32 @@
 						<h2> اضافة تنازل جديد </h2>
 					</caption>
 					<tr>
-						<td>: ادخل كود الوحدة/الشقة</td>
 						<td><input type="text" name="coUnitBarcode"></td>
+						<td>: ادخل كود الوحدة/الشقة</td>
 					</tr>
 					<tr>
-						<td>: ادخل رقم مسلسل التنازل</td>
 						<td><input type="text" name="coConcessionSerial"></td>
+						<td>: ادخل رقم مسلسل التنازل</td>
 					</tr>
 					<tr>
-						<td>: ادخل اسم المتنازل</td>
 						<td><input type="text" name="coConcessionFromName"></td>
+						<td>: ادخل اسم المتنازل</td>
 					</tr>
 					<tr>
-						<td>: ادخل رقم بطاقة المتنازل</td>
 						<td><input type="text" name="coConcessionFromId"></td>
+						<td>: ادخل رقم بطاقة المتنازل</td>
 					</tr>
 					<tr>
-						<td>: ادخل اسم المتنازل إليه</td>
 						<td><input type="text" name="coConcessionToName"></td>
+						<td>: ادخل اسم المتنازل إليه</td>
 					</tr>
 					<tr>
-						<td>: ادخل رقم بطاقة المتنازل إليه</td>
 						<td><input type="text" name="coConcessionToId"></td>
+						<td>: ادخل رقم بطاقة المتنازل إليه</td>
 					</tr>
 					<tr>
-						<td>: ادخل تاريخ التنازل</td>
 						<td><input type="text" name="coConcessionDate"></td>
+						<td>: ادخل تاريخ التنازل</td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">

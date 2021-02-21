@@ -6,7 +6,7 @@
 <head>
 
 <!-- Basic Page Needs ==================================================================================================== -->
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="Documenting 10th District Nasr City">
 <meta name="author" content="NARSS Dev Team">
 
@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Show All Owners</title>
+<title>الملاك</title>
 </head>
 <body>
 
@@ -72,34 +72,34 @@
 			<table border="1" cellpadding="15"
 				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
 				<caption>
-					<h2>List of Owners</h2>
+					<h2> عرض بيانات الملاك المتاحة </h2>
 				</caption>
 				<tr>
-					<th>Unit Barcode</th>
-					<th>Building Number</th>
-					<th>Unit Number</th>
-					<th>Owner Sequence</th>
-					<th>Owner Name</th>
-					<th>Owner ID</th>
-					<th>Action</th>
+					<th>اعدادات</th>
+					<th>رقم بطاقة المالك</th>
+					<th>اسم المالك</th>
+					<th>رقم مسلسل المالك</th>
+					<th>رقم الوحدة / الشقة</th>
+					<th>رقم المبنى / العقار</th>
+					<th>كود الوحدة / الشقة</th>
 				</tr>
 				<c:forEach var="ownerInformation" items="${msg}">
 					<c:url var="deletelink" value="deleteownerinformation">
 						<c:param name="oios" value="${ownerInformation.oiOwnerSequence}"></c:param>
 					</c:url>
 					<tr>
-						<td><c:out value="${ownerInformation.oiUnitBarcode}" /></td>
-						<td><c:out value="${ownerInformation.oiBuildingNo}" /></td>
-						<td><c:out value="${ownerInformation.oiUnitNo}" /></td>
-						<td><c:out value="${ownerInformation.oiOwnerSequence}" /></td>
-						<td><c:out value="${ownerInformation.oiOwnerName}" /></td>
-						<td><c:out value="${ownerInformation.oiOwnerId}" /></td>
-						<td><a href="${deletelink}">Delete</a></td>
+						<td style="text-align: center"><a href="${deletelink}">حذف</a></td>
+						<td style="text-align: center"><c:out value="${ownerInformation.oiOwnerId}" /></td>
+						<td style="text-align: center"><c:out value="${ownerInformation.oiOwnerName}" /></td>
+						<td style="text-align: center"><c:out value="${ownerInformation.oiOwnerSequence}" /></td>
+						<td style="text-align: center"><c:out value="${ownerInformation.oiUnitNo}" /></td>
+						<td style="text-align: center"><c:out value="${ownerInformation.oiBuildingNo}" /></td>
+						<td style="text-align: center"><c:out value="${ownerInformation.oiUnitBarcode}" /></td>
 					</tr>
 				</c:forEach>
 			</table>
 			<c:url var="back_home" value="oi_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

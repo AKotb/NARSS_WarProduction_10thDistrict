@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Add New Unit</title>
+<title> اضافة وحدة / شقة جديدة </title>
 </head>
 <body>
 
@@ -73,109 +73,109 @@
 				<table
 					style="align: center; background-color: #F1E6E6; color: #000000;">
 					<caption>
-						<h2>Add New Unit</h2>
+						<h2> اضافة وحدة / شقة جديدة </h2>
 					</caption>
 					<tr>
-						<td>Enter Building Number:</td>
 						<td><input type="text" name="fltBuildingNo"></td>
+						<td>: ادخل رقم المبنى </td>
 					</tr>
 					<tr>
-						<td>Enter Unit Number:</td>
 						<td><input type="text" name="fltUnitNo"></td>
+						<td>: ادخل رقم الوحدة </td>
 					</tr>
 					<tr>
-						<td>Enter Building Type:</td>
 						<td><input type="text" name="fltBuildType"></td>
+						<td>: ادخل نوع المبنى </td>
 					</tr>
 					<tr>
-						<td>Enter Floor Number:</td>
 						<td><input type="text" name="fltFloorNo"></td>
+						<td>: ادخل رقم الدور </td>
 					</tr>
 					<tr>
-						<td>Enter Current Owner Name:</td>
 						<td><input type="text" name="fltCurrentOwnerName"></td>
+						<td>: ادخل اسم المالك الحالي </td>
 					</tr>
 					<tr>
-						<td>Enter Deliver Date:</td>
 						<td><input type="text" name="fltDeliverDate"></td>
+						<td>: ادخل تاريخ الإستلام </td>
 					</tr>
 					<tr>
-						<td>Enter Assigned Name:</td>
 						<td><input type="text" name="fltAssignedName"></td>
+						<td>: ادخل اسم المتنازل </td>
 					</tr>
 					<tr>
-						<td>Enter Assign Date:</td>
 						<td><input type="text" name="fltAssignDate"></td>
+						<td>: ادخل تاريخ التنازل </td>
 					</tr>
 					<tr>
-						<td>Enter Unit Size:</td>
 						<td><input type="text" name="fltUnitSize"></td>
+						<td>: ادخل مساحة الوحدة </td>
 					</tr>
 					<tr>
-						<td>Enter Unit Price:</td>
 						<td><input type="text" name="fltUnitPrice"></td>
+						<td>: ادخل سعر الوحدة </td>
 					</tr>
 					<tr>
-						<td>Enter Floor:</td>
 						<td><input type="text" name="fltFloor"></td>
+						<td>: ادخل الدور </td>
 					</tr>
 					<tr>
-						<td>Enter Comments on Unit:</td>
 						<td><input type="text" name="fltComments"></td>
+						<td>: ادخل ملاحظات على الوحدة </td>
 					</tr>
 					<tr>
-						<td>Enter Unit Barcode:</td>
 						<td><input type="text" name="fltBarcode"></td>
+						<td>: ادخل كود الوحدة </td>
 					</tr>
 					<tr>
-						<td>Enter Change Activity:</td>
 						<td><input type="text" name="fltChangeActivity"></td>
+						<td>: ادخل تغيير النشاط </td>
 					</tr>
 					<tr>
-						<td>Enter Trespassing Building:</td>
 						<td><input type="text" name="fltTrespassingBuidling"></td>
+						<td>: ادخل التعديات على الأرض بمبنى </td>
 					</tr>
 					<tr>
-						<td>Enter Extend of Violation:</td>
 						<td><input type="text" name="fltExtendOfViolation"></td>
+						<td>: ادخل امتداد عدد ادوار المخالفة </td>
 					</tr>
 					<tr>
-						<td>Enter Violation Size:</td>
 						<td><input type="text" name="fltViolationSize"></td>
+						<td>: ادخل مساحة المخالفة </td>
 					</tr>
 					<tr>
-						<td>Enter Trespassing Fence:</td>
 						<td><input type="text" name="fltTrespassingFence"></td>
+						<td>: ادخل التعديات على الأرض بسور </td>
 					</tr>
 					<tr>
-						<td>Enter Trespassing Works:</td>
 						<td><input type="text" name="fltTrespassingWorks"></td>
+						<td>: ادخل التعديات على الأرض بإشغالات </td>
 					</tr>
 					<tr>
-						<td>Enter Main Activity:</td>
 						<td><input type="text" name="fltMainActivity"></td>
+						<td>: ادخل نشاط الوحدة طبقاً للمخطط </td>
 					</tr>
 					<tr>
-						<td>Enter Building Barcode:</td>
 						<td><input type="text" name="fltBuildingBarcode"></td>
+						<td>: ادخل كود المبنى / العقار </td>
 					</tr>
 					<tr>
-						<td>Enter Current Owner ID:</td>
 						<td><input type="text" name="fltCurrentOwnerID"></td>
+						<td>: ادخل رقم بطاقة المالك الحالي </td>
 					</tr>
 					<tr>
-						<td>Enter Trespassing Fence Size:</td>
 						<td><input type="text" name="fltTrespassingFenceSize"></td>
+						<td>: ادخل مساحة التعديات على الأرض بمبنى </td>
 					</tr>
 					<tr>
-						<td>Enter Trespassing Building Size:</td>
 						<td><input type="text" name="fltTrespassingBuidlingSize"></td>
+						<td>: ادخل مساحة التعديات على الأرض بمبنى </td>
 					</tr>
 				</table>
-				<input type="submit" value="Add Unit Information">
+				<input type="submit" value=" اضافة ">
 			</form>
 			<c:url var="back_home" value="ui_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

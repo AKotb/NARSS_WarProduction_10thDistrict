@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Show All Units</title>
+<title>الوحدات</title>
 </head>
 <body>
 
@@ -72,71 +72,70 @@
 			<table border="1" cellpadding="15"
 				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
 				<caption>
-					<h2>List of Units</h2>
+					<h2> عرض الوحدات / الشقق المتاحة </h2>
 				</caption>
 				<tr>
-					<th>Building Number</th>
-					<th>Unit Number</th>
-					<th>Building Type</th>
-					<th>Floor Number</th>
-					<th>Current Owner Name</th>
-					<th>Deliver Date</th>
-					<th>Assigned Name</th>
-					<th>Assign Date</th>
-					<th>Unit Size</th>
-					<th>Unit Price</th>
-					<th>Floor</th>
-					<th>Comments on Unit</th>
-					<th>Unit Barcode</th>
-					<th>Change Activity</th>
-					<th>Trespassing Building</th>
-					<th>Extend of Violation</th>
-					<th>Violation Size</th>
-					<th>Trespassing Fence</th>
-					<th>Trespassing Works</th>
-					<th>Main Activity</th>
-					<th>Building Barcode</th>
-					<th>Current Owner ID</th>
-					<th>Trespassing Fence Size</th>
-					<th>Trespassing Building Size</th>
-					<th>Action</th>
+					<th>اعدادات</th>
+					<th>مساحة التعديات على الأرض بمبنى</th>
+					<th>مساحة التعديات على الأرض بمبنى</th>
+					<th>رقم بطاقة المالك الحالي</th>
+					<th>كود المبنى / العقار</th>
+					<th> نشاط الوحدة طبقاً للمخطط</th>
+					<th> التعديات على الأرض بإشغالات</th>
+					<th>التعديات على الأرض بسور</th>
+					<th>مساحة المخالفة</th>
+					<th>امتداد عدد ادوار المخالفة</th>
+					<th>التعديات على الأرض بمبنى</th>
+					<th> تغيير النشاط</th>
+					<th> كود الوحدة</th>
+					<th>ملاحظات على الوحدة</th>
+					<th> الدور</th>
+					<th> سعر الوحدة</th>
+					<th>مساحة الوحدة</th>
+					<th> تاريخ التنازل</th>
+					<th>اسم المتنازل</th>
+					<th>تاريخ الإستلام</th>
+					<th> اسم المالك الحالي</th>
+					<th> رقم الدور</th>
+					<th>نوع المبنى</th>
+					<th>رقم الوحدة</th>
+					<th>رقم المبنى</th>
 				</tr>
 				<c:forEach var="unitInformation" items="${msg}">
 					<c:url var="deletelink" value="deleteunitinformation">
 						<c:param name="fltb" value="${unitInformation.fltBarcode}"></c:param>
 					</c:url>
 					<tr>
-						<td><c:out value="${unitInformation.fltBuildingNo}" /></td>
-						<td><c:out value="${unitInformation.fltUnitNo}" /></td>
-						<td><c:out value="${unitInformation.fltBuildType}" /></td>
-						<td><c:out value="${unitInformation.fltFloorNo}" /></td>
-						<td><c:out value="${unitInformation.fltCurrentOwnerName}" /></td>
-						<td><c:out value="${unitInformation.fltDeliverDate}" /></td>
-						<td><c:out value="${unitInformation.fltAssignedName}" /></td>
-						<td><c:out value="${unitInformation.fltAssignDate}" /></td>
-						<td><c:out value="${unitInformation.fltUnitSize}" /></td>
-						<td><c:out value="${unitInformation.fltUnitPrice}" /></td>
-						<td><c:out value="${unitInformation.fltFloor}" /></td>
-						<td><c:out value="${unitInformation.fltComments}" /></td>
-						<td><c:out value="${unitInformation.fltBarcode}" /></td>
-						<td><c:out value="${unitInformation.fltChangeActivity}" /></td>
-						<td><c:out value="${unitInformation.fltTrespassingBuidling}" /></td>
-						<td><c:out value="${unitInformation.fltExtendOfViolation}" /></td>
-						<td><c:out value="${unitInformation.fltViolationSize}" /></td>
-						<td><c:out value="${unitInformation.fltTrespassingFence}" /></td>
-						<td><c:out value="${unitInformation.fltTrespassingWorks}" /></td>
-						<td><c:out value="${unitInformation.fltMainActivity}" /></td>
-						<td><c:out value="${unitInformation.fltBuildingBarcode}" /></td>
-						<td><c:out value="${unitInformation.fltCurrentOwnerID}" /></td>
-						<td><c:out value="${unitInformation.fltTrespassingFenceSize}" /></td>
-						<td><c:out
-								value="${unitInformation.fltTrespassingBuidlingSize}" /></td>
-						<td><a href="${deletelink}">Delete</a></td>
+						<td style="text-align: center"><a href="${deletelink}">حذف</a></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltTrespassingBuidlingSize}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltTrespassingFenceSize}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltCurrentOwnerID}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltBuildingBarcode}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltMainActivity}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltTrespassingWorks}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltTrespassingFence}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltViolationSize}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltExtendOfViolation}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltTrespassingBuidling}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltChangeActivity}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltBarcode}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltComments}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltFloor}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltUnitPrice}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltUnitSize}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltAssignDate}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltAssignedName}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltDeliverDate}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltCurrentOwnerName}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltFloorNo}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltBuildType}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltUnitNo}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltBuildingNo}" /></td>
 					</tr>
 				</c:forEach>
 			</table>
 			<c:url var="back_home" value="ui_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

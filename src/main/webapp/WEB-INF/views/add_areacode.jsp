@@ -76,20 +76,20 @@
 						<h2> اضافة حي جديد </h2>
 					</caption>
 					<tr>
-						<td>: ادخل كود المدينة / المحافظة </td>
 						<td><input type="text" name="arCityCode"></td>
+						<td>: ادخل كود المدينة / المحافظة </td>
 					</tr>
 					<tr>
-						<td>: ادخل كود الحي </td>
 						<td><input type="text" name="arAreaCode"></td>
+						<td>: ادخل كود الحي </td>
 					</tr>
 					<tr>
-						<td>: ادخل اسم الحي </td>
 						<td><input type="text" name="arAreaName"></td>
+						<td>: ادخل اسم الحي </td>
 					</tr>
 					<tr>
-						<td>: ادخل كود الخريطة </td>
 						<td><input type="text" name="arAreaMap"></td>
+						<td>: ادخل كود الخريطة </td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">

@@ -76,40 +76,40 @@
 						<h2> اضافة توكيل جديد </h2>
 					</caption>
 					<tr>
-						<td>: ادخل كود الوحدة/الشقة</td>
 						<td><input type="text" name="maUnitBarcode"></td>
+						<td>: ادخل كود الوحدة/الشقة</td>
 					</tr>
 					<tr>
-						<td>: ادخل رقم التوكيل</td>
 						<td><input type="text" name="maDelegationNo"></td>
+						<td>: ادخل رقم التوكيل</td>
 					</tr>
 					<tr>
-						<td>: ادخل تاريخ التوكيل</td>
 						<td><input type="text" name="maDelegationDate"></td>
+						<td>: ادخل تاريخ التوكيل</td>
 					</tr>
 					<tr>
-						<td>: ادخل جهة اصدار التوكيل</td>
 						<td><input type="text" name="maDelegationIssuedPlace"></td>
+						<td>: ادخل جهة اصدار التوكيل</td>
 					</tr>
 					<tr>
-						<td>: ادخل نوع التوكيل</td>
 						<td><input type="text" name="maDelegationType"></td>
+						<td>: ادخل نوع التوكيل</td>
 					</tr>
 					<tr>
-						<td>: ادخل اسم الموكل</td>
 						<td><input type="text" name="maDelegatorName"></td>
+						<td>: ادخل اسم الموكل</td>
 					</tr>
 					<tr>
-						<td>: ادخل رقم بطاقة الموكل</td>
 						<td><input type="text" name="maDelegatorId"></td>
+						<td>: ادخل رقم بطاقة الموكل</td>
 					</tr>
 					<tr>
-						<td>: ادخل اسم الموكل إليه</td>
 						<td><input type="text" name="maDelegateToName"></td>
+						<td>: ادخل اسم الموكل إليه</td>
 					</tr>
 					<tr>
-						<td>: ادخل رقم بطاقة الموكل إليه</td>
 						<td><input type="text" name="maDelegateToId"></td>
+						<td>: ادخل رقم بطاقة الموكل إليه</td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">

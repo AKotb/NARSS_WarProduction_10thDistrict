@@ -76,24 +76,24 @@
 						<h2> اضافة منطقة جديدة </h2>
 					</caption>
 					<tr>
-						<td>: ادخل كود المدينة / المحافظة </td>
 						<td><input type="text" name="rcCityCode"></td>
+						<td>: ادخل كود المدينة / المحافظة </td>
 					</tr>
 					<tr>
-						<td>: ادخل كود الحي </td>
 						<td><input type="text" name="rcAreaCode"></td>
+						<td>: ادخل كود الحي </td>
 					</tr>
 					<tr>
-						<td>: ادخل كود المنطقة </td>
 						<td><input type="text" name="rcRegionCode"></td>
+						<td>: ادخل كود المنطقة </td>
 					</tr>
 					<tr>
-						<td>: ادخل اسم المنطقة </td>
 						<td><input type="text" name="rcRegionName"></td>
+						<td>: ادخل اسم المنطقة </td>
 					</tr>
 					<tr>
-						<td>: ادخل كود الخريطة </td>
 						<td><input type="text" name="rcRegionMap"></td>
+						<td>: ادخل كود الخريطة </td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">

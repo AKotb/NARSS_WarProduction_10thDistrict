@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Add New External Violation</title>
+<title>اضافة عقار مخالف جديد</title>
 </head>
 <body>
 
@@ -73,53 +73,53 @@
 				<table
 					style="align: center; background-color: #F1E6E6; color: #000000;">
 					<caption>
-						<h2>Add New External Violation</h2>
+						<h2> اضافة عقار مخالف مستقل جديد </h2>
 					</caption>
 					<tr>
-						<td>Enter Violation Number:</td>
 						<td><input type="text" name="evNewViolationNo"></td>
+						<td>: ادخل رقم المخالفة </td>
 					</tr>
 					<tr>
-						<td>Enter Related Building Barcode:</td>
 						<td><input type="text" name="evRelatedBuildingBarcode"></td>
+						<td>: ادخل كود العقار / المبنى المجاور </td>
 					</tr>
 					<tr>
-						<td>Enter Violation Type:</td>
 						<td><input type="text" name="evViolationType"></td>
+						<td>: ادخل نوع المخالفة </td>
 					</tr>
 					<tr>
-						<td>Enter Violation Activity:</td>
 						<td><input type="text" name="evViolationActivity"></td>
+						<td>: ادخل نشاط المخالفة </td>
 					</tr>
 					<tr>
-						<td>Enter Number Of Floors:</td>
 						<td><input type="text" name="evNumberOfFloors"></td>
+						<td>: ادخل عدد طوابق المخالفة </td>
 					</tr>
 					<tr>
-						<td>Enter Architectural Style:</td>
 						<td><input type="text" name="evArchitecturalStyle"></td>
+						<td>: ادخل الأسلوب الإنشائي </td>
 					</tr>
 					<tr>
-						<td>Enter Violation Status:</td>
 						<td><input type="text" name="evStatus"></td>
+						<td>: ادخل حالة العقار </td>
 					</tr>
 					<tr>
-						<td>Enter Violation Land Size:</td>
 						<td><input type="text" name="ezLandSize"></td>
+						<td>: ادخل مساحة الأرض  </td>
 					</tr>
 					<tr>
-						<td>Enter Violation Repeated Size:</td>
 						<td><input type="text" name="exRepeatedSize"></td>
+						<td>: ادخل مساحة المتكرر </td>
 					</tr>
 					<tr>
-						<td>Enter Related Building Number:</td>
 						<td><input type="text" name="exRelatedBuildingNo"></td>
+						<td>: ادخل رقم العقار / المبنى المجاور </td>
 					</tr>
 				</table>
-				<input type="submit" value="Add External Violation">
+				<input type="submit" value=" اضافة ">
 			</form>
 			<c:url var="back_home" value="ev_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

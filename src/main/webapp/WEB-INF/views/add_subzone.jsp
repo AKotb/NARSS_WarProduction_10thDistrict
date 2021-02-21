@@ -76,28 +76,28 @@
 						<h2> اضافة مربع فرعي جديد </h2>
 					</caption>
 					<tr>
-						<td>: ادخل كود المدينة / المحافظة</td>
 						<td><input type="text" name="azCity"></td>
+						<td>: ادخل كود المدينة / المحافظة</td>
 					</tr>
 					<tr>
-						<td>: ادخل كود الحي</td>
 						<td><input type="text" name="azAreaCode"></td>
+						<td>: ادخل كود الحي</td>
 					</tr>
 					<tr>
-						<td>: ادخل كود المنطقة</td>
 						<td><input type="text" name="azRegionCode"></td>
+						<td>: ادخل كود المنطقة</td>
 					</tr>
 					<tr>
-						<td>: ادخل كود المربع</td>
 						<td><input type="text" name="azZoneCode"></td>
+						<td>: ادخل كود المربع</td>
 					</tr>
 					<tr>
-						<td>: ادخل كود المربع الفرعي</td>
 						<td><input type="text" name="azSubZoneCode"></td>
+						<td>: ادخل كود المربع الفرعي</td>
 					</tr>
 					<tr>
-						<td>: ادخل كود الخريطة</td>
 						<td><input type="text" name="azSubZoneMap"></td>
+						<td>: ادخل كود الخريطة</td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">

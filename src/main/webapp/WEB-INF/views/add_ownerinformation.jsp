@@ -6,7 +6,7 @@
 <head>
 
 <!-- Basic Page Needs ==================================================================================================== -->
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="Documenting 10th District Nasr City">
 <meta name="author" content="NARSS Dev Team">
 
@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>Add New Owner</title>
+<title>اضافة مالك جديد</title>
 </head>
 <body>
 
@@ -73,37 +73,37 @@
 				<table
 					style="align: center; background-color: #F1E6E6; color: #000000;">
 					<caption>
-						<h2>Add New Owner</h2>
+						<h2> اضافة بيانات مالك جديد </h2>
 					</caption>
 					<tr>
-						<td>Enter Unit Barcode:</td>
 						<td><input type="text" name="oiUnitBarcode"></td>
+						<td>: ادخل كود الوحدة / الشقة </td>
 					</tr>
 					<tr>
-						<td>Enter Building Number:</td>
 						<td><input type="text" name="oiBuildingNo"></td>
+						<td>: ادخل رقم بالمبنى / العقار </td>
 					</tr>
 					<tr>
-						<td>Enter Unit Number:</td>
 						<td><input type="text" name="oiUnitNo"></td>
+						<td>: ادخل رقم الوحدة / الشقة </td>
 					</tr>
 					<tr>
-						<td>Enter Owner Sequence:</td>
 						<td><input type="text" name="oiOwnerSequence"></td>
+						<td>: ادخل رقم مسلسل المالك </td>
 					</tr>
 					<tr>
-						<td>Enter Owner Name:</td>
 						<td><input type="text" name="oiOwnerName"></td>
+						<td>: ادخل اسم المالك </td>
 					</tr>
 					<tr>
-						<td>Enter Owner ID:</td>
 						<td><input type="text" name="oiOwnerId"></td>
+						<td>: ادخل رقم بطاقة المالك </td>
 					</tr>
 				</table>
-				<input type="submit" value="Add Owner Information">
+				<input type="submit" value=" اضافة ">
 			</form>
 			<c:url var="back_home" value="oi_backtoindex" />
-			<a href="${back_home}">Return to Home Page</a>
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->
