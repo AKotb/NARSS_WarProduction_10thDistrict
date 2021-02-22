@@ -6,7 +6,7 @@
 <head>
 
 <!-- Basic Page Needs ==================================================================================================== -->
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="Documenting 10th District Nasr City">
 <meta name="author" content="NARSS Dev Team">
 
@@ -67,13 +67,13 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 629px; width: 100%;">
+	<div class="container" style="height: 779px;">
 		<div align="center">
 			<form method="POST" action="addunitinformation">
 				<table
-					style="align: center; background-color: #F1E6E6; color: #000000;">
+					style="align: center; background-color: #F1E6E6; color: #000000; width: 50%; float: right;">
 					<caption>
-						<h2> اضافة وحدة / شقة جديدة </h2>
+						<h2> (1) اضافة وحدة / شقة جديدة </h2>
 					</caption>
 					<tr>
 						<td><input type="text" name="fltBuildingNo"></td>
@@ -131,6 +131,12 @@
 						<td><input type="text" name="fltChangeActivity"></td>
 						<td>: ادخل تغيير النشاط </td>
 					</tr>
+				</table>
+				<table
+					style="align: center; background-color: #F1E6E6; color: #000000; width: 50%; float: left;">
+					<caption>
+						<h2> (2) اضافة وحدة / شقة جديدة </h2>
+					</caption>
 					<tr>
 						<td><input type="text" name="fltTrespassingBuidling"></td>
 						<td>: ادخل التعديات على الأرض بمبنى </td>

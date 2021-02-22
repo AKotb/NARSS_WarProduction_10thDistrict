@@ -61,13 +61,12 @@
 <title>اضافة مالك جديد</title>
 </head>
 <body>
-
 	<!-- Header ============================================================================================================ -->
 	<jsp:include page="../../_header.jsp"></jsp:include>
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 629px; width: 100%;">
+	<div class="container" style="height: 779px;">
 		<div align="center">
 			<form method="POST" action="addownerinformation">
 				<table

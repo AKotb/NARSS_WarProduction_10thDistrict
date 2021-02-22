@@ -8,7 +8,7 @@
 <head>
 
 <!-- Basic Page Needs ==================================================================================================== -->
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="Documenting 10th District Nasr City">
 <meta name="author" content="NARSS Dev Team">
 

@@ -7,7 +7,7 @@
 <head>
 
 <!-- Basic Page Needs ==================================================================================================== -->
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="Documenting 10th District Nasr City">
 <meta name="author" content="NARSS Dev Team">
 
@@ -68,7 +68,7 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 629px; width: 100%;">
+	<div class="container" style="height: 779px;">
 		<h2 style="text-align: center;"> مرحباً بكم في منظومة  اعدادات المناطق داخل الأحياء </h2>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
