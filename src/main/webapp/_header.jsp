@@ -10,6 +10,8 @@
 			<div class="mainmenu">
 				<div id="mainmenu">
 					<ul class="sf-menu">
+						<li><a href="display3d.jsp"><span class="home"><img
+									src="resources/images/dashboard.png" alt="" /></span>ثلاثية الأبعاد</a></li>
 						<li><a href="dashboard.jsp"><span class="home"><img
 									src="resources/images/dashboard.png" alt="" /></span>الإعدادات</a></li>
 						<li><a href="about.jsp"><span class="home"><img
@@ -24,6 +26,7 @@
 				<form id="responsive-menu" action="#" method="post">
 					<select>
 						<option value="">Navigation</option>
+						<option value="display3d.jsp">ثلاثية الأبعاد</option>
 						<option value="dashboard.jsp">الإعدادات</option>
 						<option value="about.jsp">عن المشروع</option>
 						<option value="index.jsp">الرئيسية</option>
