@@ -26,10 +26,21 @@ public class CityCodeServiceImpl implements CityCodeService {
 	public List<CityCode> getAllCityCodes() {
 		return cityCodeDAO.getAllCityCodes();
 	}
+    
+    @Transactional
+	public CityCode getCityCode(String cityCode) {
+		return cityCodeDAO.getCityCode(cityCode);
+	}
 
     @Transactional
 	public boolean addCityCode(CityCode cityCode) {
 		cityCodeDAO.addCityCode(cityCode);
+		return true;
+	}
+    
+    @Transactional
+	public boolean updateCityCode(CityCode cityCode) {
+		cityCodeDAO.updateCityCode(cityCode);
 		return true;
 	}
 

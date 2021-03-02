@@ -34,7 +34,7 @@ public class ExternalViolationController {
 		return mv;
 	}
 
-	@PostMapping(value = "/addexternalviolation")
+	@GetMapping(value = "/addexternalviolation")
 	public String addExternalViolation(ExternalViolation externalViolation) {
 		evs.addExternalViolation(externalViolation);
 		return "redirect:/ev_list";

@@ -11,7 +11,7 @@
 				<div id="mainmenu">
 					<ul class="sf-menu">
 						<li><a href="display3d.jsp"><span class="home"><img
-									src="resources/images/dashboard.png" alt="" /></span>ثلاثية الأبعاد</a></li>
+									src="resources/images/3d-data.png" alt="" /></span>ثلاثية الأبعاد</a></li>
 						<li><a href="dashboard.jsp"><span class="home"><img
 									src="resources/images/dashboard.png" alt="" /></span>الإعدادات</a></li>
 						<li><a href="about.jsp"><span class="home"><img

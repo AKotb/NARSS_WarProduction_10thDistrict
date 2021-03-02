@@ -34,7 +34,7 @@ public class CityCodeController {
 		return mv;
 	}
 
-	@PostMapping(value = "/addcitycode")
+	@GetMapping(value = "/addcitycode")
 	public String addCityCode(CityCode cityCode) {
 		ccs.addCityCode(cityCode);
 		return "redirect:/list";
@@ -48,6 +48,21 @@ public class CityCodeController {
 	@GetMapping("/deletecitycode")
 	public String deleteCityCode(@RequestParam("cc") String cityCode) {
 		ccs.deleteCityCode(cityCode);
+		return "redirect:/list";
+	}
+	
+	@GetMapping("/getcitycode")
+	public ModelAndView getCityCode(@RequestParam("cc") String cityCode) {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("update_citycode");
+		CityCode cityCodeObj = ccs.getCityCode(cityCode);
+		mv.addObject("citycode", cityCodeObj);
+		return mv;
+	}
+	
+	@GetMapping(value = "/updatecitycode")
+	public String updateCityCode(CityCode cityCode) {
+		ccs.updateCityCode(cityCode);
 		return "redirect:/list";
 	}
 

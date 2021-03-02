@@ -34,7 +34,7 @@ public class KeyController {
 		return mv;
 	}
 
-	@PostMapping(value = "/addkey")
+	@GetMapping(value = "/addkey")
 	public String addKey(Key key) {
 		ks.addKey(key);
 

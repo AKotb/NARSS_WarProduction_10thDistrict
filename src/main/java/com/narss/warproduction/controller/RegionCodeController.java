@@ -34,7 +34,7 @@ public class RegionCodeController {
 		return mv;
 	}
 
-	@PostMapping(value = "/addregioncode")
+	@GetMapping(value = "/addregioncode")
 	public String addRegionCode(RegionCode regionCode) {
 		rcs.addRegionCode(regionCode);
 

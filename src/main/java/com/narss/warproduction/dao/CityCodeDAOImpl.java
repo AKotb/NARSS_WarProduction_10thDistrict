@@ -35,15 +35,34 @@ public class CityCodeDAOImpl implements CityCodeDAO {
 		}
 
 	}
+	
+	@SuppressWarnings({ "unchecked", "finally" })
+	public CityCode getCityCode(String cityCode) {
+		CityCode cityCodeObj = null;
+		try {
+			Session session = factory.getCurrentSession();
+			cityCodeObj = session.get(CityCode.class, cityCode);
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			return cityCodeObj;
+		}
+
+	}
 
 	public boolean addCityCode(CityCode cityCode) {
 		Session session = factory.getCurrentSession();
 		session.save(cityCode);
 		return true;
 	}
+	
+	public boolean updateCityCode(CityCode cityCode) {
+		Session session = factory.getCurrentSession();
+		session.saveOrUpdate(cityCode);
+		return true;
+	}
 
 	public boolean deleteCityCode(String cityCode) {
-
 		Session session = factory.getCurrentSession();
 		CityCode cc = session.get(CityCode.class, cityCode);
 		session.delete(cc);

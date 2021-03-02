@@ -68,7 +68,7 @@
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 779px;">
 		<div align="center">
-			<form method="POST" action="addownerinformation">
+			<form method="GET" action="addownerinformation">
 				<table
 					style="align: center; background-color: #F1E6E6; color: #000000;">
 					<caption>

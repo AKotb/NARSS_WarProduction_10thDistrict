@@ -34,7 +34,7 @@ public class OwnerInformationController {
 		return mv;
 	}
 
-	@PostMapping(value = "/addownerinformation")
+	@GetMapping(value = "/addownerinformation")
 	public String addOwnerInformation(OwnerInformation ownerInformation) {
 		ois.addOwnerInformation(ownerInformation);
 		return "redirect:/oi_list";

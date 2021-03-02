@@ -1,4 +1,6 @@
 eclipse.preferences.version=1
+encoding//src/main/webapp/WEB-INF/views/add_citycode.jsp=UTF-8
+encoding//src/main/webapp/_header.jsp=UTF-8
 encoding//src/main/webapp/index.jsp=UTF-8
 encoding//src/main/webapp/resources/geojson/Building.geojson=UTF-8
 encoding//src/main/webapp/resources/geojson/Irregularities.geojson=UTF-8

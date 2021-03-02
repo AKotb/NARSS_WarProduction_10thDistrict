@@ -65,12 +65,14 @@
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxcedr1zrD8h225vpj3hNseos5mHGEDVY&callback=initMap"
 	async defer></script>
 <script>
-	var map;
+	let map;
+	let historicalOverlay2017;
+	let historicalOverlay2019;
 	var infowindow;
 	function initMap() {
 		var mapcenter = {
-				lat : 30.04636339157237,
-				lng : 31.375549031553224
+			lat : 30.04636339157237,
+			lng : 31.375549031553224
 		};
 		map = new google.maps.Map(document.getElementById('map'), {
 			zoom : 17,
@@ -244,43 +246,41 @@
 			irregularities_geojson_layer.revertStyle();
 		});
 
+		var imageBounds = {
+			north : 30.0487624164,
+			south : 30.044237623,
+			east : 31.3787343556,
+			west : 31.3709786191
+		};
+		historicalOverlay2017 = new google.maps.GroundOverlay(
+				'http://localhost:8080/10thDistirct_RASTER/Pleiades_2017_WGS84.jpg',
+				imageBounds);
+		historicalOverlay2019 = new google.maps.GroundOverlay(
+				'http://localhost:8080/10thDistirct_RASTER/Pleiades_2019_WGS84.jpg',
+				imageBounds);
+
 	}
 
 	//load raster image (pleiades 2017)
 	function loadrasterpleiades2017() {
-		var imageBounds = {
-				north: 30.0487624164,
-		        south: 30.044237623,
-		        east: 31.3787343556,
-		        west: 31.3709786191
-		};
-		var historicalOverlay = new google.maps.GroundOverlay('http://localhost:8080/10thDistirct_RASTER/Pleiades_2017_WGS84.jpg', imageBounds);
 		var checkbox = document.getElementById('rst_pleiades_2017');
 		if (checkbox.checked == true) {
-			historicalOverlay.setMap(map);
+			historicalOverlay2017.setMap(map);
 		} else {
-			historicalOverlay.setMap(null);
+			historicalOverlay2017.setMap(null);
 		}
 	}
 
 	//load raster image (pleiades 2019)
 	function loadrasterpleiades2019() {
-		var imageBounds = {
-				north: 30.0487624164,
-		        south: 30.044237623,
-		        east: 31.3787343556,
-		        west: 31.3709786191
-		};
-		var historicalOverlay = new google.maps.GroundOverlay('http://localhost:8080/10thDistirct_RASTER/Pleiades_2019_WGS84.jpg', imageBounds);
 		var checkbox = document.getElementById('rst_pleiades_2019');
 		if (checkbox.checked == true) {
-			historicalOverlay.setMap(map);
+			historicalOverlay2019.setMap(map);
 		} else {
-			historicalOverlay.setMap(null);
+			historicalOverlay2019.setMap(null);
 		}
 	}
-	
-	
+
 	//load vector layer (Urban 2017)
 	function loadvectorurban2017() {
 		var checkbox = document.getElementById('vct_urban_2017');
@@ -301,7 +301,7 @@
 			vectorurban2017_layer.setMap(null);
 		}
 	}
-	
+
 	//load vector layer (Urban 2019)
 	function loadvectorurban2019() {
 		var checkbox = document.getElementById('vct_urban_2019');
@@ -322,7 +322,7 @@
 			vectorurban2019_layer.setMap(null);
 		}
 	}
-	
+
 	//load vector layer (Urban Changes)
 	function loadvectorurbanchanges() {
 		var checkbox = document.getElementById('vct_urban_changes');
@@ -356,22 +356,21 @@
 	<div class="container" style="height: 779px; width: 100%;">
 
 		<div id="floating-panel">
-		<br/>
-			<b style="float: right; color: black;">Pleiades 2017</b><input
+			<br /> <b style="float: right; color: black;">Pleiades 2017</b><input
 				type="checkbox" onclick="loadrasterpleiades2017();"
-				id="rst_pleiades_2017" style="float: left;" /> <br/> 
-			<b style="float: right; color: black;">Pleiades 2019</b><input type="checkbox"
-				onclick="loadrasterpleiades2019();" id="rst_pleiades_2019"
-				style="float: left;" /> <br/>
-			<b style="float: right; color: black;">Urban 2017 (Vector)</b><input type="checkbox"
-				onclick="loadvectorurban2017();" id="vct_urban_2017"
-				style="float: left;" /> <br/>
-			<b style="float: right; color: black;">Urban 2019 (Vector)</b><input type="checkbox"
-				onclick="loadvectorurban2019();" id="vct_urban_2019"
-				style="float: left;" /> <br/>
-			<b style="float: right; color: black;">Urban Changes (Vector)</b><input type="checkbox"
-				onclick="loadvectorurbanchanges();" id="vct_urban_changes"
-				style="float: left;" /> <br/>
+				id="rst_pleiades_2017" style="float: left;" /> <br /> <b
+				style="float: right; color: black;">Pleiades 2019</b><input
+				type="checkbox" onclick="loadrasterpleiades2019();"
+				id="rst_pleiades_2019" style="float: left;" /> <br /> <b
+				style="float: right; color: black;">Urban 2017 (Vector)</b><input
+				type="checkbox" onclick="loadvectorurban2017();" id="vct_urban_2017"
+				style="float: left;" /> <br /> <b
+				style="float: right; color: black;">Urban 2019 (Vector)</b><input
+				type="checkbox" onclick="loadvectorurban2019();" id="vct_urban_2019"
+				style="float: left;" /> <br /> <b
+				style="float: right; color: black;">Urban Changes (Vector)</b><input
+				type="checkbox" onclick="loadvectorurbanchanges();"
+				id="vct_urban_changes" style="float: left;" /> <br />
 		</div>
 
 		<div id="map"></div>

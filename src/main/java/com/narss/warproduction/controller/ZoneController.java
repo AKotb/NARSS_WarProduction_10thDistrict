@@ -34,7 +34,7 @@ public class ZoneController {
 		return mv;
 	}
 
-	@PostMapping(value = "/addzone")
+	@GetMapping(value = "/addzone")
 	public String addZone(Zone zone) {
 		zs.addZone(zone);
 

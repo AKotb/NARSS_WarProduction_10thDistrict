@@ -34,7 +34,7 @@ public class ConcessionController {
 		return mv;
 	}
 
-	@PostMapping(value = "/addconcession")
+	@GetMapping(value = "/addconcession")
 	public String addConcession(Concession concession) {
 		concs.addConcession(concession);
 

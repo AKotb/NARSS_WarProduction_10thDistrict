@@ -69,7 +69,7 @@
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 779px;">
 		<div align="center">
-			<form method="POST" action="addareacode">
+			<form method="GET" action="addareacode">
 				<table
 					style="align: center; background-color: #F1E6E6; color: #000000;">
 					<caption>

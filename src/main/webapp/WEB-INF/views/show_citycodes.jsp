@@ -83,8 +83,11 @@
 					<c:url var="deletelink" value="deletecitycode">
 						<c:param name="cc" value="${cityCode.cityCode}"></c:param>
 					</c:url>
+					<c:url var="updatelink" value="getcitycode">
+						<c:param name="cc" value="${cityCode.cityCode}"></c:param>
+					</c:url>
 					<tr>
-						<td style="text-align: center"><a href="${deletelink}">حذف</a></td>
+						<td style="text-align: center"><a href="${deletelink}">حذف</a>&nbsp;&nbsp;&nbsp;<a href="${updatelink}">تعديل</a></td>
 						<td style="text-align: center"><c:out value="${cityCode.cityName}" /></td>
 						<td style="text-align: center"><c:out value="${cityCode.cityCode}" /></td>
 					</tr>

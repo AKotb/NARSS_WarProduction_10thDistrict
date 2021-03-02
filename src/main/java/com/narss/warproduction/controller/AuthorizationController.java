@@ -34,7 +34,7 @@ public class AuthorizationController {
 		return mv;
 	}
 
-	@PostMapping(value = "/addauthorization")
+	@GetMapping(value = "/addauthorization")
 	public String addAuthorization(Authorization authorization) {
 		auzs.addAuthorization(authorization);
 

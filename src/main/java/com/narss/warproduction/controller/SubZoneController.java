@@ -34,7 +34,7 @@ public class SubZoneController {
 		return mv;
 	}
 
-	@PostMapping(value = "/addsubzone")
+	@GetMapping(value = "/addsubzone")
 	public String addSubZone(SubZone subZone) {
 		szs.addSubZone(subZone);
 

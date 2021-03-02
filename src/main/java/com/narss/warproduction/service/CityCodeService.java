@@ -14,8 +14,12 @@ import com.narss.warproduction.entity.CityCode;
 public interface CityCodeService {
 	
 	List<CityCode> getAllCityCodes();
+	
+	CityCode getCityCode(String cityCode);
 
 	boolean addCityCode(CityCode cityCode);
+	
+	boolean updateCityCode(CityCode cityCode);
 
 	boolean deleteCityCode(String cityCode);
 }

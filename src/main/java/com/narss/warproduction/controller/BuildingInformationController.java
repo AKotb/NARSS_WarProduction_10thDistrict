@@ -34,7 +34,7 @@ public class BuildingInformationController {
 		return mv;
 	}
 
-	@PostMapping(value = "/addbuildinginformation")
+	@GetMapping(value = "/addbuildinginformation")
 	public String addBuildingInformation(BuildingInformation buildingInformation) {
 		bis.addBuildingInformation(buildingInformation);
 		return "redirect:/bi_list";

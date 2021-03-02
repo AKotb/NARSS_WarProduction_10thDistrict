@@ -34,7 +34,7 @@ public class UnitInformationController {
 		return mv;
 	}
 
-	@PostMapping(value = "/addunitinformation")
+	@GetMapping(value = "/addunitinformation")
 	public String addUnitInformation(UnitInformation unitInformation) {
 		uis.addUnitInformation(unitInformation);
 		return "redirect:/ui_list";

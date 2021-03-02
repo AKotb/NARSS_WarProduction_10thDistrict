@@ -34,7 +34,7 @@ public class AreaCodeController {
 		return mv;
 	}
 
-	@PostMapping(value = "/addareacode")
+	@GetMapping(value = "/addareacode")
 	public String addAreaCode(AreaCode areaCode) {
 		acs.addAreaCode(areaCode);
 
