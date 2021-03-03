@@ -63,6 +63,8 @@
 	function cancel() {
 		window.history.back();
 	}
+	
+	
 </script>
 </head>
 <body>
@@ -74,18 +76,18 @@
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 779px;">
 		<div align="center">
-			<form method="GET" action="addorupdatecitycode">
+			<form method="GET" action="updatecitycode">
 				<table
 					style="align: center; background-color: #F1E6E6; color: #000000;">
 					<caption>
 						<h2> تعديل بيانات مدينة/محافظة </h2>
 					</caption>
 					<tr>
-						<td><input type="text" name="cityCode" value="${cityCode.cityCode}"></td>
+						<td><input dir="rtl" type="text" name="cityCode" value="${citycode.cityCode}" readonly="readonly"></td>
 						<td>: كود المدينة / المحافظة </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="cityName" value="${cityCode.cityName}"></td>
+						<td><input dir="rtl" type="text" name="cityName" value="${citycode.cityName}"></td>
 						<td>: اسم المدينة / المحافظة </td>
 					</tr>
 				</table>
