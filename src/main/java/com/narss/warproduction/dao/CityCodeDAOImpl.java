@@ -36,7 +36,7 @@ public class CityCodeDAOImpl implements CityCodeDAO {
 
 	}
 	
-	@SuppressWarnings({ "unchecked", "finally" })
+	@SuppressWarnings({ "finally" })
 	public CityCode getCityCode(String cityCode) {
 		CityCode cityCodeObj = null;
 		try {
@@ -47,7 +47,6 @@ public class CityCodeDAOImpl implements CityCodeDAO {
 		} finally {
 			return cityCodeObj;
 		}
-
 	}
 
 	public boolean addCityCode(CityCode cityCode) {

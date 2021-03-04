@@ -86,8 +86,12 @@
 						<c:param name="cc" value="${areaCode.arCityCode}"></c:param>
 						<c:param name="ac" value="${areaCode.arAreaCode}"></c:param>
 					</c:url>
+					<c:url var="getareacodedatalink" value="getareacode">
+						<c:param name="cc" value="${areaCode.arCityCode}"></c:param>
+						<c:param name="ac" value="${areaCode.arAreaCode}"></c:param>
+					</c:url>
 					<tr>
-						<td style="text-align: center"><a href="${deletelink}">حذف</a></td>
+						<td style="text-align: center"><a href="${deletelink}">حذف</a>&nbsp;&nbsp;&nbsp;<a href="${getareacodedatalink}">تعديل</a></td>
 						<td style="text-align: center"><c:out
 								value="${areaCode.arAreaMap}" /></td>
 						<td style="text-align: center"><c:out

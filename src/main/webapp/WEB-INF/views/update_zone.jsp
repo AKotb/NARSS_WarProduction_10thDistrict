@@ -58,7 +58,12 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>المربعات</title>
+<title> تعديل بيانات المربع </title>
+<script>
+	function cancel() {
+		window.history.back();
+	}
+</script>
 </head>
 <body>
 
@@ -69,45 +74,36 @@
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 779px;">
 		<div align="center">
-			<table border="1" cellpadding="15"
-				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
-				<caption>
-					<h2>عرض المربعات المتاحة</h2>
-				</caption>
-				<tr>
-					<th>اعدادات</th>
-					<th>كود الخريطة</th>
-					<th>كود المربع</th>
-					<th>كود المنطقة</th>
-					<th>كود الحي</th>
-					<th>كود المدينة / المحافظة</th>
-				</tr>
-				<c:forEach var="zone" items="${msg}">
-					<c:url var="deletelink" value="deletezone">
-						<c:param name="zci" value="${zone.zonCity}"></c:param>
-						<c:param name="ac" value="${zone.areaCode}"></c:param>
-						<c:param name="rc" value="${zone.regionCode}"></c:param>
-						<c:param name="zc" value="${zone.zoneCode}"></c:param>
-					</c:url>
-					<c:url var="getzonedatalink" value="getzone">
-						<c:param name="zci" value="${zone.zonCity}"></c:param>
-						<c:param name="ac" value="${zone.areaCode}"></c:param>
-						<c:param name="rc" value="${zone.regionCode}"></c:param>
-						<c:param name="zc" value="${zone.zoneCode}"></c:param>
-					</c:url>
+			<form method="GET" action="updatezone">
+				<table
+					style="align: center; background-color: #F1E6E6; color: #000000;">
+					<caption>
+						<h2> تعديل بيانات المربع </h2>
+					</caption>
 					<tr>
-						<td style="text-align: center"><a href="${deletelink}">حذف</a>&nbsp;&nbsp;&nbsp;<a href="${getzonedatalink}">تعديل</a></td>
-						<td style="text-align: center"><c:out value="${zone.zoneMap}" /></td>
-						<td style="text-align: center"><c:out
-								value="${zone.zoneCode}" /></td>
-						<td style="text-align: center"><c:out
-								value="${zone.regionCode}" /></td>
-						<td style="text-align: center"><c:out
-								value="${zone.areaCode}" /></td>
-						<td style="text-align: center"><c:out value="${zone.zonCity}" /></td>
+						<td><input dir="rtl" type="text" name="zonCity"  value="${zone.zonCity}" readonly="readonly"></td>
+						<td>: ادخل كود المدينة / المحافظة</td>
 					</tr>
-				</c:forEach>
-			</table>
+					<tr>
+						<td><input dir="rtl" type="text" name="areaCode" value="${zone.areaCode}" readonly="readonly"></td>
+						<td>: ادخل كود الحي</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="regionCode" value="${zone.regionCode}" readonly="readonly"></td>
+						<td>: ادخل كود المنطقة</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="zoneCode" value="${zone.zoneCode}" readonly="readonly"></td>
+						<td>: ادخل كود المربع</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="zoneMap" value="${zone.zoneMap}"></td>
+						<td>: ادخل كود الخريطة</td>
+					</tr>
+				</table>
+				<input type="submit" value=" حفظ ">
+				<input type="button" value=" إلغاء " onclick="cancel()">
+			</form>
 			<c:url var="back_home" value="z_backtoindex" />
 			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>

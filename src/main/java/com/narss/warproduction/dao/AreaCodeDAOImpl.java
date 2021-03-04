@@ -33,12 +33,33 @@ public class AreaCodeDAOImpl implements AreaCodeDAO {
 		} finally {
 			return areaCodes;
 		}
-
+	}
+	
+	@SuppressWarnings({ "finally", "unchecked" })
+	public AreaCode getAreaCode(String cityCode, String areaCode) {
+		List<AreaCode> areaCodes = null;
+		try {
+			Session session = factory.getCurrentSession();
+			Query q = session.createQuery("FROM AreaCode WHERE arCityCode = :citycode AND arAreaCode = :areacode ");
+			q.setParameter("citycode", cityCode);
+			q.setParameter("areacode", areaCode);
+			areaCodes = q.getResultList();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			return areaCodes.get(0);
+		}
 	}
 
 	public boolean addAreaCode(AreaCode areaCode) {
 		Session session = factory.getCurrentSession();
 		session.save(areaCode);
+		return true;
+	}
+	
+	public boolean updateAreaCode(AreaCode areaCode) {
+		Session session = factory.getCurrentSession();
+		session.saveOrUpdate(areaCode);
 		return true;
 	}
 

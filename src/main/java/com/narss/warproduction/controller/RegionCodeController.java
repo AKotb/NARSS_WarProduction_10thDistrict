@@ -8,7 +8,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -33,11 +32,25 @@ public class RegionCodeController {
 		mv.addObject("msg", regionCodes);
 		return mv;
 	}
+	
+	@GetMapping("/getregioncode")
+	public ModelAndView getRegionCode(@RequestParam("cc") String cityCode, @RequestParam("ac") String areaCode, @RequestParam("rc") String regionCode) {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("update_regioncode");
+		RegionCode regionCodeObj = rcs.getRegionCode(cityCode, areaCode, regionCode);
+		mv.addObject("regioncode", regionCodeObj);
+		return mv;
+	}
 
 	@GetMapping(value = "/addregioncode")
 	public String addRegionCode(RegionCode regionCode) {
 		rcs.addRegionCode(regionCode);
-
+		return "redirect:/rc_list";
+	}
+	
+	@GetMapping(value = "/updateregioncode")
+	public String updateRegionCode(RegionCode regionCode) {
+		rcs.updateRegionCode(regionCode);
 		return "redirect:/rc_list";
 	}
 

@@ -63,8 +63,6 @@
 	function cancel() {
 		window.history.back();
 	}
-	
-	
 </script>
 </head>
 <body>

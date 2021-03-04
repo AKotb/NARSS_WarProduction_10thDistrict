@@ -26,10 +26,21 @@ public class RegionCodeServiceImpl implements RegionCodeService {
 	public List<RegionCode> getAllRegionCodes() {
 		return regionCodeDAO.getAllRegionCodes();
 	}
+	
+	@Transactional
+	public RegionCode getRegionCode(String cityCode, String areaCode, String regionCode) {
+		return regionCodeDAO.getRegionCode(cityCode, areaCode, regionCode);
+	}
 
 	@Transactional
 	public boolean addRegionCode(RegionCode regionCode) {
 		regionCodeDAO.addRegionCode(regionCode);
+		return true;
+	}
+	
+	@Transactional
+	public boolean updateRegionCode(RegionCode regionCode) {
+		regionCodeDAO.updateRegionCode(regionCode);
 		return true;
 	}
 

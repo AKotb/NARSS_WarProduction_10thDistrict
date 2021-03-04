@@ -8,7 +8,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -33,11 +32,26 @@ public class ZoneController {
 		mv.addObject("msg", zones);
 		return mv;
 	}
+	
+	@GetMapping("/getzone")
+	public ModelAndView getZone(@RequestParam("zci") String zonCity, @RequestParam("ac") String areaCode,
+			@RequestParam("rc") String regionCode, @RequestParam("zc") String zoneCode) {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("update_zone");
+		Zone zoneObj = zs.getZone(zonCity, areaCode, regionCode, zoneCode);
+		mv.addObject("zone", zoneObj);
+		return mv;
+	}
 
 	@GetMapping(value = "/addzone")
 	public String addZone(Zone zone) {
 		zs.addZone(zone);
-
+		return "redirect:/z_list";
+	}
+	
+	@GetMapping(value = "/updatezone")
+	public String updateZone(Zone zone) {
+		zs.updateZone(zone);
 		return "redirect:/z_list";
 	}
 

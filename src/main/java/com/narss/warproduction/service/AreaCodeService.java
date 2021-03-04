@@ -14,8 +14,12 @@ import com.narss.warproduction.entity.AreaCode;
 public interface AreaCodeService {
 
 	List<AreaCode> getAllAreaCodes();
+	
+	AreaCode getAreaCode(String cityCode, String areaCode);
 
 	boolean addAreaCode(AreaCode areaCode);
+	
+	boolean updateAreaCode(AreaCode areaCode);
 
 	boolean deleteAreaCode(String cityCode, String areaCode);
 }

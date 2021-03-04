@@ -26,10 +26,21 @@ public class AreaCodeServiceImpl implements AreaCodeService {
 	public List<AreaCode> getAllAreaCodes() {
 		return areaCodeDAO.getAllAreaCodes();
 	}
+	
+	@Transactional
+	public AreaCode getAreaCode(String cityCode, String areaCode) {
+		return areaCodeDAO.getAreaCode(cityCode, areaCode);
+	}
 
 	@Transactional
 	public boolean addAreaCode(AreaCode areaCode) {
 		areaCodeDAO.addAreaCode(areaCode);
+		return true;
+	}
+	
+	@Transactional
+	public boolean updateAreaCode(AreaCode areaCode) {
+		areaCodeDAO.updateAreaCode(areaCode);
 		return true;
 	}
 

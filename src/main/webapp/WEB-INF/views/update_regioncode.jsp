@@ -58,7 +58,12 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title> المناطق </title>
+<title> تعديل بيانات المنطقة </title>
+<script>
+	function cancel() {
+		window.history.back();
+	}
+</script>
 </head>
 <body>
 
@@ -69,40 +74,36 @@
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 779px;">
 		<div align="center">
-			<table border="1" cellpadding="15"
-				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
-				<caption>
-					<h2> عرض المناطق المتاحة </h2>
-				</caption>
-				<tr>
-					<th>اعدادات</th>
-					<th>كود الخريطة</th>
-					<th>اسم المنطقة</th>
-					<th>كود المنطقة</th>
-					<th>كود الحي</th>
-					<th>كود المدينة / المحافظة</th>
-				</tr>
-				<c:forEach var="regionCode" items="${msg}">
-					<c:url var="deletelink" value="deleteregioncode">
-						<c:param name="cc" value="${regionCode.rcCityCode}"></c:param>
-						<c:param name="ac" value="${regionCode.rcAreaCode}"></c:param>
-						<c:param name="rc" value="${regionCode.rcRegionCode}"></c:param>
-					</c:url>
-					<c:url var="getregioncodedatalink" value="getregioncode">
-						<c:param name="cc" value="${regionCode.rcCityCode}"></c:param>
-						<c:param name="ac" value="${regionCode.rcAreaCode}"></c:param>
-						<c:param name="rc" value="${regionCode.rcRegionCode}"></c:param>
-					</c:url>
+			<form method="GET" action="updateregioncode">
+				<table
+					style="align: center; background-color: #F1E6E6; color: #000000;">
+					<caption>
+						<h2> تعديل بيانات المنطقة </h2>
+					</caption>
 					<tr>
-						<td style="text-align: center"><a href="${deletelink}">حذف</a>&nbsp;&nbsp;&nbsp;<a href="${getregioncodedatalink}">تعديل</a></td>
-						<td style="text-align: center"><c:out value="${regionCode.rcRegionMap}" /></td>
-						<td style="text-align: center"><c:out value="${regionCode.rcRegionName}" /></td>
-						<td style="text-align: center"><c:out value="${regionCode.rcRegionCode}" /></td>
-						<td style="text-align: center"><c:out value="${regionCode.rcAreaCode}" /></td>
-						<td style="text-align: center"><c:out value="${regionCode.rcCityCode}" /></td>
+						<td><input dir="rtl" type="text" name="rcCityCode" value="${regioncode.rcCityCode}" readonly="readonly"></td>
+						<td>: كود المدينة / المحافظة </td>
 					</tr>
-				</c:forEach>
-			</table>
+					<tr>
+						<td><input dir="rtl" type="text" name="rcAreaCode" value="${regioncode.rcAreaCode}" readonly="readonly"></td>
+						<td>: كود الحي </td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="rcRegionCode" value="${regioncode.rcRegionCode}" readonly="readonly"></td>
+						<td>: كود المنطقة </td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="rcRegionName" value="${regioncode.rcRegionName}"></td>
+						<td>: اسم المنطقة </td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="rcRegionMap" value="${regioncode.rcRegionMap}"></td>
+						<td>: كود الخريطة </td>
+					</tr>
+				</table>
+				<input type="submit" value=" حفظ ">
+				<input type="button" value=" إلغاء " onclick="cancel()">
+			</form>
 			<c:url var="back_home" value="rc_backtoindex" />
 			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>

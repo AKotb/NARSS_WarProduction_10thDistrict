@@ -33,12 +33,34 @@ public class RegionCodeDAOImpl implements RegionCodeDAO {
 		} finally {
 			return regionCodes;
 		}
-
+	}
+	
+	@SuppressWarnings({ "unchecked", "finally" })
+	public RegionCode getRegionCode(String cityCode, String areaCode, String regionCode) {
+		List<RegionCode> regionCodes = null;
+		try {
+			Session session = factory.getCurrentSession();
+			Query q = session.createQuery("FROM RegionCode WHERE rcCityCode = :citycode AND rcAreaCode = :areacode AND rcRegionCode = :regioncode");
+			q.setParameter("citycode", cityCode);
+			q.setParameter("areacode", areaCode);
+			q.setParameter("regioncode", regionCode);
+			regionCodes = q.getResultList();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			return regionCodes.get(0);
+		}
 	}
 
 	public boolean addRegionCode(RegionCode regionCode) {
 		Session session = factory.getCurrentSession();
 		session.save(regionCode);
+		return true;
+	}
+	
+	public boolean updateRegionCode(RegionCode regionCode) {
+		Session session = factory.getCurrentSession();
+		session.saveOrUpdate(regionCode);
 		return true;
 	}
 

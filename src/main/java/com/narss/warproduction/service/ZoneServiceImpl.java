@@ -26,10 +26,21 @@ public class ZoneServiceImpl implements ZoneService {
 	public List<Zone> getAllZones() {
 		return zoneDAO.getAllZones();
 	}
+	
+	@Transactional
+	public Zone getZone(String zonCity, String areaCode, String regionCode, String zoneCode) {
+		return zoneDAO.getZone(zonCity, areaCode, regionCode, zoneCode);
+	}
 
 	@Transactional
 	public boolean addZone(Zone zone) {
 		zoneDAO.addZone(zone);
+		return true;
+	}
+	
+	@Transactional
+	public boolean updateZone(Zone zone) {
+		zoneDAO.updateZone(zone);
 		return true;
 	}
 
