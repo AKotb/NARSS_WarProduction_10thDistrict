@@ -69,6 +69,16 @@ div.blankSeparator2 {
 .mainmenu {
 	float:left;
 }
+
+.systemtitle {
+    float: right;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 5;
+    padding-right: 100px;
+}
+
 ul.sf-menu {
 	margin-top:0px;
 }

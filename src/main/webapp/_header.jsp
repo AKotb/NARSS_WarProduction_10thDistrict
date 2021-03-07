@@ -5,7 +5,10 @@
 		<!-- Header | Logo, Menu ================================================== -->
 		<header>
 			<div class="logo">
-				<a href="index.jsp"><img src="resources/images/logo.png" alt="" /></a>
+				<a href="index.jsp"><img src="resources/images/logo-1.png" alt="" style="width: 180px; height: 110px;"/></a>
+			</div>
+			<div class="systemtitle">
+				<span>قاعدة بيانات مكانية ثنائية و ثلاثية الأبعاد لتوثيق مباني الحي العاشر - مدينة نصر</span>
 			</div>
 			<div class="mainmenu">
 				<div id="mainmenu">
