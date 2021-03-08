@@ -4,8 +4,8 @@
 	<div class="container">
 		<div class="eleven columns alpha">
 			<p class="copyright">
-				&copy; Copyright 2012. &quot;Proximet&quot; by <a
-					href="http://www.anarieldesign.com/">Anariel</a>. All rights
+				&copy; Copyright 2021. &quot;Ministry of WAR Production&quot; by <a
+					href="http://www.narss.sci.eg/">NARSS</a>. All rights
 				reserved.
 			</p>
 		</div>

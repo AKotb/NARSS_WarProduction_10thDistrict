@@ -134,8 +134,7 @@ td {
 						<tr>
 							<td><button type="button" class="btn btn-info"
 									style="width: 62%; background-color: #17a2b9; border-color: #17a2b9; font-size: 16pt;"
-									data-toggle="collapse" data-target="#nteam1">فريق
-									الهيئة-1</button></td>
+									data-toggle="collapse" data-target="#nteam1">فريق تحليل البيانات و تطويرالموقع الإلكتروني</button></td>
 							<td><button type="button" class="btn btn-info"
 									style="width: 62%; background-color: #17a2b9; border-color: #17a2b9; font-size: 16pt;"
 									data-toggle="collapse" data-target="#bteam1">فريق
@@ -144,8 +143,7 @@ td {
 						<tr>
 							<td><button type="button" class="btn btn-info"
 									style="width: 62%; background-color: #17a2b9; border-color: #17a2b9; font-size: 16pt;"
-									data-toggle="collapse" data-target="#nteam2">فريق
-									الهيئة-2</button></td>
+									data-toggle="collapse" data-target="#nteam2">فريق رفع البيانات ثلاثية الأبعاد</button></td>
 							<td><button type="button" class="btn btn-info"
 									style="width: 62%; background-color: #17a2b9; border-color: #17a2b9; font-size: 16pt;"
 									data-toggle="collapse" data-target="#bteam2">فريق
@@ -155,7 +153,7 @@ td {
 
 					<div id="nteam1" class="collapse">
 						<div class="dataanalysisteam_div">
-							<h3 class="dataanalysisteam_h3">فريق الهيئة-1</h3>
+							<h3 class="dataanalysisteam_h3">فريق تحليل البيانات و تطويرالموقع الإلكتروني</h3>
 						</div>
 						<div class="dataanalysisteam_container_div">
 							<div class="row_about">
@@ -165,8 +163,8 @@ td {
 											<img class="photo_member"
 												src="resources/images/profil-male.png">
 										</div>
-										<h3 class="person_title">الاسم</h3>
-										<h4 class="person_desc">الوظيفة</h4>
+										<h3 class="person_title">د. بسام عبداللطيف</h3>
+										<h4 class="person_desc">باحث</h4>
 									</div>
 								</div>
 								<div class="column_about">
@@ -175,8 +173,8 @@ td {
 											<img class="photo_member"
 												src="resources/images/profil-male.png">
 										</div>
-										<h3 class="person_title">الاسم</h3>
-										<h4 class="person_desc">الوظيفة</h4>
+										<h3 class="person_title">د. محمد رشدي</h3>
+										<h4 class="person_desc">باحث</h4>
 									</div>
 								</div>
 								<div class="column_about">
@@ -185,8 +183,8 @@ td {
 											<img class="photo_member"
 												src="resources/images/profil-male.png">
 										</div>
-										<h3 class="person_title">الاسم</h3>
-										<h4 class="person_desc">الوظيفة</h4>
+										<h3 class="person_title">م. أحمد قطب</h3>
+										<h4 class="person_desc">مهندس برمجيات</h4>
 									</div>
 								</div>
 							</div>
@@ -195,7 +193,7 @@ td {
 
 					<div id="nteam2" class="collapse">
 						<div class="surveyteam_div">
-							<h3 class="surveyteam_h3">فريق الهيئة-2</h3>
+							<h3 class="surveyteam_h3">فريق رفع البيانات ثلاثية الأبعاد</h3>
 						</div>
 						<div class="surveyteam_container_div">
 							<div class="row_about">
@@ -205,8 +203,8 @@ td {
 											<img class="photo_member"
 												src="resources/images/profil-male.png">
 										</div>
-										<h3 class="person_title">الاسم</h3>
-										<h4 class="person_desc">الوظيفة</h4>
+										<h3 class="person_title">د. عطية بخيت</h3>
+										<h4 class="person_desc">باحث</h4>
 									</div>
 								</div>
 								<div class="column_about">
@@ -215,8 +213,8 @@ td {
 											<img class="photo_member"
 												src="resources/images/profil-male.png">
 										</div>
-										<h3 class="person_title">الاسم</h3>
-										<h4 class="person_desc">الوظيفة</h4>
+										<h3 class="person_title">م. وائل خضر</h3>
+										<h4 class="person_desc">مهندس مساحة</h4>
 									</div>
 								</div>
 								<div class="column_about">
@@ -225,8 +223,8 @@ td {
 											<img class="photo_member"
 												src="resources/images/profil-male.png">
 										</div>
-										<h3 class="person_title">الاسم</h3>
-										<h4 class="person_desc">الوظيفة</h4>
+										<h3 class="person_title">م. عبدالرحمن علي</h3>
+										<h4 class="person_desc">مساعد باحث</h4>
 									</div>
 								</div>
 							</div>

@@ -13,12 +13,12 @@
 			<div class="mainmenu">
 				<div id="mainmenu">
 					<ul class="sf-menu">
-						<li><a href="display3d.jsp"><span class="home"><img
-									src="resources/images/3d-data.png" alt="" /></span>ثلاثية الأبعاد</a></li>
-						<li><a href="dashboard.jsp"><span class="home"><img
-									src="resources/images/dashboard.png" alt="" /></span>الإعدادات</a></li>
 						<li><a href="about.jsp"><span class="home"><img
 									src="resources/images/about.png" alt="" /></span>عن المشروع</a></li>
+						<li><a href="dashboard.jsp"><span class="home"><img
+									src="resources/images/dashboard.png" alt="" /></span>الإعدادات</a></li>
+						<li><a href="display3d.jsp"><span class="home"><img
+									src="resources/images/3d-data.png" alt="" /></span>ثلاثية الأبعاد</a></li>
 						<li><a href="index.jsp" id="visited"><span class="home"><img
 									src="resources/images/home.png" alt="" /></span>الرئيسية</a></li>
 					</ul>
