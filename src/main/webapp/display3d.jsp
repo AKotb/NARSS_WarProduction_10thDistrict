@@ -68,11 +68,20 @@
 
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 779px;">
-	<div class="warprod_main_3d">
-	<ul dir="rtl">
-		<li><a href="http://localhost:8080/3D_Data_View/entry/test_binary.html" target="_blank">عرض البيانات ثلاثية الأبعاد</a></li>
-	</ul>
-	</div>
+		<div class="warprod_main_3d">
+			<ul dir="rtl">
+				<li><a
+					href="http://localhost:8080/3D_Data_View/entry/test_binary.html"
+					target="_blank">عرض البيانات ثلاثية الأبعاد</a></li>
+			</ul>
+		</div>
+		<div class="warprod_main_cityengine">
+			<ul dir="rtl">
+				<li><a
+					href="http://localhost:8080/City_Engine_View/webviewer/ceviewer_offline.html"
+					target="_blank">عرض بيانات منظومة City Engine</a></li>
+			</ul>
+		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->
 
