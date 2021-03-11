@@ -14,8 +14,12 @@ import com.narss.warproduction.entity.Key;
 public interface KeyDAO {
 
 	List<Key> getAllKeys();
+	
+	Key getKey(String keyAll);
 
 	boolean addKey(Key key);
+	
+	boolean updateKey(Key key);
 
 	boolean deleteKey(String keyAll);
 

@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.narss.warproduction.entity.Key;
+import com.narss.warproduction.entity.SubZone;
 import com.narss.warproduction.service.KeyService;
 
 /**
@@ -33,11 +34,25 @@ public class KeyController {
 		mv.addObject("msg", keys);
 		return mv;
 	}
+	
+	@GetMapping("/getkey")
+	public ModelAndView getKey(@RequestParam("ka") String keyAll) {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("update_key");
+		Key keyObj = ks.getKey(keyAll);
+		mv.addObject("key", keyObj);
+		return mv;
+	}
 
 	@GetMapping(value = "/addkey")
 	public String addKey(Key key) {
 		ks.addKey(key);
-
+		return "redirect:/k_list";
+	}
+	
+	@GetMapping(value = "/updatekey")
+	public String updateKey(Key key) {
+		ks.updateKey(key);
 		return "redirect:/k_list";
 	}
 

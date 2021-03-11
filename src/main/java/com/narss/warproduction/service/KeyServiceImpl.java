@@ -28,8 +28,19 @@ public class KeyServiceImpl implements KeyService {
 	}
 
 	@Transactional
+	public Key getKey(String keyAll) {
+		return keyDAO.getKey(keyAll);
+	}
+	
+	@Transactional
 	public boolean addKey(Key key) {
 		keyDAO.addKey(key);
+		return true;
+	}
+	
+	@Transactional
+	public boolean updateKey(Key key) {
+		keyDAO.updateKey(key);
 		return true;
 	}
 

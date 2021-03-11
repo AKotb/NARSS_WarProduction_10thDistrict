@@ -90,8 +90,11 @@
 					<c:url var="deletelink" value="deletekey">
 						<c:param name="ka" value="${key.keyAll}"></c:param>
 					</c:url>
+					<c:url var="getkeydatalink" value="getkey">
+						<c:param name="ka" value="${key.keyAll}"></c:param>
+					</c:url>
 					<tr>
-						<td style="text-align: center"><a href="${deletelink}">حذف</a></td>
+						<td style="text-align: center"><a href="${deletelink}">حذف</a>&nbsp;&nbsp;&nbsp;<a href="${getkeydatalink}">تعديل</a></td>
 						<td style="text-align: center"><c:out
 								value="${key.keyBuildingKey}" /></td>
 						<td style="text-align: center"><c:out value="${key.keyAll}" /></td>

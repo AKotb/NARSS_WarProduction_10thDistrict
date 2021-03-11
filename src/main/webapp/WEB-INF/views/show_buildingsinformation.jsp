@@ -106,8 +106,12 @@
 						<c:param name="bibb"
 							value="${buildingInformation.biBuildingBarcode}"></c:param>
 					</c:url>
+					<c:url var="getbuildinginformationdatalink" value="getbuildinginformation">
+						<c:param name="bibb"
+							value="${buildingInformation.biBuildingBarcode}"></c:param>
+					</c:url>
 					<tr>
-						<td style="text-align: center"><a href="${deletelink}">حذف</a></td>
+						<td style="text-align: center"><a href="${deletelink}">حذف</a>&nbsp;&nbsp;&nbsp;<a href="${getbuildinginformationdatalink}">تعديل</a></td>
 						<td style="text-align: center"><c:out value="${buildingInformation.biChangeActivityDate}" /></td>
 						<td style="text-align: center"><c:out value="${buildingInformation.biLastContractDate}" /></td>
 						<td style="text-align: center"><c:out value="${buildingInformation.biSubZoneCode}" /></td>

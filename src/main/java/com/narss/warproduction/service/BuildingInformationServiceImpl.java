@@ -26,10 +26,21 @@ public class BuildingInformationServiceImpl implements BuildingInformationServic
 	public List<BuildingInformation> getAllBuildingsInformation() {
 		return buildingInformationDAO.getAllBuildingsInformation();
 	}
+    
+    @Transactional
+	public BuildingInformation getBuildingInformation(String biBuildingBarcode) {
+		return buildingInformationDAO.getBuildingInformation(biBuildingBarcode);
+	}
 
     @Transactional
 	public boolean addBuildingInformation(BuildingInformation buildingInformation) {
     	buildingInformationDAO.addBuildingInformation(buildingInformation);
+		return true;
+	}
+    
+    @Transactional
+	public boolean updateBuildingInformation(BuildingInformation buildingInformation) {
+    	buildingInformationDAO.updateBuildingInformation(buildingInformation);
 		return true;
 	}
 

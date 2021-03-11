@@ -14,8 +14,12 @@ import com.narss.warproduction.entity.BuildingInformation;
 public interface BuildingInformationDAO {
 
 	List<BuildingInformation> getAllBuildingsInformation();
+	
+	BuildingInformation getBuildingInformation(String biBuildingBarcode);
 
 	boolean addBuildingInformation(BuildingInformation buildingInformation);
+	
+	boolean updateBuildingInformation(BuildingInformation buildingInformation);
 
 	boolean deleteBuildingInformation(String biBuildingBarcode);
 

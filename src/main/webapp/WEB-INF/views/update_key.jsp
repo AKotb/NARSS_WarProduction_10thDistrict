@@ -58,7 +58,12 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>المربعات الفرعية</title>
+<title> تعديل بيانات عنصر ربط البيانات  </title>
+<script>
+	function cancel() {
+		window.history.back();
+	}
+</script>
 </head>
 <body>
 
@@ -69,53 +74,53 @@
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 779px;">
 		<div align="center">
-			<table border="1" cellpadding="15"
-				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
-				<caption>
-					<h2>عرض المربعات الفرعية المتاحة</h2>
-				</caption>
-				<tr>
-					<th>اعدادات</th>
-					<th>كود الخريطة</th>
-					<th>كود المربع الفرعي</th>
-					<th>كود المربع</th>
-					<th>كود المنطقة</th>
-					<th>كود الحي</th>
-					<th>كود المدينة / المحافظة</th>
-				</tr>
-				<c:forEach var="subZone" items="${msg}">
-					<c:url var="deletelink" value="deletesubzone">
-						<c:param name="azc" value="${subZone.azCity}"></c:param>
-						<c:param name="azac" value="${subZone.azAreaCode}"></c:param>
-						<c:param name="azrc" value="${subZone.azRegionCode}"></c:param>
-						<c:param name="azzc" value="${subZone.azZoneCode}"></c:param>
-						<c:param name="azszc" value="${subZone.azSubZoneCode}"></c:param>
-					</c:url>
-					<c:url var="getsubzonedatalink" value="getsubzone">
-						<c:param name="azc" value="${subZone.azCity}"></c:param>
-						<c:param name="azac" value="${subZone.azAreaCode}"></c:param>
-						<c:param name="azrc" value="${subZone.azRegionCode}"></c:param>
-						<c:param name="azzc" value="${subZone.azZoneCode}"></c:param>
-						<c:param name="azszc" value="${subZone.azSubZoneCode}"></c:param>
-					</c:url>
+			<form method="GET" action="updatekey">
+				<table
+					style="align: center; background-color: #F1E6E6; color: #000000;">
+					<caption>
+						<h2> تعديل بيانات عنصر ربط البيانات </h2>
+					</caption>
 					<tr>
-						<td style="text-align: center"><a href="${deletelink}">حذف</a>&nbsp;&nbsp;&nbsp;<a href="${getsubzonedatalink}">تعديل</a></td>
-						<td style="text-align: center"><c:out
-								value="${subZone.azSubZoneMap}" /></td>
-						<td style="text-align: center"><c:out
-								value="${subZone.azSubZoneCode}" /></td>
-						<td style="text-align: center"><c:out
-								value="${subZone.azZoneCode}" /></td>
-						<td style="text-align: center"><c:out
-								value="${subZone.azRegionCode}" /></td>
-						<td style="text-align: center"><c:out
-								value="${subZone.azAreaCode}" /></td>
-						<td style="text-align: center"><c:out
-								value="${subZone.azCity}" /></td>
+						<td><input dir="rtl" type="text" name="keyCityCode" value="${key.keyCityCode}"></td>
+						<td>: كود المدينة / المحافظة</td>
 					</tr>
-				</c:forEach>
-			</table>
-			<c:url var="back_home" value="sz_backtoindex" />
+					<tr>
+						<td><input dir="rtl" type="text" name="keyAreaCode" value="${key.keyAreaCode}"></td>
+						<td>: كود الحي</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="keyRegionCode" value="${key.keyRegionCode}"></td>
+						<td>: كود المنطقة</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="keyZoneCode" value="${key.keyZoneCode}"></td>
+						<td>: كود المربع</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="keySubZoneCode" value="${key.keySubZoneCode}"></td>
+						<td>: كود المربع الفرعي</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="keyBuildingNo" value="${key.keyBuildingNo}"></td>
+						<td>: رقم المبنى/العقار</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="keyAppartementNo" value="${key.keyAppartementNo}"></td>
+						<td>: رقم الوحدة/الشقة</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="keyAll" value="${key.keyAll}" readonly="readonly"></td>
+						<td>: كود عنصر ربط البيانات</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="keyBuildingKey" value="${key.keyBuildingKey}"></td>
+						<td>: كود المبنى/العقار</td>
+					</tr>
+				</table>
+				<input type="submit" value=" حفظ ">
+				<input type="button" value=" إلغاء " onclick="cancel()">
+			</form>
+			<c:url var="back_home" value="k_backtoindex" />
 			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>

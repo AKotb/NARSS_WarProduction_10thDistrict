@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.narss.warproduction.entity.BuildingInformation;
+import com.narss.warproduction.entity.Key;
 import com.narss.warproduction.service.BuildingInformationService;
 
 /**
@@ -33,10 +34,25 @@ public class BuildingInformationController {
 		mv.addObject("msg", buildingsInformation);
 		return mv;
 	}
+	
+	@GetMapping("/getbuildinginformation")
+	public ModelAndView getBuildingInformation(@RequestParam("bibb") String biBuildingBarcode) {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("update_buildinginformation");
+		BuildingInformation buildingInformationObj = bis.getBuildingInformation(biBuildingBarcode);
+		mv.addObject("buildinginformation", buildingInformationObj);
+		return mv;
+	}
 
 	@GetMapping(value = "/addbuildinginformation")
 	public String addBuildingInformation(BuildingInformation buildingInformation) {
 		bis.addBuildingInformation(buildingInformation);
+		return "redirect:/bi_list";
+	}
+	
+	@GetMapping(value = "/updatebuildinginformation")
+	public String updateBuildingInformation(BuildingInformation buildingInformation) {
+		bis.updateBuildingInformation(buildingInformation);
 		return "redirect:/bi_list";
 	}
 

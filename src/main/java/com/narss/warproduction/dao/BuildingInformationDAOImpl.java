@@ -33,12 +33,32 @@ public class BuildingInformationDAOImpl implements BuildingInformationDAO {
 		} finally {
 			return buildingsInformation;
 		}
-
+	}
+	
+	@SuppressWarnings({ "unchecked", "finally" })
+	public BuildingInformation getBuildingInformation(String biBuildingBarcode) {
+		List<BuildingInformation> buildingsInformation = null;
+		try {
+			Session session = factory.getCurrentSession();
+			Query q = session.createQuery("FROM BuildingInformation WHERE biBuildingBarcode = :biBuildingBarcode");
+			q.setParameter("biBuildingBarcode", biBuildingBarcode);
+			buildingsInformation = q.getResultList();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			return buildingsInformation.get(0);
+		}
 	}
 
 	public boolean addBuildingInformation(BuildingInformation buildingInformation) {
 		Session session = factory.getCurrentSession();
 		session.save(buildingInformation);
+		return true;
+	}
+	
+	public boolean updateBuildingInformation(BuildingInformation buildingInformation) {
+		Session session = factory.getCurrentSession();
+		session.saveOrUpdate(buildingInformation);
 		return true;
 	}
 

@@ -4,11 +4,14 @@
 package com.narss.warproduction.dao;
 
 import java.util.List;
+
 import javax.persistence.Query;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
 import com.narss.warproduction.entity.Key;
 
 /**
@@ -33,12 +36,32 @@ public class KeyDAOImpl implements KeyDAO {
 		} finally {
 			return keys;
 		}
-
+	}
+	
+	@SuppressWarnings({ "unchecked", "finally" })
+	public Key getKey(String keyAll) {
+		List<Key> keys = null;
+		try {
+			Session session = factory.getCurrentSession();
+			Query q = session.createQuery("FROM Key WHERE keyAll = :keyall");
+			q.setParameter("keyall", keyAll);
+			keys = q.getResultList();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			return keys.get(0);
+		}
 	}
 
 	public boolean addKey(Key key) {
 		Session session = factory.getCurrentSession();
 		session.save(key);
+		return true;
+	}
+	
+	public boolean updateKey(Key key) {
+		Session session = factory.getCurrentSession();
+		session.saveOrUpdate(key);
 		return true;
 	}
 

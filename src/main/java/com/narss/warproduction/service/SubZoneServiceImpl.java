@@ -26,10 +26,21 @@ public class SubZoneServiceImpl implements SubZoneService {
 	public List<SubZone> getAllSubZones() {
 		return subZoneDAO.getAllSubZones();
 	}
+	
+	@Transactional
+	public SubZone getSubZone(String azCity, String azAreaCode, String azRegionCode, String azZoneCode, String azSubZoneCode) {
+		return subZoneDAO.getSubZone(azCity, azAreaCode, azRegionCode, azZoneCode, azSubZoneCode);
+	}
 
 	@Transactional
 	public boolean addSubZone(SubZone subZone) {
 		subZoneDAO.addSubZone(subZone);
+		return true;
+	}
+	
+	@Transactional
+	public boolean updateSubZone(SubZone subZone) {
+		subZoneDAO.updateSubZone(subZone);
 		return true;
 	}
 

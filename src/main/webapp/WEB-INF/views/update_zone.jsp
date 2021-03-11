@@ -82,23 +82,23 @@
 					</caption>
 					<tr>
 						<td><input dir="rtl" type="text" name="zonCity"  value="${zone.zonCity}" readonly="readonly"></td>
-						<td>: ادخل كود المدينة / المحافظة</td>
+						<td>: كود المدينة / المحافظة</td>
 					</tr>
 					<tr>
 						<td><input dir="rtl" type="text" name="areaCode" value="${zone.areaCode}" readonly="readonly"></td>
-						<td>: ادخل كود الحي</td>
+						<td>: كود الحي</td>
 					</tr>
 					<tr>
 						<td><input dir="rtl" type="text" name="regionCode" value="${zone.regionCode}" readonly="readonly"></td>
-						<td>: ادخل كود المنطقة</td>
+						<td>: كود المنطقة</td>
 					</tr>
 					<tr>
 						<td><input dir="rtl" type="text" name="zoneCode" value="${zone.zoneCode}" readonly="readonly"></td>
-						<td>: ادخل كود المربع</td>
+						<td>: كود المربع</td>
 					</tr>
 					<tr>
 						<td><input dir="rtl" type="text" name="zoneMap" value="${zone.zoneMap}"></td>
-						<td>: ادخل كود الخريطة</td>
+						<td>: كود الخريطة</td>
 					</tr>
 				</table>
 				<input type="submit" value=" حفظ ">

@@ -14,8 +14,12 @@ import com.narss.warproduction.entity.SubZone;
 public interface SubZoneService {
 
 	List<SubZone> getAllSubZones();
+	
+	SubZone getSubZone(String azCity, String azAreaCode, String azRegionCode, String azZoneCode, String azSubZoneCode);
 
 	boolean addSubZone(SubZone subZone);
+	
+	boolean updateSubZone(SubZone subZone);
 
 	boolean deleteSubZone(String azCity, String azAreaCode, String azRegionCode, String azZoneCode, String azSubZoneCode);
 }
