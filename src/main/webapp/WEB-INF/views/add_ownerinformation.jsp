@@ -59,6 +59,11 @@
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
 <title>اضافة مالك جديد</title>
+<script>
+	function cancel() {
+		window.history.back();
+	}
+</script>
 </head>
 <body>
 	<!-- Header ============================================================================================================ -->
@@ -66,7 +71,7 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px;">
+	<div class="container" style="height: 606px;">
 		<div align="center">
 			<form method="GET" action="addownerinformation">
 				<table
@@ -75,31 +80,32 @@
 						<h2> اضافة بيانات مالك جديد </h2>
 					</caption>
 					<tr>
-						<td><input type="text" name="oiUnitBarcode"></td>
+						<td><input dir="rtl" type="text" name="oiUnitBarcode"></td>
 						<td>: ادخل كود الوحدة / الشقة </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="oiBuildingNo"></td>
+						<td><input dir="rtl" type="text" name="oiBuildingNo"></td>
 						<td>: ادخل رقم بالمبنى / العقار </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="oiUnitNo"></td>
+						<td><input dir="rtl" type="text" name="oiUnitNo"></td>
 						<td>: ادخل رقم الوحدة / الشقة </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="oiOwnerSequence"></td>
+						<td><input dir="rtl" type="text" name="oiOwnerSequence"></td>
 						<td>: ادخل رقم مسلسل المالك </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="oiOwnerName"></td>
+						<td><input dir="rtl" type="text" name="oiOwnerName"></td>
 						<td>: ادخل اسم المالك </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="oiOwnerId"></td>
+						<td><input dir="rtl" type="text" name="oiOwnerId"></td>
 						<td>: ادخل رقم بطاقة المالك </td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">
+				<input type="button" value=" إلغاء " onclick="cancel()">
 			</form>
 			<c:url var="back_home" value="oi_backtoindex" />
 			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>

@@ -33,12 +33,32 @@ public class UnitInformationDAOImpl implements UnitInformationDAO {
 		} finally {
 			return unitsInformation;
 		}
-
+	}
+	
+	@SuppressWarnings({ "unchecked", "finally" })
+	public UnitInformation getUnitInformation(String fltBarcode) {
+		List<UnitInformation> unitsInformation = null;
+		try {
+			Session session = factory.getCurrentSession();
+			Query q = session.createQuery("FROM UnitInformation WHERE fltBarcode = :fltBarcode");
+			q.setParameter("fltBarcode", fltBarcode);
+			unitsInformation = q.getResultList();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			return unitsInformation.get(0);
+		}
 	}
 
 	public boolean addUnitInformation(UnitInformation unitInformation) {
 		Session session = factory.getCurrentSession();
 		session.save(unitInformation);
+		return true;
+	}
+	
+	public boolean updateUnitInformation(UnitInformation unitInformation) {
+		Session session = factory.getCurrentSession();
+		session.saveOrUpdate(unitInformation);
 		return true;
 	}
 

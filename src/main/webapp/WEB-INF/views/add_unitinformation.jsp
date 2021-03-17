@@ -59,6 +59,11 @@
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
 <title> اضافة وحدة / شقة جديدة </title>
+<script>
+	function cancel() {
+		window.history.back();
+	}
+</script>
 </head>
 <body>
 
@@ -67,7 +72,7 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px;">
+	<div class="container" style="height: 650px;">
 		<div align="center">
 			<form method="GET" action="addunitinformation">
 				<table
@@ -76,60 +81,52 @@
 						<h2> (1) اضافة وحدة / شقة جديدة </h2>
 					</caption>
 					<tr>
-						<td><input type="text" name="fltBuildingNo"></td>
+						<td><input dir="rtl" type="text" name="fltBuildingNo"></td>
 						<td>: ادخل رقم المبنى </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltUnitNo"></td>
+						<td><input dir="rtl" type="text" name="fltUnitNo"></td>
 						<td>: ادخل رقم الوحدة </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltBuildType"></td>
+						<td><input dir="rtl" type="text" name="fltBuildType"></td>
 						<td>: ادخل نوع المبنى </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltFloorNo"></td>
+						<td><input dir="rtl" type="text" name="fltFloorNo"></td>
 						<td>: ادخل رقم الدور </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltCurrentOwnerName"></td>
+						<td><input dir="rtl" type="text" name="fltCurrentOwnerName"></td>
 						<td>: ادخل اسم المالك الحالي </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltDeliverDate"></td>
+						<td><input dir="rtl" type="text" name="fltDeliverDate"></td>
 						<td>: ادخل تاريخ الإستلام </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltAssignedName"></td>
+						<td><input dir="rtl" type="text" name="fltAssignedName"></td>
 						<td>: ادخل اسم المتنازل </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltAssignDate"></td>
+						<td><input dir="rtl" type="text" name="fltAssignDate"></td>
 						<td>: ادخل تاريخ التنازل </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltUnitSize"></td>
+						<td><input dir="rtl" type="text" name="fltUnitSize"></td>
 						<td>: ادخل مساحة الوحدة </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltUnitPrice"></td>
+						<td><input dir="rtl" type="text" name="fltUnitPrice"></td>
 						<td>: ادخل سعر الوحدة </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltFloor"></td>
+						<td><input dir="rtl" type="text" name="fltFloor"></td>
 						<td>: ادخل الدور </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltComments"></td>
+						<td><input dir="rtl" type="text" name="fltComments"></td>
 						<td>: ادخل ملاحظات على الوحدة </td>
-					</tr>
-					<tr>
-						<td><input type="text" name="fltBarcode"></td>
-						<td>: ادخل كود الوحدة </td>
-					</tr>
-					<tr>
-						<td><input type="text" name="fltChangeActivity"></td>
-						<td>: ادخل تغيير النشاط </td>
 					</tr>
 				</table>
 				<table
@@ -138,47 +135,56 @@
 						<h2> (2) اضافة وحدة / شقة جديدة </h2>
 					</caption>
 					<tr>
-						<td><input type="text" name="fltTrespassingBuidling"></td>
+						<td><input dir="rtl" type="text" name="fltBarcode"></td>
+						<td>: ادخل كود الوحدة </td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="fltChangeActivity"></td>
+						<td>: ادخل تغيير النشاط </td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="fltTrespassingBuidling"></td>
 						<td>: ادخل التعديات على الأرض بمبنى </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltExtendOfViolation"></td>
+						<td><input dir="rtl" type="text" name="fltExtendOfViolation"></td>
 						<td>: ادخل امتداد عدد ادوار المخالفة </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltViolationSize"></td>
+						<td><input dir="rtl" type="text" name="fltViolationSize"></td>
 						<td>: ادخل مساحة المخالفة </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltTrespassingFence"></td>
+						<td><input dir="rtl" type="text" name="fltTrespassingFence"></td>
 						<td>: ادخل التعديات على الأرض بسور </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltTrespassingWorks"></td>
+						<td><input dir="rtl" type="text" name="fltTrespassingWorks"></td>
 						<td>: ادخل التعديات على الأرض بإشغالات </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltMainActivity"></td>
+						<td><input dir="rtl" type="text" name="fltMainActivity"></td>
 						<td>: ادخل نشاط الوحدة طبقاً للمخطط </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltBuildingBarcode"></td>
+						<td><input dir="rtl" type="text" name="fltBuildingBarcode"></td>
 						<td>: ادخل كود المبنى / العقار </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltCurrentOwnerID"></td>
+						<td><input dir="rtl" type="text" name="fltCurrentOwnerID"></td>
 						<td>: ادخل رقم بطاقة المالك الحالي </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltTrespassingFenceSize"></td>
+						<td><input dir="rtl" type="text" name="fltTrespassingFenceSize"></td>
 						<td>: ادخل مساحة التعديات على الأرض بمبنى </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="fltTrespassingBuidlingSize"></td>
+						<td><input dir="rtl" type="text" name="fltTrespassingBuidlingSize"></td>
 						<td>: ادخل مساحة التعديات على الأرض بمبنى </td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">
+				<input type="button" value=" إلغاء " onclick="cancel()">
 			</form>
 			<c:url var="back_home" value="ui_backtoindex" />
 			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>

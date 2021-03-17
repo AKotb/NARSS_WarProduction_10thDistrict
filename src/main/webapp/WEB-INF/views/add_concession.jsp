@@ -59,6 +59,11 @@
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
 <title> اضافة تنازل جديد </title>
+<script>
+	function cancel() {
+		window.history.back();
+	}
+</script>
 </head>
 <body>
 
@@ -67,7 +72,7 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px;">
+	<div class="container" style="height: 606px;">
 		<div align="center">
 			<form method="GET" action="addconcession">
 				<table
@@ -76,35 +81,36 @@
 						<h2> اضافة تنازل جديد </h2>
 					</caption>
 					<tr>
-						<td><input type="text" name="coUnitBarcode"></td>
+						<td><input dir="rtl" type="text" name="coUnitBarcode"></td>
 						<td>: ادخل كود الوحدة/الشقة</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="coConcessionSerial"></td>
+						<td><input dir="rtl" type="text" name="coConcessionSerial"></td>
 						<td>: ادخل رقم مسلسل التنازل</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="coConcessionFromName"></td>
+						<td><input dir="rtl" type="text" name="coConcessionFromName"></td>
 						<td>: ادخل اسم المتنازل</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="coConcessionFromId"></td>
+						<td><input dir="rtl" type="text" name="coConcessionFromId"></td>
 						<td>: ادخل رقم بطاقة المتنازل</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="coConcessionToName"></td>
+						<td><input dir="rtl" type="text" name="coConcessionToName"></td>
 						<td>: ادخل اسم المتنازل إليه</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="coConcessionToId"></td>
+						<td><input dir="rtl" type="text" name="coConcessionToId"></td>
 						<td>: ادخل رقم بطاقة المتنازل إليه</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="coConcessionDate"></td>
+						<td><input dir="rtl" type="text" name="coConcessionDate"></td>
 						<td>: ادخل تاريخ التنازل</td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">
+				<input type="button" value=" إلغاء " onclick="cancel()">
 			</form>
 			<c:url var="back_home" value="conc_backtoindex" />
 			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>

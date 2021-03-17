@@ -59,6 +59,11 @@
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
 <title>اضافة عقار مخالف جديد</title>
+<script>
+	function cancel() {
+		window.history.back();
+	}
+</script>
 </head>
 <body>
 
@@ -67,7 +72,7 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px;">
+	<div class="container" style="height: 606px;">
 		<div align="center">
 			<form method="GET" action="addexternalviolation">
 				<table
@@ -76,47 +81,48 @@
 						<h2> اضافة عقار مخالف مستقل جديد </h2>
 					</caption>
 					<tr>
-						<td><input type="text" name="evNewViolationNo"></td>
+						<td><input dir="rtl" type="text" name="evNewViolationNo"></td>
 						<td>: ادخل رقم المخالفة </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="evRelatedBuildingBarcode"></td>
+						<td><input dir="rtl" type="text" name="evRelatedBuildingBarcode"></td>
 						<td>: ادخل كود العقار / المبنى المجاور </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="evViolationType"></td>
+						<td><input dir="rtl" type="text" name="evViolationType"></td>
 						<td>: ادخل نوع المخالفة </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="evViolationActivity"></td>
+						<td><input dir="rtl" type="text" name="evViolationActivity"></td>
 						<td>: ادخل نشاط المخالفة </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="evNumberOfFloors"></td>
+						<td><input dir="rtl" type="text" name="evNumberOfFloors"></td>
 						<td>: ادخل عدد طوابق المخالفة </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="evArchitecturalStyle"></td>
+						<td><input dir="rtl" type="text" name="evArchitecturalStyle"></td>
 						<td>: ادخل الأسلوب الإنشائي </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="evStatus"></td>
+						<td><input dir="rtl" type="text" name="evStatus"></td>
 						<td>: ادخل حالة العقار </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="ezLandSize"></td>
+						<td><input dir="rtl" type="text" name="ezLandSize"></td>
 						<td>: ادخل مساحة الأرض  </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="exRepeatedSize"></td>
+						<td><input dir="rtl" type="text" name="exRepeatedSize"></td>
 						<td>: ادخل مساحة المتكرر </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="exRelatedBuildingNo"></td>
+						<td><input dir="rtl" type="text" name="exRelatedBuildingNo"></td>
 						<td>: ادخل رقم العقار / المبنى المجاور </td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">
+				<input type="button" value=" إلغاء " onclick="cancel()">
 			</form>
 			<c:url var="back_home" value="ev_backtoindex" />
 			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>

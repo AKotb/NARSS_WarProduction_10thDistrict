@@ -58,7 +58,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title>لوحة الإعدادات</title>
+<title>البيانات ثلاثية الأبعاد</title>
 </head>
 <body>
 
@@ -67,19 +67,24 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px;">
+	<div class="container" style="height: 606px;">
 		<div class="warprod_main_3d">
 			<ul dir="rtl">
 				<li><a
-					href="http://localhost:8080/3D_Data_View/entry/test_binary.html"
-					target="_blank">عرض البيانات ثلاثية الأبعاد</a></li>
-			</ul>
-		</div>
-		<div class="warprod_main_cityengine">
-			<ul dir="rtl">
+					href="http://localhost:8080/3D_Data_View/entry/Area_01.html"
+					target="_blank">عرض البيانات ثلاثية الأبعاد للمنطقة 1</a></li>
 				<li><a
-					href="http://localhost:8080/City_Engine_View/webviewer/ceviewer_offline.html"
-					target="_blank">عرض بيانات منظومة City Engine</a></li>
+					href="http://localhost:8080/3D_Data_View/entry/Area_02.html"
+					target="_blank">عرض البيانات ثلاثية الأبعاد للمنطقة 2</a></li>
+				<li><a
+					href="http://localhost:8080/3D_Data_View/entry/Area_03.html"
+					target="_blank">عرض البيانات ثلاثية الأبعاد للمنطقة 3</a></li>
+				<li><a
+					href="http://localhost:8080/3D_Data_View/entry/Area_04.html"
+					target="_blank">عرض البيانات ثلاثية الأبعاد للمنطقة 4</a></li>
+				<li><a
+					href="http://localhost:8080/3D_Data_View/entry/Area_05.html"
+					target="_blank">عرض البيانات ثلاثية الأبعاد للمنطقة 5</a></li>
 			</ul>
 		</div>
 	</div>

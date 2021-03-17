@@ -59,6 +59,11 @@
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
 <title> اضافة مربع فرعي جديد </title>
+<script>
+	function cancel() {
+		window.history.back();
+	}
+</script>
 </head>
 <body>
 
@@ -67,7 +72,7 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px;">
+	<div class="container" style="height: 606px;">
 		<div align="center">
 			<form method="GET" action="addsubzone">
 				<table
@@ -76,31 +81,32 @@
 						<h2> اضافة مربع فرعي جديد </h2>
 					</caption>
 					<tr>
-						<td><input type="text" name="azCity"></td>
+						<td><input dir="rtl" type="text" name="azCity"></td>
 						<td>: ادخل كود المدينة / المحافظة</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="azAreaCode"></td>
+						<td><input dir="rtl" type="text" name="azAreaCode"></td>
 						<td>: ادخل كود الحي</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="azRegionCode"></td>
+						<td><input dir="rtl" type="text" name="azRegionCode"></td>
 						<td>: ادخل كود المنطقة</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="azZoneCode"></td>
+						<td><input dir="rtl" type="text" name="azZoneCode"></td>
 						<td>: ادخل كود المربع</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="azSubZoneCode"></td>
+						<td><input dir="rtl" type="text" name="azSubZoneCode"></td>
 						<td>: ادخل كود المربع الفرعي</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="azSubZoneMap"></td>
+						<td><input dir="rtl" type="text" name="azSubZoneMap"></td>
 						<td>: ادخل كود الخريطة</td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">
+				<input type="button" value=" إلغاء " onclick="cancel()">
 			</form>
 			<c:url var="back_home" value="sz_backtoindex" />
 			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>

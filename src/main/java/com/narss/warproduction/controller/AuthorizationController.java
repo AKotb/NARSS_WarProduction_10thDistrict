@@ -8,7 +8,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -33,11 +32,25 @@ public class AuthorizationController {
 		mv.addObject("msg", authorizations);
 		return mv;
 	}
+	
+	@GetMapping("/getauthorization")
+	public ModelAndView getAuthorization(@RequestParam("madn") String maDelegationNo) {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("update_authorization");
+		Authorization authorizationObj = auzs.getAuthorization(maDelegationNo);
+		mv.addObject("authorization", authorizationObj);
+		return mv;
+	}
 
 	@GetMapping(value = "/addauthorization")
 	public String addAuthorization(Authorization authorization) {
 		auzs.addAuthorization(authorization);
-
+		return "redirect:/auz_list";
+	}
+	
+	@GetMapping(value = "/updateauthorization")
+	public String updateAuthorization(Authorization authorization) {
+		auzs.updateAuthorization(authorization);
 		return "redirect:/auz_list";
 	}
 

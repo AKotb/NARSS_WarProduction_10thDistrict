@@ -33,7 +33,21 @@ public class ExternalViolationDAOImpl implements ExternalViolationDAO {
 		} finally {
 			return externalViolations;
 		}
-
+	}
+	
+	@SuppressWarnings({ "unchecked", "finally" })
+	public ExternalViolation getExternalViolation(String evNewViolationNo) {
+		List<ExternalViolation> externalViolations = null;
+		try {
+			Session session = factory.getCurrentSession();
+			Query q = session.createQuery("FROM ExternalViolation WHERE evNewViolationNo = :evNewViolationNo");
+			q.setParameter("evNewViolationNo", evNewViolationNo);
+			externalViolations = q.getResultList();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			return externalViolations.get(0);
+		}
 	}
 
 	public boolean addExternalViolation(ExternalViolation externalViolation) {
@@ -41,12 +55,17 @@ public class ExternalViolationDAOImpl implements ExternalViolationDAO {
 		session.save(externalViolation);
 		return true;
 	}
+	
+	public boolean updateExternalViolation(ExternalViolation externalViolation) {
+		Session session = factory.getCurrentSession();
+		session.saveOrUpdate(externalViolation);
+		return true;
+	}
 
 	public boolean deleteExternalViolation(String evNewViolationNo) {
 		Session session = factory.getCurrentSession();
 		ExternalViolation ev = session.get(ExternalViolation.class, evNewViolationNo);
 		session.delete(ev);
-
 		return true;
 	}
 

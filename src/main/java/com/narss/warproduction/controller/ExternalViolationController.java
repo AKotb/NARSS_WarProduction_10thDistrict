@@ -8,7 +8,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -33,10 +32,25 @@ public class ExternalViolationController {
 		mv.addObject("msg", externalViolations);
 		return mv;
 	}
+	
+	@GetMapping("/getexternalviolation")
+	public ModelAndView getExternalViolation(@RequestParam("evnvn") String evNewViolationNo) {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("update_externalviolation");
+		ExternalViolation externalViolationObj = evs.getExternalViolation(evNewViolationNo);
+		mv.addObject("externalviolation", externalViolationObj);
+		return mv;
+	}
 
 	@GetMapping(value = "/addexternalviolation")
 	public String addExternalViolation(ExternalViolation externalViolation) {
 		evs.addExternalViolation(externalViolation);
+		return "redirect:/ev_list";
+	}
+	
+	@GetMapping(value = "/updateexternalviolation")
+	public String updateExternalViolation(ExternalViolation externalViolation) {
+		evs.updateExternalViolation(externalViolation);
 		return "redirect:/ev_list";
 	}
 

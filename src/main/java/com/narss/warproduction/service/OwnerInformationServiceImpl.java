@@ -26,10 +26,21 @@ public class OwnerInformationServiceImpl implements OwnerInformationService {
 	public List<OwnerInformation> getAllOwnersInformation() {
 		return ownerInformationDAO.getAllOwnersInformation();
 	}
+    
+    @Transactional
+	public OwnerInformation getOwnerInformation(String oiOwnerSequence) {
+		return ownerInformationDAO.getOwnerInformation(oiOwnerSequence);
+	}
 
     @Transactional
 	public boolean addOwnerInformation(OwnerInformation ownerInformation) {
     	ownerInformationDAO.addOwnerInformation(ownerInformation);
+		return true;
+	}
+    
+    @Transactional
+	public boolean updateOwnerInformation(OwnerInformation ownerInformation) {
+    	ownerInformationDAO.updateOwnerInformation(ownerInformation);
 		return true;
 	}
 

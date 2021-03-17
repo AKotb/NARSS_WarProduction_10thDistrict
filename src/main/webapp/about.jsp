@@ -83,9 +83,9 @@ td {
 			<div class="beh_main2">
 				<div class="beh_main_aboutus">
 					<h1 class="aboutauthority_h1">عن المشروع</h1>
-					<p dir="rtl">ملخص عن مشروع توثيق أراضي الحي العاشر يمدينة نصر
-						بالتعاون بين وزراة الإنتاج الحربي و الهئية القومية للاستشعار من
-						البعد وعلوم الفضاء</p>
+					<p dir="rtl">يهدف هذا المشروع إلى اجراء دراسات التغيرات المكانية ثنائية الابعاد (سلبية وايجابية) باستخدام صور الاقمار الصناعية عالية الدقة المكانية واعداد خريطة متجهة تفصيلية توضح توزيع الانماط العمرانية بمنطقة الحي العاشر مدينة نصر.
+انتاج مجسم رقمي ثلاثي الابعاد باستخدام المجسمات الرقمية المستنبطة من صور الاقمار الصناعية وذلك لربطه بقواعد البيانات الجغرافية المستنبطة من العمل الحقلي للوحدات السكنية والمناطق العمرانية بمنطقة الدراسة. انتاج مجسم رقمي ثلاثي الابعاد باستخدام المجسمات الرقمية المستنبطة من المسح الحقلي ثلاثي الابعاد بتقنية الليزر (LiDAR) الارضي فائق الدقة المكانية لرفع الوضع الراهن (2020). تطوير وبناء نظام جغرافي معلوماتي من خلال البوابة الإلكترونية يوفر بيانات دقيقة ومحدثة وشاملة مستنبطة من بيانات الاستشعار عن بعد ونظم المعلومات الجغرافية كمخرج اساسي لعرض وتحليل بيانات المشروع ولمنع تكرارية المشروعات على مستوي الوزارات المعنية بتطوير، ومراقبة الانماط العمرانية على مستوي الجمهورية.
+					</p>
 					<div class="supervisors_container_div">
 						<div class="supervisors_row_about_main">
 							<div class="card_about">
@@ -103,10 +103,10 @@ td {
 							<div class="card_about">
 								<div>
 									<img class="photo_head"
-										src="resources/images/mohamed_ahmed_morsy.jpg">
+										src="resources/images/Magedelsoraty.jpg">
 								</div>
-								<h2 class="person_title">اللواء مهندس / محمد أحمد مرسي</h2>
-								<h3 class="person_desc">وزير الإنتاج الحربي</h3>
+								<h2 class="person_title">اللواء / ماجد سليمان السرتي</h2>
+								<h3 class="person_desc">رئيس شركة الانتاج الحربي للمشروعات والاستشارات الهندسية والتوريدات العامة</h3>
 							</div>
 						</div>
 					</div>
@@ -122,32 +122,30 @@ td {
 								<img class="photo_head" src="resources/images/safaa_hassan.jpg">
 							</div>
 							<h2 class="person_title">أ.د / صفاء محمد حسن</h2>
-							<h3 class="person_desc">المدير التنفيذي للمشروع</h3>
+							<h3 class="person_desc">رئيس قسم نظم المعلومات الجغرافية - الباحث الرئيسي للمشروع</h3>
 						</div>
 					</div>
 
 					<table>
 						<tr>
 							<th>فرق عمل الهيئة القومية للاستشعار من البعد وعلوم الفضاء</th>
-							<th>فرق عمل وزارة الإنتاج الحربي</th>
+							<th>فرق عمل وزارة الإنتاج الحربي ووزارة الإسكان</th>
 						</tr>
 						<tr>
 							<td><button type="button" class="btn btn-info"
 									style="width: 62%; background-color: #17a2b9; border-color: #17a2b9; font-size: 16pt;"
 									data-toggle="collapse" data-target="#nteam1">فريق تحليل البيانات و تطويرالموقع الإلكتروني</button></td>
 							<td><button type="button" class="btn btn-info"
-									style="width: 62%; background-color: #17a2b9; border-color: #17a2b9; font-size: 16pt;"
-									data-toggle="collapse" data-target="#bteam1">فريق
-									الوزارة -1</button></td>
+									style="width: 66%; background-color: #17a2b9; border-color: #17a2b9; font-size: 16pt;"
+									data-toggle="collapse" data-target="#bteam1">فريق عمل شركة الانتاج الحربي للمشروعات والاستشارات الهندسية والتوريدات العامة</button></td>
 						</tr>
 						<tr>
 							<td><button type="button" class="btn btn-info"
 									style="width: 62%; background-color: #17a2b9; border-color: #17a2b9; font-size: 16pt;"
 									data-toggle="collapse" data-target="#nteam2">فريق رفع البيانات ثلاثية الأبعاد</button></td>
 							<td><button type="button" class="btn btn-info"
-									style="width: 62%; background-color: #17a2b9; border-color: #17a2b9; font-size: 16pt;"
-									data-toggle="collapse" data-target="#bteam2">فريق
-									الوزارة -2</button></td>
+									style="width: 66%; background-color: #17a2b9; border-color: #17a2b9; font-size: 16pt;"
+									data-toggle="collapse" data-target="#bteam2">فريق عمل صندوق تمويل الإسكان</button></td>
 						</tr>
 					</table>
 
@@ -164,7 +162,7 @@ td {
 												src="resources/images/profil-male.png">
 										</div>
 										<h3 class="person_title">د. بسام عبداللطيف</h3>
-										<h4 class="person_desc">باحث</h4>
+										<h4 class="person_desc">باحث بشعبة استقبال وتحليل البيانات وشئون المحطة الأرضية</h4>
 									</div>
 								</div>
 								<div class="column_about">
@@ -174,7 +172,7 @@ td {
 												src="resources/images/profil-male.png">
 										</div>
 										<h3 class="person_title">د. محمد رشدي</h3>
-										<h4 class="person_desc">باحث</h4>
+										<h4 class="person_desc">باحث بشعبة استقبال وتحليل البيانات وشئون المحطة الأرضية</h4>
 									</div>
 								</div>
 								<div class="column_about">
@@ -187,13 +185,33 @@ td {
 										<h4 class="person_desc">مهندس برمجيات</h4>
 									</div>
 								</div>
+								<div class="column_about">
+									<div class="card_about">
+										<div>
+											<img class="photo_member"
+												src="resources/images/profil-male.png">
+										</div>
+										<h3 class="person_title">م. مصطفي محمود</h3>
+										<h4 class="person_desc">مهندس نظم المعلومات</h4>
+									</div>
+								</div>
+								<div class="column_about">
+									<div class="card_about">
+										<div>
+											<img class="photo_member"
+												src="resources/images/profil-male.png">
+										</div>
+										<h3 class="person_title">أ. أحمد سامي</h3>
+										<h4 class="person_desc">أخصائي</h4>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 
 					<div id="nteam2" class="collapse">
 						<div class="surveyteam_div">
-							<h3 class="surveyteam_h3">فريق رفع البيانات ثلاثية الأبعاد</h3>
+							<h3 class="surveyteam_h3">فريق عمل شعبة المساحة والتصوير الجوي</h3>
 						</div>
 						<div class="surveyteam_container_div">
 							<div class="row_about">
@@ -204,7 +222,7 @@ td {
 												src="resources/images/profil-male.png">
 										</div>
 										<h3 class="person_title">د. عطية بخيت</h3>
-										<h4 class="person_desc">باحث</h4>
+										<h4 class="person_desc">رئيس قسم المساحة والتصوير</h4>
 									</div>
 								</div>
 								<div class="column_about">
@@ -223,8 +241,28 @@ td {
 											<img class="photo_member"
 												src="resources/images/profil-male.png">
 										</div>
+										<h3 class="person_title">م. محمد الصواف</h3>
+										<h4 class="person_desc">مهندس مساحة</h4>
+									</div>
+								</div>
+								<div class="column_about">
+									<div class="card_about">
+										<div>
+											<img class="photo_member"
+												src="resources/images/profil-male.png">
+										</div>
 										<h3 class="person_title">م. عبدالرحمن علي</h3>
-										<h4 class="person_desc">مساعد باحث</h4>
+										<h4 class="person_desc">مهندس مساحة</h4>
+									</div>
+								</div>
+								<div class="column_about">
+									<div class="card_about">
+										<div>
+											<img class="photo_member"
+												src="resources/images/profil-male.png">
+										</div>
+										<h3 class="person_title">أ. أحمد عبد الحميد</h3>
+										<h4 class="person_desc">أخصائي مساحة</h4>
 									</div>
 								</div>
 							</div>
@@ -234,7 +272,7 @@ td {
 
 					<div id="bteam1" class="collapse">
 						<div class="governorateteam_div">
-							<h3 class="governorateteam_h3">فريق الوزارة -1</h3>
+							<h3 class="governorateteam_h3">فريق عمل شركة الانتاج الحربي للمشروعات والاستشارات الهندسية والتوريدات العامة</h3>
 						</div>
 						<div class="governorateteam_container_div">
 							<div class="row_about">
@@ -242,30 +280,10 @@ td {
 									<div class="card_about">
 										<div>
 											<img class="photo_member"
-												src="resources/images/profil-male.png">
+												src="resources/images/magedabelfattah.jpg">
 										</div>
-										<h3 class="person_title">الاسم</h3>
-										<h4 class="person_desc">الوظيفة</h4>
-									</div>
-								</div>
-								<div class="column_about">
-									<div class="card_about">
-										<div>
-											<img class="photo_member"
-												src="resources/images/profil-male.png">
-										</div>
-										<h3 class="person_title">الاسم</h3>
-										<h4 class="person_desc">الوظيفة</h4>
-									</div>
-								</div>
-								<div class="column_about">
-									<div class="card_about">
-										<div>
-											<img class="photo_member"
-												src="resources/images/profil-male.png">
-										</div>
-										<h3 class="person_title">الاسم</h3>
-										<h4 class="person_desc">الوظيفة</h4>
+										<h3 class="person_title">اللواء / ماجد عبد الفتاح</h3>
+										<h4 class="person_desc">نائب رئيس شركة الانتاج الحربي للمشروعات والاستشارات الهندسية والتوريدات العامة</h4>
 									</div>
 								</div>
 							</div>
@@ -274,7 +292,7 @@ td {
 
 					<div id="bteam2" class="collapse">
 						<div class="natronteam_div">
-							<h3 class="natronteam_h3">فريق الوزارة -2</h3>
+							<h3 class="natronteam_h3">فريق عمل صندوق تمويل الإسكان</h3>
 						</div>
 						<div class="natronteam_container_div">
 							<div class="row_about">
@@ -282,30 +300,10 @@ td {
 									<div class="card_about">
 										<div>
 											<img class="photo_member"
-												src="resources/images/profil-male.png">
+												src="resources/images/ahmedelkholy.jpg">
 										</div>
-										<h3 class="person_title">الاسم</h3>
-										<h4 class="person_desc">الوظيفة</h4>
-									</div>
-								</div>
-								<div class="column_about">
-									<div class="card_about">
-										<div>
-											<img class="photo_member"
-												src="resources/images/profil-male.png">
-										</div>
-										<h3 class="person_title">الاسم</h3>
-										<h4 class="person_desc">الوظيفة</h4>
-									</div>
-								</div>
-								<div class="column_about">
-									<div class="card_about">
-										<div>
-											<img class="photo_member"
-												src="resources/images/profil-male.png">
-										</div>
-										<h3 class="person_title">الاسم</h3>
-										<h4 class="person_desc">الوظيفة</h4>
+										<h3 class="person_title">مهندس  / أحمد الخولي</h3>
+										<h4 class="person_desc">رئيس المشروعات بصندوق تمويل الإسكان-وزراة الاسكان</h4>
 									</div>
 								</div>
 							</div>

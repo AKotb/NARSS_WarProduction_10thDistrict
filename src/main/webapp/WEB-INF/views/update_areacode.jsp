@@ -72,7 +72,7 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px;">
+	<div class="container" style="height: 606px;">
 		<div align="center">
 			<form method="GET" action="updateareacode">
 				<table

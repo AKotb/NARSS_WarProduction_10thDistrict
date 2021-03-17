@@ -59,6 +59,11 @@
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
 <title> اضافة توكيل جديد </title>
+<script>
+	function cancel() {
+		window.history.back();
+	}
+</script>
 </head>
 <body>
 
@@ -67,7 +72,7 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px;">
+	<div class="container" style="height: 606px;">
 		<div align="center">
 			<form method="GET" action="addauthorization">
 				<table
@@ -76,43 +81,44 @@
 						<h2> اضافة توكيل جديد </h2>
 					</caption>
 					<tr>
-						<td><input type="text" name="maUnitBarcode"></td>
+						<td><input dir="rtl" type="text" name="maUnitBarcode"></td>
 						<td>: ادخل كود الوحدة/الشقة</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="maDelegationNo"></td>
+						<td><input dir="rtl" type="text" name="maDelegationNo"></td>
 						<td>: ادخل رقم التوكيل</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="maDelegationDate"></td>
+						<td><input dir="rtl" type="text" name="maDelegationDate"></td>
 						<td>: ادخل تاريخ التوكيل</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="maDelegationIssuedPlace"></td>
+						<td><input dir="rtl" type="text" name="maDelegationIssuedPlace"></td>
 						<td>: ادخل جهة اصدار التوكيل</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="maDelegationType"></td>
+						<td><input dir="rtl" type="text" name="maDelegationType"></td>
 						<td>: ادخل نوع التوكيل</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="maDelegatorName"></td>
+						<td><input dir="rtl" type="text" name="maDelegatorName"></td>
 						<td>: ادخل اسم الموكل</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="maDelegatorId"></td>
+						<td><input dir="rtl" type="text" name="maDelegatorId"></td>
 						<td>: ادخل رقم بطاقة الموكل</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="maDelegateToName"></td>
+						<td><input dir="rtl" type="text" name="maDelegateToName"></td>
 						<td>: ادخل اسم الموكل إليه</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="maDelegateToId"></td>
+						<td><input dir="rtl" type="text" name="maDelegateToId"></td>
 						<td>: ادخل رقم بطاقة الموكل إليه</td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">
+				<input type="button" value=" إلغاء " onclick="cancel()">
 			</form>
 			<c:url var="back_home" value="auz_backtoindex" />
 			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>

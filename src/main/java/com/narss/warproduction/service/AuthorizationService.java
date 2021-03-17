@@ -14,8 +14,12 @@ import com.narss.warproduction.entity.Authorization;
 public interface AuthorizationService {
 	
 	List<Authorization> getAllAuthorizations();
+	
+	Authorization getAuthorization(String maDelegationNo);
 
 	boolean addAuthorization(Authorization authorization);
+	
+	boolean updateAuthorization(Authorization authorization);
 
 	boolean deleteAuthorization(String maDelegationNo);
 }

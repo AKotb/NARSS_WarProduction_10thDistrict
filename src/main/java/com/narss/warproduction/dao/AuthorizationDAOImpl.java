@@ -33,12 +33,32 @@ public class AuthorizationDAOImpl implements AuthorizationDAO {
 		} finally {
 			return authorizations;
 		}
-
+	}
+	
+	@SuppressWarnings({ "unchecked", "finally" })
+	public Authorization getAuthorization(String maDelegationNo) {
+		List<Authorization> authorizations = null;
+		try {
+			Session session = factory.getCurrentSession();
+			Query q = session.createQuery("FROM Authorization WHERE maDelegationNo = :maDelegationNo");
+			q.setParameter("maDelegationNo", maDelegationNo);
+			authorizations = q.getResultList();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			return authorizations.get(0);
+		}
 	}
 
 	public boolean addAuthorization(Authorization authorization) {
 		Session session = factory.getCurrentSession();
 		session.save(authorization);
+		return true;
+	}
+	
+	public boolean updateAuthorization(Authorization authorization) {
+		Session session = factory.getCurrentSession();
+		session.saveOrUpdate(authorization);
 		return true;
 	}
 

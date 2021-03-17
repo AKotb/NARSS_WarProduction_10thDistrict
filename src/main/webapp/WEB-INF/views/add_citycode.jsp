@@ -59,6 +59,11 @@
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
 <title> اضافة مدينة / محافظة جديدة </title>
+<script>
+	function cancel() {
+		window.history.back();
+	}
+</script>
 </head>
 <body>
 
@@ -67,7 +72,7 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px;">
+	<div class="container" style="height: 606px;">
 		<div align="center">
 			<form method="GET" action="addcitycode">
 				<table
@@ -76,15 +81,16 @@
 						<h2> اضافة مدينة / محافظة جديدة </h2>
 					</caption>
 					<tr>
-						<td><input type="text" name="cityCode"></td>
+						<td><input dir="rtl" type="text" name="cityCode"></td>
 						<td>: ادخل كود المدينة / المحافظة </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="cityName"></td>
+						<td><input dir="rtl" type="text" name="cityName"></td>
 						<td>: ادخل اسم المدينة / المحافظة </td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">
+				<input type="button" value=" إلغاء " onclick="cancel()">
 			</form>
 			<c:url var="back_home" value="backtoindex" />
 			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>

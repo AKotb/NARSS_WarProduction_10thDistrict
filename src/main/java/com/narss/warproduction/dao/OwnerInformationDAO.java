@@ -14,8 +14,12 @@ import com.narss.warproduction.entity.OwnerInformation;
 public interface OwnerInformationDAO {
 
 	List<OwnerInformation> getAllOwnersInformation();
+	
+	OwnerInformation getOwnerInformation(String oiOwnerSequence);
 
 	boolean addOwnerInformation(OwnerInformation ownerInformation);
+	
+	boolean updateOwnerInformation(OwnerInformation ownerInformation);
 
 	boolean deleteOwnerInformation(String oiOwnerSequence);
 

@@ -59,6 +59,11 @@
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
 <title> اضافة عنصر ربط بيانات جديد </title>
+<script>
+	function cancel() {
+		window.history.back();
+	}
+</script>
 </head>
 <body>
 
@@ -67,7 +72,7 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px;">
+	<div class="container" style="height: 606px;">
 		<div align="center">
 			<form method="GET" action="addkey">
 				<table
@@ -76,43 +81,44 @@
 						<h2> اضافة عنصر ربط بيانات جديد </h2>
 					</caption>
 					<tr>
-						<td><input type="text" name="keyCityCode"></td>
+						<td><input dir="rtl" type="text" name="keyCityCode"></td>
 						<td>: ادخل كود المدينة / المحافظة</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="keyAreaCode"></td>
+						<td><input dir="rtl" type="text" name="keyAreaCode"></td>
 						<td>: ادخل كود الحي</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="keyRegionCode"></td>
+						<td><input dir="rtl" type="text" name="keyRegionCode"></td>
 						<td>: ادخل كود المنطقة</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="keyZoneCode"></td>
+						<td><input dir="rtl" type="text" name="keyZoneCode"></td>
 						<td>: ادخل كود المربع</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="keySubZoneCode"></td>
+						<td><input dir="rtl" type="text" name="keySubZoneCode"></td>
 						<td>: ادخل كود المربع الفرعي</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="keyBuildingNo"></td>
+						<td><input dir="rtl" type="text" name="keyBuildingNo"></td>
 						<td>: ادخل رقم المبنى/العقار</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="keyAppartementNo"></td>
+						<td><input dir="rtl" type="text" name="keyAppartementNo"></td>
 						<td>: ادخل رقم الوحدة/الشقة</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="keyAll"></td>
+						<td><input dir="rtl" type="text" name="keyAll"></td>
 						<td>: ادخل كود عنصر ربط البيانات</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="keyBuildingKey"></td>
+						<td><input dir="rtl" type="text" name="keyBuildingKey"></td>
 						<td>: ادخل كود المبنى/العقار</td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">
+				<input type="button" value=" إلغاء " onclick="cancel()">
 			</form>
 			<c:url var="back_home" value="k_backtoindex" />
 			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>

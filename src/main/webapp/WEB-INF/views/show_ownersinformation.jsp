@@ -67,9 +67,9 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px;">
+	<div class="container" style="height: 606px;">
 		<div align="center">
-			<table border="1" cellpadding="15"
+			<table id="tables" border="1" cellpadding="15"
 				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
 				<caption>
 					<h2> عرض بيانات الملاك المتاحة </h2>
@@ -87,8 +87,11 @@
 					<c:url var="deletelink" value="deleteownerinformation">
 						<c:param name="oios" value="${ownerInformation.oiOwnerSequence}"></c:param>
 					</c:url>
+					<c:url var="getownerinformationdatalink" value="getownerinformation">
+						<c:param name="oios" value="${ownerInformation.oiOwnerSequence}"></c:param>
+					</c:url>
 					<tr>
-						<td style="text-align: center"><a href="${deletelink}">حذف</a></td>
+						<td style="text-align: center"><a href="${deletelink}">حذف</a>&nbsp;&nbsp;&nbsp;<a href="${getownerinformationdatalink}">تعديل</a></td>
 						<td style="text-align: center"><c:out value="${ownerInformation.oiOwnerId}" /></td>
 						<td style="text-align: center"><c:out value="${ownerInformation.oiOwnerName}" /></td>
 						<td style="text-align: center"><c:out value="${ownerInformation.oiOwnerSequence}" /></td>

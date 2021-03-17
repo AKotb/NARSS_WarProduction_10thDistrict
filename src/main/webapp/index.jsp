@@ -66,8 +66,14 @@
 	async defer></script>
 <script>
 	let map;
-	let historicalOverlay2017;
-	let historicalOverlay2019;
+	let fusedhistoricalOverlay2017;
+	let fusedhistoricalOverlay2019;
+	let geometriccorrectedhistoricalOverlay2017;
+	let geometriccorrectedhistoricalOverlay2019;
+	let positiveurbanchangeshistoricalOverlay;
+	let negativeurbanchangeshistoricalOverlay;
+	let positivenonurbanchangeshistoricalOverlay;
+	let negativenonurbanchangeshistoricalOverlay;
 	var infowindow;
 	function initMap() {
 		var mapcenter = {
@@ -77,43 +83,141 @@
 		map = new google.maps.Map(document.getElementById('map'), {
 			zoom : 17,
 			center : mapcenter,
+			scaleControl: true,
+			streetViewControl: true,
+			streetViewControlOptions: {
+				position: google.maps.ControlPosition.LEFT_BOTTOM,
+			},
+			zoomControl: true,
+			zoomControlOptions: {
+				position: google.maps.ControlPosition.LEFT_BOTTOM,
+			},
+			fullscreenControl: true,
+			fullscreenControlOptions: {
+				position: google.maps.ControlPosition.LEFT_TOP,
+			},
 			mapTypeId : 'satellite'
 		});
 
 		infowindow = new google.maps.InfoWindow();
 
 		var imageBounds = {
-			north : 30.0487624164,
-			south : 30.044237623,
-			east : 31.3787343556,
-			west : 31.3709786191
+			north : 30.0497530232,
+			south : 30.0428180596,
+			east : 31.3801049471,
+			west : 31.3692724843
 		};
-		historicalOverlay2017 = new google.maps.GroundOverlay(
-				'http://localhost:8080/10thDistirct_RASTER/Pleiades_2017_WGS84.jpg',
+		
+		var ch_imageBounds = {
+				north : 30.0487624164,
+				south : 30.0442376671,
+				east : 31.37873428,
+				west : 31.3709786191
+		};
+		fusedhistoricalOverlay2017 = new google.maps.GroundOverlay(
+				'http://localhost:8080/10thDistirct_RASTER/Fused_2017.png',
 				imageBounds);
-		historicalOverlay2019 = new google.maps.GroundOverlay(
-				'http://localhost:8080/10thDistirct_RASTER/Pleiades_2019_WGS84.jpg',
+		fusedhistoricalOverlay2019 = new google.maps.GroundOverlay(
+				'http://localhost:8080/10thDistirct_RASTER/Fused_2019.png',
 				imageBounds);
+		geometriccorrectedhistoricalOverlay2017 = new google.maps.GroundOverlay(
+				'http://localhost:8080/10thDistirct_RASTER/Geometric_Corrected_2017.png',
+				imageBounds);
+		geometriccorrectedhistoricalOverlay2019 = new google.maps.GroundOverlay(
+				'http://localhost:8080/10thDistirct_RASTER/Geometric_Corrected_2019.png',
+				imageBounds);
+		positiveurbanchangeshistoricalOverlay = new google.maps.GroundOverlay(
+				'http://localhost:8080/10thDistirct_RASTER/Positive_Urban_Changes.png',
+				ch_imageBounds);
+		negativeurbanchangeshistoricalOverlay = new google.maps.GroundOverlay(
+				'http://localhost:8080/10thDistirct_RASTER/Negative_Urban_Changes.png',
+				ch_imageBounds);
+		positivenonurbanchangeshistoricalOverlay = new google.maps.GroundOverlay(
+				'http://localhost:8080/10thDistirct_RASTER/Positive_Non-Urban_Changes.png',
+				ch_imageBounds);
+		negativenonurbanchangeshistoricalOverlay = new google.maps.GroundOverlay(
+				'http://localhost:8080/10thDistirct_RASTER/Negative_Non-Urban_Changes.png',
+				ch_imageBounds);
 
 	}
 
-	//load raster image (pleiades 2017)
-	function loadrasterpleiades2017() {
-		var checkbox = document.getElementById('rst_pleiades_2017');
+	//load raster image (Fused 2017)
+	function loadrasterfused2017() {
+		var checkbox = document.getElementById('rst_fused_2017');
 		if (checkbox.checked == true) {
-			historicalOverlay2017.setMap(map);
+			fusedhistoricalOverlay2017.setMap(map);
 		} else {
-			historicalOverlay2017.setMap(null);
+			fusedhistoricalOverlay2017.setMap(null);
 		}
 	}
 
-	//load raster image (pleiades 2019)
-	function loadrasterpleiades2019() {
-		var checkbox = document.getElementById('rst_pleiades_2019');
+	//load raster image (Fused 2019)
+	function loadrasterfused2019() {
+		var checkbox = document.getElementById('rst_fused_2019');
 		if (checkbox.checked == true) {
-			historicalOverlay2019.setMap(map);
+			fusedhistoricalOverlay2019.setMap(map);
 		} else {
-			historicalOverlay2019.setMap(null);
+			fusedhistoricalOverlay2019.setMap(null);
+		}
+	}
+	
+	//load raster image (Geometric Corrected 2017)
+	function loadrastergeometriccorrected2017() {
+		var checkbox = document.getElementById('rst_geometriccorrected_2017');
+		if (checkbox.checked == true) {
+			geometriccorrectedhistoricalOverlay2017.setMap(map);
+		} else {
+			geometriccorrectedhistoricalOverlay2017.setMap(null);
+		}
+	}
+	
+	//load raster image (Geometric Corrected 2019)
+	function loadrastergeometriccorrected2019() {
+		var checkbox = document.getElementById('rst_geometriccorrected_2019');
+		if (checkbox.checked == true) {
+			geometriccorrectedhistoricalOverlay2019.setMap(map);
+		} else {
+			geometriccorrectedhistoricalOverlay2019.setMap(null);
+		}
+	}
+	
+	//load raster image (Positive Urban Changes)
+	function loadrasterpositiveurbanchanges() {
+		var checkbox = document.getElementById('rst_positiveurbanchanges');
+		if (checkbox.checked == true) {
+			positiveurbanchangeshistoricalOverlay.setMap(map);
+		} else {
+			positiveurbanchangeshistoricalOverlay.setMap(null);
+		}
+	}
+	
+	//load raster image (Negative Urban Changes)
+	function loadrasternegativeurbanchanges() {
+		var checkbox = document.getElementById('rst_negativeurbanchanges');
+		if (checkbox.checked == true) {
+			negativeurbanchangeshistoricalOverlay.setMap(map);
+		} else {
+			negativeurbanchangeshistoricalOverlay.setMap(null);
+		}
+	}
+	
+	//load raster image (Positive Non-Urban Changes)
+	function loadrasterpositivenonurbanchanges() {
+		var checkbox = document.getElementById('rst_positivenonurbanchanges');
+		if (checkbox.checked == true) {
+			positivenonurbanchangeshistoricalOverlay.setMap(map);
+		} else {
+			positivenonurbanchangeshistoricalOverlay.setMap(null);
+		}
+	}
+	
+	//load raster image (Negative Non-Urban Changes)
+	function loadrasternegativenonurbanchanges() {
+		var checkbox = document.getElementById('rst_negativenonurbanchanges');
+		if (checkbox.checked == true) {
+			negativenonurbanchangeshistoricalOverlay.setMap(map);
+		} else {
+			negativenonurbanchangeshistoricalOverlay.setMap(null);
 		}
 	}
 
@@ -128,8 +232,8 @@
 					.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Urban_2017_GCS84.geojson');
 			vectorurban2017_layer.setStyle(function(feature) {
 				return ({
-					fillColor : 'orange',
-					strokeColor : '#3300FF',
+					fillColor : 'yellow',
+					strokeColor : 'yellow',
 					strokeWeight : 1
 				});
 			});
@@ -149,8 +253,8 @@
 					.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Urban_2019_GCS84.geojson');
 			vectorurban2019_layer.setStyle(function(feature) {
 				return ({
-					fillColor : 'green',
-					strokeColor : '#3300FF',
+					fillColor : 'yellow',
+					strokeColor : 'yellow',
 					strokeWeight : 1
 				});
 			});
@@ -171,7 +275,7 @@
 			vectorurbanchanges_layer.setStyle(function(feature) {
 				return ({
 					fillColor : 'red',
-					strokeColor : '#3300FF',
+					strokeColor : 'red',
 					strokeWeight : 1
 				});
 			});
@@ -188,12 +292,12 @@
 				map : map
 			});
 			buildings_layer
-					.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Buildings.geojson');
+					.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Building_Info.geojson');
 			buildings_layer.setStyle(function(feature) {
-				var color = '#FF0000';
+				var color = 'blue';
 				return ({
 					fillColor : color,
-					strokeColor : "black",
+					strokeColor : color,
 					strokeWeight : 2
 				});
 			});
@@ -209,75 +313,75 @@
 									fillColor : 'green'
 								});
 								var BL_CTY_NAME = event.feature
-										.getProperty('BL_CTY_NAME');
+										.getProperty('BL_CTY_NAM');
 								var BL_REGON_NAME = event.feature
-										.getProperty("BL_REGON_NAME");
+										.getProperty("BL_REGON_N");
 								var BL_AREA_NAME = event.feature
-										.getProperty("BL_AREA_NAME");
+										.getProperty("BL_AREA_NA");
 								var BL_ZONE_CODE = event.feature
-										.getProperty("BL_ZONE_CODE");
+										.getProperty("BL_ZONE_CO");
 								var BL_SUB_ZONE_CODE = event.feature
-										.getProperty("BL_SUB_ZONE_CODE");
+										.getProperty("BL_SUB_ZON");
 								var BL_BUILDING_BARCODE = event.feature
-										.getProperty("BL_BUILDING_BARCODE");
+										.getProperty("BL_BUILDIN");
 								var BL_BUILDING_NO = event.feature
-										.getProperty("BL_BUILDING_NO");
+										.getProperty("BL_BUILD_1");
 								var BL_NO_FLATS_PER_FLOOR = event.feature
-										.getProperty("BL_NO_FLATS_PER_FLOOR");
+										.getProperty("BL_NO_FLAT");
 								var BL_NO_UNITS = event.feature
-										.getProperty("BL_NO_UNITS");
+										.getProperty("BL_NO_UNIT");
 								var BL_ARCHITECTURAL_STYLE = event.feature
-										.getProperty("BL_ARCHITECTURAL_STYLE");
+										.getProperty("BL_ARCHITE");
 								var BL_STATUS = event.feature
 										.getProperty("BL_STATUS");
 								var BL_VIOLATIONS = event.feature
-										.getProperty("BL_VIOLATIONS");
+										.getProperty("BL_VIOLATI");
 								var BL_TRESPASSING_BUILDING = event.feature
-										.getProperty("BL_TRESPASSING_BUILDING");
+										.getProperty("BL_TRESPAS");
 								var BL_TRESPASSING_FENCE = event.feature
-										.getProperty("BL_TRESPASSING_FENCE");
+										.getProperty("BL_TRESP_1");
 								var BL_TRESPASSING_WORKS = event.feature
-										.getProperty("BL_TRESPASSING_WORKS");
+										.getProperty("BL_TRESP_2");
 								var BL_CHANGING_ACTIVITY = event.feature
-										.getProperty("BL_CHANGING_ACTIVITY");
+										.getProperty("BL_CHANGIN");
 								var BL_BUILDING_CURR_NO = event.feature
-										.getProperty("BL_BUILDING_CURR_NO");
+										.getProperty("BL_BUILD_2");
 								var CITY_CODE = event.feature
-										.getProperty("CITY_CODE");
+										.getProperty("BL_CITY_CO");
 								var AREA_CODE = event.feature
-										.getProperty("AREA_CODE");
+										.getProperty("BL_AREA_CO");
 								var REGON_CODE = event.feature
-										.getProperty("REGON_CODE");
+										.getProperty("BL_REGON_C");
 								var BL_BLD_MODEL = event.feature
-										.getProperty("BL_BLD_MODEL");
+										.getProperty("BL_BL_BLD_");
 								var BL_STREET_NAME = event.feature
-										.getProperty("BL_STREET_NAME");
+										.getProperty("BL_BL_STRE");
 								var BL_PROPERTY_OWNERSHIP = event.feature
-										.getProperty("BL_PROPERTY_OWNERSHIP");
+										.getProperty("BL_PROPERT");
 								var var1 = event.feature
-										.getProperty("نشاط_الدور_الارضى_للمخطط");
+										.getProperty("BL_Activit");
 								var var2 = event.feature
-										.getProperty("نشاط_الدور_الارضى_للوضع_الراهن");
+										.getProperty("BL_Activ_1");
 								var var3 = event.feature
-										.getProperty("نوع_المخالفة");
+										.getProperty("BL_VIOLA_1");
 								var var4 = event.feature
-										.getProperty("عدد_الادوار_المخالفة");
+										.getProperty("BL_NO_FLOO");
 								var var5 = event.feature
-										.getProperty("تغير_نشاط_العقار_طبقا_للدور");
+										.getProperty("BL_CHANG_1");
 								var var6 = event.feature
-										.getProperty("استعمال_المخطط");
+										.getProperty("BL_LAND_US");
 								var var7 = event.feature
-										.getProperty("استعمال_الوضع_الراهن");
+										.getProperty("BL_LAND__1");
 								var var8 = event.feature
-										.getProperty("مخالفة_تغير_نشاط");
+										.getProperty("BL_VIOLA_2");
 								var var9 = event.feature
-										.getProperty("مساحة_النموذج");
+										.getProperty("BL_AREA_MO");
 								var var10 = event.feature
-										.getProperty("عدد_الادوار_طبقا_للمخطط");
+										.getProperty("BL_NO_FL_1");
 								var var11 = event.feature
-										.getProperty("عدد_الادوار_فى_الوضع_الراهن");
+										.getProperty("BL_NO_FL_2");
 								var var12 = event.feature
-										.getProperty("عدد_الوحدات_المخالفة");
+										.getProperty("BL_NO_VIOL");
 								var content = "<div style=\"text-align:center; overflow:hidden;\"><h1 style=\"background-color: #bfd6e4;color:#000;\">"
 										+ "بيانات المبنى"
 										+ "</h1><br><br>"
@@ -386,10 +490,10 @@
 			violations_layer
 					.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Violations.geojson');
 			violations_layer.setStyle(function(feature) {
-				var color = '#EECDF7';
+				var color = 'red';
 				return ({
 					fillColor : color,
-					strokeColor : "black",
+					strokeColor : color,
 					strokeWeight : 2
 				});
 			});
@@ -405,45 +509,47 @@
 									fillColor : 'green'
 								});
 								var EV_RELATED_BULDING_NO = event.feature
-										.getProperty('EV_RELATED_BULDING_NO');
+										.getProperty('TR_RELATED');
 								var EV_RELATED_BUDLING_BARCODE = event.feature
-										.getProperty('EV_RELATED_BUDLING_BARCODE');
+										.getProperty('TR_RELAT_1');
 								var EV_TRESPASSING_TYPE = event.feature
-										.getProperty("EV_TRESPASSING_TYPE");
+										.getProperty("TR_TRESPAS");
 								var EV_TRESPASSING_ACTIVY = event.feature
-										.getProperty("EV_TRESPASSING_ACTIVY");
+										.getProperty("TR_TRESP_1");
 								var EV_NO_OF_FLOOR = event.feature
-										.getProperty("EV_NO_OF_FLOOR");
+										.getProperty("TR_NO_OF_F");
 								var EV_ARCHITECTURAL_STYLE = event.feature
-										.getProperty("EV_ARCHITECTURAL_STYLE");
+										.getProperty("TR_ARCHITE");
 								var EV_STATUS = event.feature
-										.getProperty("EV_STATUS");
+										.getProperty("TR_STATUS");
 								var EV_COMMENTS = event.feature
-										.getProperty("EV_COMMENTS");
+										.getProperty("TR_COMMENT");
 								var EV_LAND_SIZE = event.feature
-										.getProperty("EV_LAND_SIZE");
+										.getProperty("TR_LAND_SI");
 								var EV_REPETED_SIZE = event.feature
-										.getProperty("EV_REPETED_SIZE");
+										.getProperty("TR_REPETED");
 								var ZONE_CODE = event.feature
-										.getProperty("ZONE_CODE");
+										.getProperty("TR_ZONE_CO");
 								var ID_TRESPASSING = event.feature
-										.getProperty("ID_TRESPASSING");
+										.getProperty("TR_ID_TRES");
 								var TRESPASSING_CODE = event.feature
-										.getProperty("TRESPASSING_CODE");
+										.getProperty("TR_TRESP_2");
 								var var13 = event.feature
-										.getProperty("تصنيف_التعدى");
+										.getProperty("TR_TRESP_3");
 								var var14 = event.feature
-										.getProperty("استعمال_الارض_فى_2017");
+										.getProperty("TR_LAND_US");
 								var var15 = event.feature
-										.getProperty("استعمال_الارض_الوضع_الراهن");
+										.getProperty("TR_LAND__1");
 								var var16 = event.feature
-										.getProperty("سنة_التعدى");
+										.getProperty("TR_TRESP_4");
 								var var17 = event.feature
-										.getProperty("استعمال_الارض_فى_المخطط");
+										.getProperty("TR_LAND__2");
 								var var18 = event.feature
-										.getProperty("تعديات_يجب_ازالتها");
+										.getProperty("TR_TRESP_5");
 								var var19 = event.feature
-										.getProperty("تقنين_الاوضاع");
+										.getProperty("TR_TRESP_6");
+								var var20 = event.feature
+										.getProperty("TR_PATH_PH");
 								var content = "<div style=\"text-align:center; overflow:hidden;\"><h1 style=\"background-color: #bfd6e4;color:#000;\">"
 										+ "بيانات المخالفة"
 										+ "</h1><br><br>"
@@ -487,7 +593,9 @@
 										+ var18
 										+ "</td><td class=\'rightcolumn\'>تعديات_يجب_ازالتها</td></tr><tr><td class=\'td\'>"
 										+ var19
-										+ "</td><td class=\'rightcolumn\'>تقنين_الاوضاع</td></tr></table>"
+										+ "</td><td class=\'rightcolumn\'>تقنين_الاوضاع</td></tr><tr><td class=\'td\'>"
+										+ var20
+										+ "</td><td class=\'rightcolumn\'>صورة توضح التعدي</td></tr></table>"
 										+ "</div>";
 								infowindow.setContent(content);
 								infowindow.setPosition(event.latLng);
@@ -539,7 +647,7 @@
 									fillColor : 'green'
 								});
 								var entrances_building_barcode = event.feature
-										.getProperty('باركود_العقار');
+										.getProperty('باركو');
 								var entrances_zone_code = event.feature
 										.getProperty('zone_code');
 								var content = "<div style=\"text-align:center; overflow:hidden;\"><h1 style=\"background-color: #bfd6e4;color:#000;\">"
@@ -581,7 +689,7 @@
 				map : map
 			});
 			roads_layer
-					.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Roads.geojson');
+					.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Center_Line_Roads.geojson');
 			roads_layer.setStyle(function(feature) {
 				return ({
 					fillColor : '#FFE584',
@@ -601,11 +709,11 @@
 									fillColor : 'green'
 								});
 								var roads_street_type = event.feature
-										.getProperty('نوع_الشارع');
+										.getProperty('Street_typ');
 								var roads_street_width = event.feature
-										.getProperty('عرض_الشارع');
+										.getProperty('Street_wid');
 								var roads_street_status = event.feature
-										.getProperty('حالة_الشارع');
+										.getProperty('Street_con');
 								var content = "<div style=\"text-align:center; overflow:hidden;\"><h1 style=\"background-color: #bfd6e4;color:#000;\">"
 										+ "بيانات الشارع"
 										+ "</h1><br><br>"
@@ -647,7 +755,7 @@
 				map : map
 			});
 			area_boundary_layer
-					.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Area_Boundary.geojson');
+					.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Area_Boundry.geojson');
 			area_boundary_layer.setStyle(function(feature) {
 				return ({
 					fillColor : 'transparent',
@@ -668,7 +776,7 @@
 				map : map
 			});
 			zone_boundary_layer
-					.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Zone_Boundary.geojson');
+					.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Zone_Boundry.geojson');
 			zone_boundary_layer.setStyle(function(feature) {
 				return ({
 					fillColor : 'transparent',
@@ -728,11 +836,11 @@
 				map : map
 			});
 			general_structure_1977_layer
-					.loadGeoJson('http://localhost:8080/10thDistirct_JSON/General_Structure_1977.geojson');
+					.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Arady_Mokhatat_1977.geojson');
 			general_structure_1977_layer.setStyle(function(feature) {
 				return ({
-					fillColor : '#BDE6F2',
-					strokeColor : 'black',
+					fillColor : '#FF00FF',
+					strokeColor : '#FF00FF',
 					strokeWeight : 2
 				});
 			});
@@ -749,7 +857,7 @@
 											fillColor : 'green'
 										});
 								var general_structure_1977_usage = event.feature
-										.getProperty('استعمال');
+										.getProperty('LAND_USE');
 								var general_structure_1977_zone_code = event.feature
 										.getProperty('ZONE_CODE');
 								var content = "<div style=\"text-align:center; overflow:hidden;\"><h1 style=\"background-color: #bfd6e4;color:#000;\">"
@@ -793,11 +901,11 @@
 				map : map
 			});
 			lands_layer
-					.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Lands.geojson');
+					.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Arady.geojson');
 			lands_layer.setStyle(function(feature) {
 				return ({
-					fillColor : '#C1F5D8',
-					strokeColor : 'black',
+					fillColor : '#A52A2A',
+					strokeColor : '#A52A2A',
 					strokeWeight : 2
 				});
 			});
@@ -812,9 +920,9 @@
 									strokeColor : 'red',
 									fillColor : 'green'
 								});
-								var lands_usage_acc_structure = event.feature.getProperty('استعمال_الارض_فى_المخطط');
-								var lands_usage_before_2017 = event.feature.getProperty('استعمال_الارض_قبل_2017');
-								var lands_usage_current = event.feature.getProperty('استعمال_الارض_فى_الوضع_الراهن');
+								var lands_usage_acc_structure = event.feature.getProperty('LAND_USE_P');
+								var lands_usage_before_2017 = event.feature.getProperty('LAND_USE_2');
+								var lands_usage_current = event.feature.getProperty('LAND_USE_C');
 								var lands_zone_code = event.feature.getProperty('ZONE_CODE');
 								var content = "<div style=\"text-align:center; overflow:hidden;\"><h1 style=\"background-color: #bfd6e4;color:#000;\">"
 										+ "بيانات الأرض"
@@ -850,6 +958,69 @@
 			lands_layer.setMap(null);
 		}
 	}
+	
+	//load vector layer (Procad Land Marks)
+	function loadprocadlandmarks() {
+		var checkbox = document.getElementById('vct_procadlandmarks');
+		if (checkbox.checked == true) {
+			lands_layer = new google.maps.Data({
+				map : map
+			});
+			lands_layer
+					.loadGeoJson('http://localhost:8080/10thDistirct_JSON/Land_Marks.geojson');
+			lands_layer.setStyle(function(feature) {
+				return ({
+					fillColor : '#C1F5D8',
+					strokeColor : 'black',
+					strokeWeight : 2
+				});
+			});
+
+			lands_layer
+					.addListener(
+							'click',
+							function(event) {
+								lands_layer.revertStyle();
+								lands_layer.overrideStyle(event.feature, {
+									strokeWeight : 4,
+									strokeColor : 'red',
+									fillColor : 'green'
+								});
+								var land_mark_name = event.feature.getProperty('name');
+								var land_mark_land_use = event.feature.getProperty('LAND_USE');
+								var land_mark_location = event.feature.getProperty('LOCATION');
+								var content = "<div style=\"text-align:center; overflow:hidden;\"><h1 style=\"background-color: #bfd6e4;color:#000;\">"
+										+ "بيانات المعلم"
+										+ "</h1><br><br>"
+										+ "<table class=\"outertable\" style=\"dir: rtl;\"><tr><td class=\'td\'>"
+										+ land_mark_name
+										+ "</td><td class=\'rightcolumn\'>اسم المعلم</td></tr><tr><td class=\'td\'>"
+										+ land_mark_land_use
+										+ "</td><td class=\'rightcolumn\'>استخدام الأرض</td></tr><tr><td class=\'td\'>"
+										+ land_mark_location
+										+ "</td><td class=\'rightcolumn\'>الموقع</td></tr></table>"
+										+ "</div>";
+								infowindow.setContent(content);
+								infowindow.setPosition(event.latLng);
+								infowindow.open(map);
+							});
+
+			lands_layer.addListener('mouseover', function(event) {
+				lands_layer.revertStyle();
+				lands_layer.overrideStyle(event.feature, {
+					strokeWeight : 4,
+					fillColor : 'yellow',
+					strokeColor : 'yellow'
+				});
+			});
+
+			lands_layer.addListener('mouseout', function(event) {
+				lands_layer.revertStyle();
+			});
+		} else {
+			lands_layer.setMap(null);
+		}
+	}
 </script>
 <title>توثيق الحي العاشر - مدينة نصر</title>
 </head>
@@ -860,7 +1031,7 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px; width: 100%;">
+	<div class="container" style="height: 606px; width: 100%;">
 
 		<div id="procad_data_panel">
 			<h3 style="color: Blue;">Procad Data</h3>
@@ -887,16 +1058,37 @@
 				id="vct_procadgeneralstructure" style="float: left;" /> <br /> <b
 				style="float: right; color: black;">الأراضي</b><input
 				type="checkbox" onclick="loadprocadlands();" id="vct_procadlands"
+				style="float: left;" /> <br /><b
+				style="float: right; color: black;">المعالم</b><input
+				type="checkbox" onclick="loadprocadlandmarks();" id="vct_procadlandmarks"
 				style="float: left;" /> <br />
 		</div>
 		<div id="narss_data_panel">
 			<h3 style="color: Blue;">NARSS Data</h3>
-			<b style="float: right; color: black;">Pleiades 2017</b><input
-				type="checkbox" onclick="loadrasterpleiades2017();"
-				id="rst_pleiades_2017" style="float: left;" /> <br /> <b
-				style="float: right; color: black;">Pleiades 2019</b><input
-				type="checkbox" onclick="loadrasterpleiades2019();"
-				id="rst_pleiades_2019" style="float: left;" /> <br /> <b
+			<b style="float: right; color: black;">Fused 2017</b><input
+				type="checkbox" onclick="loadrasterfused2017();"
+				id="rst_fused_2017" style="float: left;" /> <br /> <b
+				style="float: right; color: black;">Fused 2019</b><input
+				type="checkbox" onclick="loadrasterfused2019();"
+				id="rst_fused_2019" style="float: left;" /> <br /> <b
+				style="float: right; color: black;">Geometric Corrected 2017</b><input
+				type="checkbox" onclick="loadrastergeometriccorrected2017();"
+				id="rst_geometriccorrected_2017" style="float: left;" /> <br /><b
+				style="float: right; color: black;">Geometric Corrected 2019</b><input
+				type="checkbox" onclick="loadrastergeometriccorrected2019();"
+				id="rst_geometriccorrected_2019" style="float: left;" /> <br /><b
+				style="float: right; color: black;">Positive Urban Changes</b><input
+				type="checkbox" onclick="loadrasterpositiveurbanchanges();"
+				id="rst_positiveurbanchanges" style="float: left;" /> <br /><b
+				style="float: right; color: black;">Negative Urban Changes</b><input
+				type="checkbox" onclick="loadrasternegativeurbanchanges();"
+				id="rst_negativeurbanchanges" style="float: left;" /> <br /><b
+				style="float: right; color: black;">Positive Non-Urban Changes</b><input
+				type="checkbox" onclick="loadrasterpositivenonurbanchanges();"
+				id="rst_positivenonurbanchanges" style="float: left;" /> <br /><b
+				style="float: right; color: black;">Negative Non-Urban Changes</b><input
+				type="checkbox" onclick="loadrasternegativenonurbanchanges();"
+				id="rst_negativenonurbanchanges" style="float: left;" /> <br /><b
 				style="float: right; color: black;">Urban 2017 (Vector)</b><input
 				type="checkbox" onclick="loadvectorurban2017();" id="vct_urban_2017"
 				style="float: left;" /> <br /> <b

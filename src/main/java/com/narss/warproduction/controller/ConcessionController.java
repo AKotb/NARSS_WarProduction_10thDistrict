@@ -8,7 +8,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -33,11 +32,26 @@ public class ConcessionController {
 		mv.addObject("msg", concessions);
 		return mv;
 	}
+	
+	@GetMapping("/getconcession")
+	public ModelAndView getConcession(@RequestParam("concs") String coConcessionSerial) {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("update_concession");
+		double dcoConcessionSerial=Double.parseDouble(coConcessionSerial); 
+		Concession concessionObj = concs.getConcession(dcoConcessionSerial);
+		mv.addObject("concession", concessionObj);
+		return mv;
+	}
 
 	@GetMapping(value = "/addconcession")
 	public String addConcession(Concession concession) {
 		concs.addConcession(concession);
-
+		return "redirect:/conc_list";
+	}
+	
+	@GetMapping(value = "/updateconcession")
+	public String updateConcession(Concession concession) {
+		concs.updateConcession(concession);
 		return "redirect:/conc_list";
 	}
 

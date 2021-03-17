@@ -58,7 +58,12 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title> عناصر ربط البيانات </title>
+<title> تعديل بيانات التنازل </title>
+<script>
+	function cancel() {
+		window.history.back();
+	}
+</script>
 </head>
 <body>
 
@@ -69,53 +74,45 @@
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 606px;">
 		<div align="center">
-			<table id="tables" border="1" cellpadding="15"
-				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
-				<caption>
-					<h2>عرض عناصر ربط البيانات المتاحة</h2>
-				</caption>
-				<tr>
-					<th>اعدادات</th>
-					<th>كود المبنى/العقار</th>
-					<th>كود عنصر ربط البيانات</th>
-					<th>رقم الشقة/الوحدة</th>
-					<th>رقم العقار/المبنى</th>
-					<th>كود المربع الفرعي</th>
-					<th>كود المربع</th>
-					<th>كود المنطقة</th>
-					<th>كود الحي</th>
-					<th>كود المدينة / المحافظة</th>
-				</tr>
-				<c:forEach var="key" items="${msg}">
-					<c:url var="deletelink" value="deletekey">
-						<c:param name="ka" value="${key.keyAll}"></c:param>
-					</c:url>
-					<c:url var="getkeydatalink" value="getkey">
-						<c:param name="ka" value="${key.keyAll}"></c:param>
-					</c:url>
+			<form method="GET" action="updateconcession">
+				<table
+					style="align: center; background-color: #F1E6E6; color: #000000;">
+					<caption>
+						<h2> تعديل بيانات التنازل </h2>
+					</caption>
 					<tr>
-						<td style="text-align: center"><a href="${deletelink}">حذف</a>&nbsp;&nbsp;&nbsp;<a href="${getkeydatalink}">تعديل</a></td>
-						<td style="text-align: center"><c:out
-								value="${key.keyBuildingKey}" /></td>
-						<td style="text-align: center"><c:out value="${key.keyAll}" /></td>
-						<td style="text-align: center"><c:out
-								value="${key.keyAppartementNo}" /></td>
-						<td style="text-align: center"><c:out
-								value="${key.keyBuildingNo}" /></td>
-						<td style="text-align: center"><c:out
-								value="${key.keySubZoneCode}" /></td>
-						<td style="text-align: center"><c:out
-								value="${key.keyZoneCode}" /></td>
-						<td style="text-align: center"><c:out
-								value="${key.keyRegionCode}" /></td>
-						<td style="text-align: center"><c:out
-								value="${key.keyAreaCode}" /></td>
-						<td style="text-align: center"><c:out
-								value="${key.keyCityCode}" /></td>
+						<td><input dir="rtl" type="text" name="coUnitBarcode" value="${concession.coUnitBarcode}"></td>
+						<td>: كود الوحدة/الشقة</td>
 					</tr>
-				</c:forEach>
-			</table>
-			<c:url var="back_home" value="k_backtoindex" />
+					<tr>
+						<td><input dir="rtl" type="text" name="coConcessionSerial" value="${concession.coConcessionSerial}" readonly="readonly"></td>
+						<td>: رقم مسلسل التنازل</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="coConcessionFromName" value="${concession.coConcessionFromName}"></td>
+						<td>: اسم المتنازل</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="coConcessionFromId" value="${concession.coConcessionFromId}"></td>
+						<td>: رقم بطاقة المتنازل</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="coConcessionToName" value="${concession.coConcessionToName}"></td>
+						<td>: اسم المتنازل إليه</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="coConcessionToId" value="${concession.coConcessionToId}"></td>
+						<td>: رقم بطاقة المتنازل إليه</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="coConcessionDate" value="${concession.coConcessionDate}"></td>
+						<td>: تاريخ التنازل</td>
+					</tr>
+				</table>
+				<input type="submit" value=" حفظ ">
+				<input type="button" value=" إلغاء " onclick="cancel()">
+			</form>
+			<c:url var="back_home" value="conc_backtoindex" />
 			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>

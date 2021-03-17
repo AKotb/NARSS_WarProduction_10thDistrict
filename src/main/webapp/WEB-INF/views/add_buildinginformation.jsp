@@ -59,6 +59,11 @@
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
 <title> اضافة مبنى / عقار جديد </title>
+<script>
+	function cancel() {
+		window.history.back();
+	}
+</script>
 </head>
 <body>
 
@@ -67,7 +72,7 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px;">
+	<div class="container" style="height: 650px;">
 		<div align="center">
 			<form method="GET" action="addbuildinginformation">
 				<table
@@ -76,51 +81,51 @@
 						<h2> (1) اضافة مبنى / عقار جديد </h2>
 					</caption>
 					<tr>
-						<td><input type="text" name="biBuildingBarcode"></td>
+						<td><input dir="rtl" type="text" name="biBuildingBarcode"></td>
 						<td>: ادخل كود المبنى / العقار </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biBuildingNo"></td>
+						<td><input dir="rtl" type="text" name="biBuildingNo"></td>
 						<td>: ادخل رقم المبنى / العقار طبقاً للمخطط </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biBuidlingCurrentNo"></td>
+						<td><input dir="rtl" type="text" name="biBuidlingCurrentNo"></td>
 						<td>: ادخل رقم المبنى / العقار طبقاً للوضع الراهن </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biBuildingModel"></td>
+						<td><input dir="rtl" type="text" name="biBuildingModel"></td>
 						<td>: ادخل نموذج العقار / المبنى </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biNumberOfFloors"></td>
+						<td><input dir="rtl" type="text" name="biNumberOfFloors"></td>
 						<td>: ادخل عدد الأدوار / الطوابق </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biNumberOfFlatsPerFloor"></td>
+						<td><input dir="rtl" type="text" name="biNumberOfFlatsPerFloor"></td>
 						<td>: ادخل عدد الوحدات في كل طابق </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biNumberOfUnits"></td>
+						<td><input dir="rtl" type="text" name="biNumberOfUnits"></td>
 						<td>: ادخل اجمالي عدد الوحدات </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biUsage"></td>
+						<td><input dir="rtl" type="text" name="biUsage"></td>
 						<td>:   ادخل الغرض من العقار </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biArchitecturalStyle"></td>
+						<td><input dir="rtl" type="text" name="biArchitecturalStyle"></td>
 						<td>: ادخل الأسلوب الإنشائي </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biStatus"></td>
+						<td><input dir="rtl" type="text" name="biStatus"></td>
 						<td>: ادخل حالة العقار </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biViolations"></td>
+						<td><input dir="rtl" type="text" name="biViolations"></td>
 						<td>: ادخل المخالفات </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biTrespassingBuilding"></td>
+						<td><input dir="rtl" type="text" name="biTrespassingBuilding"></td>
 						<td>: ادخل التعديات على الأرض بمبنى </td>
 					</tr>
 				</table>
@@ -130,55 +135,56 @@
 						<h2> (2) اضافة مبنى / عقار جديد </h2>
 					</caption>
 					<tr>
-						<td><input type="text" name="biTrespassingFence"></td>
+						<td><input dir="rtl" type="text" name="biTrespassingFence"></td>
 						<td>: ادخل التعديات على الأرض بسور </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biTrespassingWorks"></td>
+						<td><input dir="rtl" type="text" name="biTrespassingWorks"></td>
 						<td>: ادخل التعديات على الأرض بإشغالات </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biChangingActivity"></td>
+						<td><input dir="rtl" type="text" name="biChangingActivity"></td>
 						<td>: ادخل تغيير النشاط </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biStreetName"></td>
+						<td><input dir="rtl" type="text" name="biStreetName"></td>
 						<td>: ادخل اسم الشارع </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biPropertyOwnership"></td>
+						<td><input dir="rtl" type="text" name="biPropertyOwnership"></td>
 						<td>: ادخل ملكية العقار </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biCityCode"></td>
+						<td><input dir="rtl" type="text" name="biCityCode"></td>
 						<td>: ادخل كود المدينة / المحافظة </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biAreaCode"></td>
+						<td><input dir="rtl" type="text" name="biAreaCode"></td>
 						<td>: ادخل كود الحي</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biRegionCode"></td>
+						<td><input dir="rtl" type="text" name="biRegionCode"></td>
 						<td>: ادخل كود المنطقة </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biZoneCode"></td>
+						<td><input dir="rtl" type="text" name="biZoneCode"></td>
 						<td>: ادخل كود المربع الرئيسي </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biSubZoneCode"></td>
+						<td><input dir="rtl" type="text" name="biSubZoneCode"></td>
 						<td>: ادخل كود المربع الفرعي </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biLastContractDate"></td>
+						<td><input dir="rtl" type="text" name="biLastContractDate"></td>
 						<td>: ادخل تاريخ اخر تعاقد </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="biChangeActivityDate"></td>
+						<td><input dir="rtl" type="text" name="biChangeActivityDate"></td>
 						<td>: ادخل تاريخ تغيير النشاط </td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">
+				<input type="button" value=" إلغاء " onclick="cancel()">
 			</form>
 			<c:url var="back_home" value="bi_backtoindex" />
 			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>

@@ -67,9 +67,9 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px;">
+	<div class="container" style="height: 606px;">
 		<div align="center">
-			<table border="1" cellpadding="15"
+			<table id="tables" border="1" cellpadding="15"
 				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
 				<caption>
 					<h2>عرض التوكيلات المتاحة</h2>
@@ -90,8 +90,11 @@
 					<c:url var="deletelink" value="deleteauthorization">
 						<c:param name="madn" value="${authorization.maDelegationNo}"></c:param>
 					</c:url>
+					<c:url var="getauthorizationdatalink" value="getauthorization">
+						<c:param name="madn" value="${authorization.maDelegationNo}"></c:param>
+					</c:url>
 					<tr>
-						<td style="text-align: center"><a href="${deletelink}">حذف</a></td>
+						<td style="text-align: center"><a href="${deletelink}">حذف</a>&nbsp;&nbsp;&nbsp;<a href="${getauthorizationdatalink}">تعديل</a></td>
 						<td style="text-align: center"><c:out
 								value="${authorization.maDelegateToId}" /></td>
 						<td style="text-align: center"><c:out

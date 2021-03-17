@@ -8,7 +8,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -33,10 +32,25 @@ public class OwnerInformationController {
 		mv.addObject("msg", ownersInformation);
 		return mv;
 	}
+	
+	@GetMapping("/getownerinformation")
+	public ModelAndView getOwnerInformation(@RequestParam("oios") String oiOwnerSequence) {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("update_ownerinformation");
+		OwnerInformation ownersInformationObj = ois.getOwnerInformation(oiOwnerSequence);
+		mv.addObject("ownerinformation", ownersInformationObj);
+		return mv;
+	}
 
 	@GetMapping(value = "/addownerinformation")
 	public String addOwnerInformation(OwnerInformation ownerInformation) {
 		ois.addOwnerInformation(ownerInformation);
+		return "redirect:/oi_list";
+	}
+	
+	@GetMapping(value = "/updateownerinformation")
+	public String updateOwnerInformation(OwnerInformation ownerInformation) {
+		ois.updateOwnerInformation(ownerInformation);
 		return "redirect:/oi_list";
 	}
 

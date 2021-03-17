@@ -68,7 +68,7 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px;">
+	<div class="container" style="height: 606px;">
 		<h2 style="text-align: center;"> مرحباً بكم  في منظومة  اعدادات التوكيلات  </h2>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">
@@ -81,6 +81,9 @@
 			<h2>
 				<a href="${show_authorizations}"> عرض التوكيلات المتاحة </a>
 			</h2>
+			<br />
+			<c:url var="back_home" value="/dashboard.jsp" />
+			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
 	<!-- Content ends here ================================================================================================= -->

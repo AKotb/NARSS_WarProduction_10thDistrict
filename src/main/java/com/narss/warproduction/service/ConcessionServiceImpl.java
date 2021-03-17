@@ -26,10 +26,21 @@ public class ConcessionServiceImpl implements ConcessionService {
 	public List<Concession> getAllConcessions() {
 		return concessionDAO.getAllConcessions();
 	}
+    
+    @Transactional
+	public Concession getConcession(double coConcessionSerial) {
+		return concessionDAO.getConcession(coConcessionSerial);
+	}
 
     @Transactional
 	public boolean addConcession(Concession concession) {
     	concessionDAO.addConcession(concession);
+		return true;
+	}
+    
+    @Transactional
+	public boolean updateConcession(Concession concession) {
+    	concessionDAO.updateConcession(concession);
 		return true;
 	}
 

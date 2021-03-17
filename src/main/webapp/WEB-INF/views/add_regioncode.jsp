@@ -59,6 +59,11 @@
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
 <title> اضافة منطقة جديدة </title>
+<script>
+	function cancel() {
+		window.history.back();
+	}
+</script>
 </head>
 <body>
 
@@ -67,7 +72,7 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px;">
+	<div class="container" style="height: 606px;">
 		<div align="center">
 			<form method="GET" action="addregioncode">
 				<table
@@ -76,27 +81,28 @@
 						<h2> اضافة منطقة جديدة </h2>
 					</caption>
 					<tr>
-						<td><input type="text" name="rcCityCode"></td>
+						<td><input dir="rtl" type="text" name="rcCityCode"></td>
 						<td>: ادخل كود المدينة / المحافظة </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="rcAreaCode"></td>
+						<td><input dir="rtl" type="text" name="rcAreaCode"></td>
 						<td>: ادخل كود الحي </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="rcRegionCode"></td>
+						<td><input dir="rtl" type="text" name="rcRegionCode"></td>
 						<td>: ادخل كود المنطقة </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="rcRegionName"></td>
+						<td><input dir="rtl" type="text" name="rcRegionName"></td>
 						<td>: ادخل اسم المنطقة </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="rcRegionMap"></td>
+						<td><input dir="rtl" type="text" name="rcRegionMap"></td>
 						<td>: ادخل كود الخريطة </td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">
+				<input type="button" value=" إلغاء " onclick="cancel()">
 			</form>
 			<c:url var="back_home" value="rc_backtoindex" />
 			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>

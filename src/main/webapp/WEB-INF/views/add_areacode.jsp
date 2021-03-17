@@ -59,6 +59,11 @@
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
 <title> اضافة حي جديد </title>
+<script>
+	function cancel() {
+		window.history.back();
+	}
+</script>
 </head>
 <body>
 
@@ -67,7 +72,7 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px;">
+	<div class="container" style="height: 606px;">
 		<div align="center">
 			<form method="GET" action="addareacode">
 				<table
@@ -76,23 +81,24 @@
 						<h2> اضافة حي جديد </h2>
 					</caption>
 					<tr>
-						<td><input type="text" name="arCityCode"></td>
+						<td><input dir="rtl" type="text" name="arCityCode"></td>
 						<td>: ادخل كود المدينة / المحافظة </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="arAreaCode"></td>
+						<td><input dir="rtl" type="text" name="arAreaCode"></td>
 						<td>: ادخل كود الحي </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="arAreaName"></td>
+						<td><input dir="rtl" type="text" name="arAreaName"></td>
 						<td>: ادخل اسم الحي </td>
 					</tr>
 					<tr>
-						<td><input type="text" name="arAreaMap"></td>
+						<td><input dir="rtl" type="text" name="arAreaMap"></td>
 						<td>: ادخل كود الخريطة </td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">
+				<input type="button" value=" إلغاء " onclick="cancel()">
 			</form>
 			<c:url var="back_home" value="ar_backtoindex" />
 			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>

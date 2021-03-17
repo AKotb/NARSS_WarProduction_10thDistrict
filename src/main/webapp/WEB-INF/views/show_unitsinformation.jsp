@@ -67,9 +67,9 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px; width:100%;">
+	<div class="container" style="height: 606px; width:100%;">
 		<div align="center">
-			<table border="1" cellpadding="15"
+			<table id="tables" border="1" cellpadding="15"
 				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
 				<caption>
 					<h2> عرض الوحدات / الشقق المتاحة </h2>
@@ -105,8 +105,11 @@
 					<c:url var="deletelink" value="deleteunitinformation">
 						<c:param name="fltb" value="${unitInformation.fltBarcode}"></c:param>
 					</c:url>
+					<c:url var="getunitinformationdatalink" value="getunitinformation">
+						<c:param name="fltb" value="${unitInformation.fltBarcode}"></c:param>
+					</c:url>
 					<tr>
-						<td style="text-align: center"><a href="${deletelink}">حذف</a></td>
+						<td style="text-align: center"><a href="${deletelink}">حذف</a>&nbsp;&nbsp;&nbsp;<a href="${getunitinformationdatalink}">تعديل</a></td>
 						<td style="text-align: center"><c:out value="${unitInformation.fltTrespassingBuidlingSize}" /></td>
 						<td style="text-align: center"><c:out value="${unitInformation.fltTrespassingFenceSize}" /></td>
 						<td style="text-align: center"><c:out value="${unitInformation.fltCurrentOwnerID}" /></td>

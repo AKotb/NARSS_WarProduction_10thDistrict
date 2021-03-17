@@ -26,10 +26,21 @@ public class ExternalViolationServiceImpl implements ExternalViolationService {
 	public List<ExternalViolation> getAllExternalViolations() {
 		return externalViolationDAO.getAllExternalViolations();
 	}
+    
+    @Transactional
+	public ExternalViolation getExternalViolation(String evNewViolationNo) {
+		return externalViolationDAO.getExternalViolation(evNewViolationNo);
+	}
 
     @Transactional
 	public boolean addExternalViolation(ExternalViolation externalViolation) {
     	externalViolationDAO.addExternalViolation(externalViolation);
+		return true;
+	}
+    
+    @Transactional
+	public boolean updateExternalViolation(ExternalViolation externalViolation) {
+    	externalViolationDAO.updateExternalViolation(externalViolation);
 		return true;
 	}
 

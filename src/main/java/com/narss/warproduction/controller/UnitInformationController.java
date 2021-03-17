@@ -8,7 +8,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -33,10 +32,25 @@ public class UnitInformationController {
 		mv.addObject("msg", unitsInformation);
 		return mv;
 	}
+	
+	@GetMapping("/getunitinformation")
+	public ModelAndView getUnitInformation(@RequestParam("fltb") String fltBarcode) {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("update_unitinformation");
+		UnitInformation unitInformationObj = uis.getUnitInformation(fltBarcode);
+		mv.addObject("unitinformation", unitInformationObj);
+		return mv;
+	}
 
 	@GetMapping(value = "/addunitinformation")
 	public String addUnitInformation(UnitInformation unitInformation) {
 		uis.addUnitInformation(unitInformation);
+		return "redirect:/ui_list";
+	}
+	
+	@GetMapping(value = "/updateunitinformation")
+	public String updateUnitInformation(UnitInformation unitInformation) {
+		uis.updateUnitInformation(unitInformation);
 		return "redirect:/ui_list";
 	}
 

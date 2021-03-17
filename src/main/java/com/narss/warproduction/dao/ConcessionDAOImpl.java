@@ -33,12 +33,32 @@ public class ConcessionDAOImpl implements ConcessionDAO {
 		} finally {
 			return concessions;
 		}
-
+	}
+	
+	@SuppressWarnings({ "unchecked", "finally" })
+	public Concession getConcession(double coConcessionSerial) {
+		List<Concession> concessions = null;
+		try {
+			Session session = factory.getCurrentSession();
+			Query q = session.createQuery("FROM Concession WHERE coConcessionSerial = :coConcessionSerial");
+			q.setParameter("coConcessionSerial", coConcessionSerial);
+			concessions = q.getResultList();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			return concessions.get(0);
+		}
 	}
 
 	public boolean addConcession(Concession concession) {
 		Session session = factory.getCurrentSession();
 		session.save(concession);
+		return true;
+	}
+	
+	public boolean updateConcession(Concession concession) {
+		Session session = factory.getCurrentSession();
+		session.saveOrUpdate(concession);
 		return true;
 	}
 

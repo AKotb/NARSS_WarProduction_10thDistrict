@@ -26,10 +26,21 @@ public class UnitInformationServiceImpl implements UnitInformationService {
 	public List<UnitInformation> getAllUnitsInformation() {
 		return unitInformationDAO.getAllUnitsInformation();
 	}
+    
+    @Transactional
+	public UnitInformation getUnitInformation(String fltBarcode) {
+		return unitInformationDAO.getUnitInformation(fltBarcode);
+	}
 
     @Transactional
 	public boolean addUnitInformation(UnitInformation unitInformation) {
     	unitInformationDAO.addUnitInformation(unitInformation);
+		return true;
+	}
+    
+    @Transactional
+	public boolean updateUnitInformation(UnitInformation unitInformation) {
+    	unitInformationDAO.updateUnitInformation(unitInformation);
 		return true;
 	}
 

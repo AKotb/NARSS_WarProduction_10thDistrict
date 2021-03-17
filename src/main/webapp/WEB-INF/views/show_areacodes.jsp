@@ -67,7 +67,7 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px;">
+	<div class="container" style="height: 606px;">
 		<div align="center">
 			<table id="tables" border="1" cellpadding="15"
 				style="color: #000000; border-spacing: 20px; border-collapse: unset;">

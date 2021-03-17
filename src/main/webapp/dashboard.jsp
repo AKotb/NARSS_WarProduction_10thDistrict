@@ -67,7 +67,7 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px;">
+	<div class="container" style="height: 606px;">
 		<h2 style="text-align: center;">مرحباً بك في لوحة إعدادات النظام</h2>
 		<div
 			style="text-align: center; margin-left: 30%; background-color: #F1E6E6; width: 40%">

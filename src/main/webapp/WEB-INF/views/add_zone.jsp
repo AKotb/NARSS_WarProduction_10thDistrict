@@ -59,6 +59,11 @@
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
 <title>اضافة مربع جديد</title>
+<script>
+	function cancel() {
+		window.history.back();
+	}
+</script>
 </head>
 <body>
 
@@ -67,7 +72,7 @@
 	<!-- Header ends here ================================================================================================== -->
 
 	<!-- Content =========================================================================================================== -->
-	<div class="container" style="height: 779px;">
+	<div class="container" style="height: 606px;">
 		<div align="center">
 			<form method="GET" action="addzone">
 				<table
@@ -76,27 +81,28 @@
 						<h2>اضافة مربع جديد</h2>
 					</caption>
 					<tr>
-						<td><input type="text" name="zonCity"></td>
+						<td><input dir="rtl" type="text" name="zonCity"></td>
 						<td>: ادخل كود المدينة / المحافظة</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="areaCode"></td>
+						<td><input dir="rtl" type="text" name="areaCode"></td>
 						<td>: ادخل كود الحي</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="regionCode"></td>
+						<td><input dir="rtl" type="text" name="regionCode"></td>
 						<td>: ادخل كود المنطقة</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="zoneCode"></td>
+						<td><input dir="rtl" type="text" name="zoneCode"></td>
 						<td>: ادخل كود المربع</td>
 					</tr>
 					<tr>
-						<td><input type="text" name="zoneMap"></td>
+						<td><input dir="rtl" type="text" name="zoneMap"></td>
 						<td>: ادخل كود الخريطة</td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">
+				<input type="button" value=" إلغاء " onclick="cancel()">
 			</form>
 			<c:url var="back_home" value="z_backtoindex" />
 			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>

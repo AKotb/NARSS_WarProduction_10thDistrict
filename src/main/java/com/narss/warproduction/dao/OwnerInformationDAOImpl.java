@@ -33,12 +33,32 @@ public class OwnerInformationDAOImpl implements OwnerInformationDAO {
 		} finally {
 			return ownersInformation;
 		}
-
+	}
+	
+	@SuppressWarnings({ "unchecked", "finally" })
+	public OwnerInformation getOwnerInformation(String oiOwnerSequence) {
+		List<OwnerInformation> ownersInformation = null;
+		try {
+			Session session = factory.getCurrentSession();
+			Query q = session.createQuery("FROM OwnerInformation WHERE oiOwnerSequence = :oiOwnerSequence");
+			q.setParameter("oiOwnerSequence", oiOwnerSequence);
+			ownersInformation = q.getResultList();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			return ownersInformation.get(0);
+		}
 	}
 
 	public boolean addOwnerInformation(OwnerInformation ownerInformation) {
 		Session session = factory.getCurrentSession();
 		session.save(ownerInformation);
+		return true;
+	}
+	
+	public boolean updateOwnerInformation(OwnerInformation ownerInformation) {
+		Session session = factory.getCurrentSession();
+		session.saveOrUpdate(ownerInformation);
 		return true;
 	}
 

@@ -26,10 +26,21 @@ public class AuthorizationServiceImpl implements AuthorizationService {
 	public List<Authorization> getAllAuthorizations() {
 		return authorizationDAO.getAllAuthorizations();
 	}
+    
+    @Transactional
+   	public Authorization getAuthorization(String maDelegationNo) {
+   		return authorizationDAO.getAuthorization(maDelegationNo);
+   	}
 
     @Transactional
 	public boolean addAuthorization(Authorization authorization) {
     	authorizationDAO.addAuthorization(authorization);
+		return true;
+	}
+    
+    @Transactional
+	public boolean updateAuthorization(Authorization authorization) {
+    	authorizationDAO.updateAuthorization(authorization);
 		return true;
 	}
 

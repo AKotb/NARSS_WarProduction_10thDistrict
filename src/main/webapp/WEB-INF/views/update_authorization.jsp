@@ -58,7 +58,12 @@
 	type="text/javascript"></script>
 <script type="text/javascript"
 	src="resources/js/modernizr.custom.29473.js"></script>
-<title> عناصر ربط البيانات </title>
+<title> تعديل بيانات التوكيل </title>
+<script>
+	function cancel() {
+		window.history.back();
+	}
+</script>
 </head>
 <body>
 
@@ -69,53 +74,53 @@
 	<!-- Content =========================================================================================================== -->
 	<div class="container" style="height: 606px;">
 		<div align="center">
-			<table id="tables" border="1" cellpadding="15"
-				style="color: #000000; border-spacing: 20px; border-collapse: unset;">
-				<caption>
-					<h2>عرض عناصر ربط البيانات المتاحة</h2>
-				</caption>
-				<tr>
-					<th>اعدادات</th>
-					<th>كود المبنى/العقار</th>
-					<th>كود عنصر ربط البيانات</th>
-					<th>رقم الشقة/الوحدة</th>
-					<th>رقم العقار/المبنى</th>
-					<th>كود المربع الفرعي</th>
-					<th>كود المربع</th>
-					<th>كود المنطقة</th>
-					<th>كود الحي</th>
-					<th>كود المدينة / المحافظة</th>
-				</tr>
-				<c:forEach var="key" items="${msg}">
-					<c:url var="deletelink" value="deletekey">
-						<c:param name="ka" value="${key.keyAll}"></c:param>
-					</c:url>
-					<c:url var="getkeydatalink" value="getkey">
-						<c:param name="ka" value="${key.keyAll}"></c:param>
-					</c:url>
+			<form method="GET" action="updateauthorization">
+				<table
+					style="align: center; background-color: #F1E6E6; color: #000000;">
+					<caption>
+						<h2> تعديل بيانات التوكيل </h2>
+					</caption>
 					<tr>
-						<td style="text-align: center"><a href="${deletelink}">حذف</a>&nbsp;&nbsp;&nbsp;<a href="${getkeydatalink}">تعديل</a></td>
-						<td style="text-align: center"><c:out
-								value="${key.keyBuildingKey}" /></td>
-						<td style="text-align: center"><c:out value="${key.keyAll}" /></td>
-						<td style="text-align: center"><c:out
-								value="${key.keyAppartementNo}" /></td>
-						<td style="text-align: center"><c:out
-								value="${key.keyBuildingNo}" /></td>
-						<td style="text-align: center"><c:out
-								value="${key.keySubZoneCode}" /></td>
-						<td style="text-align: center"><c:out
-								value="${key.keyZoneCode}" /></td>
-						<td style="text-align: center"><c:out
-								value="${key.keyRegionCode}" /></td>
-						<td style="text-align: center"><c:out
-								value="${key.keyAreaCode}" /></td>
-						<td style="text-align: center"><c:out
-								value="${key.keyCityCode}" /></td>
+						<td><input dir="rtl" type="text" name="maUnitBarcode" value="${authorization.maUnitBarcode}"></td>
+						<td>: كود الوحدة/الشقة</td>
 					</tr>
-				</c:forEach>
-			</table>
-			<c:url var="back_home" value="k_backtoindex" />
+					<tr>
+						<td><input dir="rtl" type="text" name="maDelegationNo" value="${authorization.maDelegationNo}" readonly="readonly"></td>
+						<td>: رقم التوكيل</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="maDelegationDate" value="${authorization.maDelegationDate}"></td>
+						<td>: تاريخ التوكيل</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="maDelegationIssuedPlace" value="${authorization.maDelegationIssuedPlace}"></td>
+						<td>: جهة اصدار التوكيل</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="maDelegationType" value="${authorization.maDelegationType}"></td>
+						<td>: نوع التوكيل</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="maDelegatorName" value="${authorization.maDelegatorName}"></td>
+						<td>: اسم الموكل</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="maDelegatorId" value="${authorization.maDelegatorId}"></td>
+						<td>: رقم بطاقة الموكل</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="maDelegateToName" value="${authorization.maDelegateToName}"></td>
+						<td>: اسم الموكل إليه</td>
+					</tr>
+					<tr>
+						<td><input dir="rtl" type="text" name="maDelegateToId" value="${authorization.maDelegateToId}"></td>
+						<td>: رقم بطاقة الموكل إليه</td>
+					</tr>
+				</table>
+				<input type="submit" value=" حفظ ">
+				<input type="button" value=" إلغاء " onclick="cancel()">
+			</form>
+			<c:url var="back_home" value="auz_backtoindex" />
 			<a href="${back_home}"> عودة إلى الصفحة الرئيسية </a>
 		</div>
 	</div>
