@@ -81,24 +81,24 @@
 						<h2> تعديل بيانات المنطقة </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="rcCityCode" value="${regioncode.rcCityCode}" readonly="readonly"></td>
-						<td>: كود المدينة / المحافظة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="rcCityCode" value="${regioncode.rcCityCode}" readonly="readonly"></td>
+						<td><p style="float: right;">: كود المدينة / المحافظة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="rcAreaCode" value="${regioncode.rcAreaCode}" readonly="readonly"></td>
-						<td>: كود الحي </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="rcAreaCode" value="${regioncode.rcAreaCode}" readonly="readonly"></td>
+						<td><p style="float: right;">: كود الحي </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="rcRegionCode" value="${regioncode.rcRegionCode}" readonly="readonly"></td>
-						<td>: كود المنطقة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="rcRegionCode" value="${regioncode.rcRegionCode}" readonly="readonly"></td>
+						<td><p style="float: right;">: كود المنطقة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="rcRegionName" value="${regioncode.rcRegionName}"></td>
-						<td>: اسم المنطقة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="rcRegionName" value="${regioncode.rcRegionName}"></td>
+						<td><p style="float: right;">: اسم المنطقة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="rcRegionMap" value="${regioncode.rcRegionMap}"></td>
-						<td>: كود الخريطة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="rcRegionMap" value="${regioncode.rcRegionMap}"></td>
+						<td><p style="float: right;">: كود الخريطة </p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" حفظ ">

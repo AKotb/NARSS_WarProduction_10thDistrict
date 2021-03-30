@@ -81,44 +81,44 @@
 						<h2> تعديل بيانات عقار مخالف </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="evNewViolationNo" value="${externalviolation.evNewViolationNo}" readonly="readonly"></td>
-						<td>: رقم المخالفة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="evNewViolationNo" value="${externalviolation.evNewViolationNo}" readonly="readonly"></td>
+						<td><p style="float: right;">: رقم المخالفة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="evRelatedBuildingBarcode" value="${externalviolation.evRelatedBuildingBarcode}"></td>
-						<td>: كود العقار / المبنى المجاور </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="evRelatedBuildingBarcode" value="${externalviolation.evRelatedBuildingBarcode}"></td>
+						<td><p style="float: right;">: كود العقار / المبنى المجاور </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="evViolationType" value="${externalviolation.evViolationType}"></td>
-						<td>: نوع المخالفة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="evViolationType" value="${externalviolation.evViolationType}"></td>
+						<td><p style="float: right;">: نوع المخالفة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="evViolationActivity" value="${externalviolation.evViolationActivity}"></td>
-						<td>: نشاط المخالفة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="evViolationActivity" value="${externalviolation.evViolationActivity}"></td>
+						<td><p style="float: right;">: نشاط المخالفة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="evNumberOfFloors" value="${externalviolation.evNumberOfFloors}"></td>
-						<td>: عدد طوابق المخالفة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="evNumberOfFloors" value="${externalviolation.evNumberOfFloors}"></td>
+						<td><p style="float: right;">: عدد طوابق المخالفة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="evArchitecturalStyle" value="${externalviolation.evArchitecturalStyle}"></td>
-						<td>: الأسلوب الإنشائي </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="evArchitecturalStyle" value="${externalviolation.evArchitecturalStyle}"></td>
+						<td><p style="float: right;">: الأسلوب الإنشائي </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="evStatus" value="${externalviolation.evStatus}"></td>
-						<td>: حالة العقار </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="evStatus" value="${externalviolation.evStatus}"></td>
+						<td><p style="float: right;">: حالة العقار </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="ezLandSize" value="${externalviolation.ezLandSize}"></td>
-						<td>: مساحة الأرض  </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="ezLandSize" value="${externalviolation.ezLandSize}"></td>
+						<td><p style="float: right;">: مساحة الأرض  </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="exRepeatedSize" value="${externalviolation.exRepeatedSize}"></td>
-						<td>: مساحة المتكرر </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="exRepeatedSize" value="${externalviolation.exRepeatedSize}"></td>
+						<td><p style="float: right;">: مساحة المتكرر </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="exRelatedBuildingNo" value="${externalviolation.exRelatedBuildingNo}"></td>
-						<td>: رقم العقار / المبنى المجاور </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="exRelatedBuildingNo" value="${externalviolation.exRelatedBuildingNo}"></td>
+						<td><p style="float: right;">: رقم العقار / المبنى المجاور </p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" حفظ ">

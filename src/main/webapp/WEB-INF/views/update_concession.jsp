@@ -81,32 +81,32 @@
 						<h2> تعديل بيانات التنازل </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="coUnitBarcode" value="${concession.coUnitBarcode}"></td>
-						<td>: كود الوحدة/الشقة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="coUnitBarcode" value="${concession.coUnitBarcode}"></td>
+						<td><p style="float: right;">: كود الوحدة/الشقة</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="coConcessionSerial" value="${concession.coConcessionSerial}" readonly="readonly"></td>
-						<td>: رقم مسلسل التنازل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="coConcessionSerial" value="${concession.coConcessionSerial}" readonly="readonly"></td>
+						<td><p style="float: right;">: رقم مسلسل التنازل</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="coConcessionFromName" value="${concession.coConcessionFromName}"></td>
-						<td>: اسم المتنازل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="coConcessionFromName" value="${concession.coConcessionFromName}"></td>
+						<td><p style="float: right;">: اسم المتنازل</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="coConcessionFromId" value="${concession.coConcessionFromId}"></td>
-						<td>: رقم بطاقة المتنازل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="coConcessionFromId" value="${concession.coConcessionFromId}"></td>
+						<td><p style="float: right;">: رقم بطاقة المتنازل</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="coConcessionToName" value="${concession.coConcessionToName}"></td>
-						<td>: اسم المتنازل إليه</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="coConcessionToName" value="${concession.coConcessionToName}"></td>
+						<td><p style="float: right;">: اسم المتنازل إليه</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="coConcessionToId" value="${concession.coConcessionToId}"></td>
-						<td>: رقم بطاقة المتنازل إليه</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="coConcessionToId" value="${concession.coConcessionToId}"></td>
+						<td><p style="float: right;">: رقم بطاقة المتنازل إليه</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="coConcessionDate" value="${concession.coConcessionDate}"></td>
-						<td>: تاريخ التنازل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="coConcessionDate" value="${concession.coConcessionDate}"></td>
+						<td><p style="float: right;">: تاريخ التنازل</p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" حفظ ">

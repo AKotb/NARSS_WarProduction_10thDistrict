@@ -81,20 +81,20 @@
 						<h2> تعديل بيانات الحي </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="arCityCode" value="${areacode.arCityCode}" readonly="readonly"></td>
-						<td>: كود المدينة / المحافظة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="arCityCode" value="${areacode.arCityCode}" readonly="readonly"></td>
+						<td><p style="float: right;">: كود المدينة / المحافظة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="arAreaCode" value="${areacode.arAreaCode}" readonly="readonly"></td>
-						<td>: كود الحي </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="arAreaCode" value="${areacode.arAreaCode}" readonly="readonly"></td>
+						<td><p style="float: right;">: كود الحي </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="arAreaName" value="${areacode.arAreaName}"></td>
-						<td>: اسم الحي </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="arAreaName" value="${areacode.arAreaName}"></td>
+						<td><p style="float: right;">: اسم الحي </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="arAreaMap" value="${areacode.arAreaMap}"></td>
-						<td>: كود الخريطة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="arAreaMap" value="${areacode.arAreaMap}"></td>
+						<td><p style="float: right;">: كود الخريطة </p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" حفظ ">

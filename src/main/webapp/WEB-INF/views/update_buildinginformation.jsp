@@ -81,52 +81,52 @@
 						<h2> (1) تعديل مبنى / عقار </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="biBuildingBarcode" value="${buildinginformation.biBuildingBarcode}" readonly="readonly"></td>
-						<td>: كود المبنى / العقار </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biBuildingBarcode" value="${buildinginformation.biBuildingBarcode}" readonly="readonly"></td>
+						<td><p style="float: right;">: كود المبنى / العقار </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biBuildingNo" value="${buildinginformation.biBuildingNo}"></td>
-						<td>: رقم المبنى / العقار طبقاً للمخطط </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biBuildingNo" value="${buildinginformation.biBuildingNo}"></td>
+						<td><p style="float: right;">: رقم المبنى / العقار طبقاً للمخطط </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biBuidlingCurrentNo" value="${buildinginformation.biBuidlingCurrentNo}"></td>
-						<td>: رقم المبنى / العقار طبقاً للوضع الراهن </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biBuidlingCurrentNo" value="${buildinginformation.biBuidlingCurrentNo}"></td>
+						<td><p style="float: right;">: رقم المبنى / العقار طبقاً للوضع الراهن </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biBuildingModel" value="${buildinginformation.biBuildingModel}"></td>
-						<td>: نموذج العقار / المبنى </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biBuildingModel" value="${buildinginformation.biBuildingModel}"></td>
+						<td><p style="float: right;">: نموذج العقار / المبنى </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biNumberOfFloors" value="${buildinginformation.biNumberOfFloors}"></td>
-						<td>: عدد الأدوار / الطوابق </td>
+						<td><input style="float: right;" style="float: right;" dir="rtl" type="text" name="biNumberOfFloors" value="${buildinginformation.biNumberOfFloors}"></td>
+						<td><p style="float: right;">: عدد الأدوار / الطوابق </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biNumberOfFlatsPerFloor" value="${buildinginformation.biNumberOfFlatsPerFloor}"></td>
-						<td>: عدد الوحدات في كل طابق </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biNumberOfFlatsPerFloor" value="${buildinginformation.biNumberOfFlatsPerFloor}"></td>
+						<td><p style="float: right;">: عدد الوحدات في كل طابق </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biNumberOfUnits" value="${buildinginformation.biNumberOfUnits}"></td>
-						<td>: اجمالي عدد الوحدات </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biNumberOfUnits" value="${buildinginformation.biNumberOfUnits}"></td>
+						<td><p style="float: right;">: اجمالي عدد الوحدات </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biUsage" value="${buildinginformation.biUsage}"></td>
-						<td>:   الغرض من العقار </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biUsage" value="${buildinginformation.biUsage}"></td>
+						<td><p style="float: right;">:   الغرض من العقار </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biArchitecturalStyle" value="${buildinginformation.biArchitecturalStyle}"></td>
-						<td>: االأسلوب الإنشائي </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biArchitecturalStyle" value="${buildinginformation.biArchitecturalStyle}"></td>
+						<td><p style="float: right;">: االأسلوب الإنشائي </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biStatus" value="${buildinginformation.biStatus}"></td>
-						<td>: حالة العقار </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biStatus" value="${buildinginformation.biStatus}"></td>
+						<td><p style="float: right;">: حالة العقار </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biViolations" value="${buildinginformation.biViolations}"></td>
-						<td>: المخالفات </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biViolations" value="${buildinginformation.biViolations}"></td>
+						<td><p style="float: right;">: المخالفات </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biTrespassingBuilding" value="${buildinginformation.biTrespassingBuilding}"></td>
-						<td>: التعديات على الأرض بمبنى </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biTrespassingBuilding" value="${buildinginformation.biTrespassingBuilding}"></td>
+						<td><p style="float: right;">: التعديات على الأرض بمبنى </p></td>
 					</tr>
 				</table>
 				<table
@@ -135,52 +135,52 @@
 						<h2> (2) تعديل مبنى / عقار </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="biTrespassingFence" value="${buildinginformation.biTrespassingFence}"></td>
-						<td>: التعديات على الأرض بسور </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biTrespassingFence" value="${buildinginformation.biTrespassingFence}"></td>
+						<td><p style="float: right;">: التعديات على الأرض بسور </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biTrespassingWorks" value="${buildinginformation.biTrespassingWorks}"></td>
-						<td>: لتعديات على الأرض بإشغالات </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biTrespassingWorks" value="${buildinginformation.biTrespassingWorks}"></td>
+						<td><p style="float: right;">: لتعديات على الأرض بإشغالات </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biChangingActivity" value="${buildinginformation.biChangingActivity}"></td>
-						<td>: تغيير النشاط </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biChangingActivity" value="${buildinginformation.biChangingActivity}"></td>
+						<td><p style="float: right;">: تغيير النشاط </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biStreetName" value="${buildinginformation.biStreetName}"></td>
-						<td>: اسم الشارع </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biStreetName" value="${buildinginformation.biStreetName}"></td>
+						<td><p style="float: right;">: اسم الشارع </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biPropertyOwnership" value="${buildinginformation.biPropertyOwnership}"></td>
-						<td>: ملكية العقار </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biPropertyOwnership" value="${buildinginformation.biPropertyOwnership}"></td>
+						<td><p style="float: right;">: ملكية العقار </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biCityCode" value="${buildinginformation.biCityCode}"></td>
-						<td>: كود المدينة / المحافظة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biCityCode" value="${buildinginformation.biCityCode}"></td>
+						<td><p style="float: right;">: كود المدينة / المحافظة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biAreaCode" value="${buildinginformation.biAreaCode}"></td>
-						<td>: كود الحي</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biAreaCode" value="${buildinginformation.biAreaCode}"></td>
+						<td><p style="float: right;">: كود الحي </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biRegionCode" value="${buildinginformation.biRegionCode}"></td>
-						<td>: كود المنطقة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biRegionCode" value="${buildinginformation.biRegionCode}"></td>
+						<td><p style="float: right;">: كود المنطقة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biZoneCode" value="${buildinginformation.biZoneCode}"></td>
-						<td>: كود المربع الرئيسي </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biZoneCode" value="${buildinginformation.biZoneCode}"></td>
+						<td><p style="float: right;">: كود المربع الرئيسي </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biSubZoneCode" value="${buildinginformation.biSubZoneCode}"></td>
-						<td>: كود المربع الفرعي </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biSubZoneCode" value="${buildinginformation.biSubZoneCode}"></td>
+						<td><p style="float: right;">: كود المربع الفرعي </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biLastContractDate" value="${buildinginformation.biLastContractDate}"></td>
-						<td>: تاريخ اخر تعاقد </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biLastContractDate" value="${buildinginformation.biLastContractDate}"></td>
+						<td><p style="float: right;">: تاريخ اخر تعاقد </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biChangeActivityDate" value="${buildinginformation.biChangeActivityDate}"></td>
-						<td>: تاريخ تغيير النشاط </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biChangeActivityDate" value="${buildinginformation.biChangeActivityDate}"></td>
+						<td><p style="float: right;">: تاريخ تغيير النشاط </p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" حفظ ">

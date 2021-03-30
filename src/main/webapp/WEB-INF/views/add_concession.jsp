@@ -81,32 +81,32 @@
 						<h2> اضافة تنازل جديد </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="coUnitBarcode"></td>
-						<td>: ادخل كود الوحدة/الشقة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="coUnitBarcode"></td>
+						<td><p style="float: right;">: ادخل كود الوحدة/الشقة</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="coConcessionSerial"></td>
-						<td>: ادخل رقم مسلسل التنازل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="coConcessionSerial"></td>
+						<td><p style="float: right;">: ادخل رقم مسلسل التنازل</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="coConcessionFromName"></td>
-						<td>: ادخل اسم المتنازل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="coConcessionFromName"></td>
+						<td><p style="float: right;">: ادخل اسم المتنازل</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="coConcessionFromId"></td>
-						<td>: ادخل رقم بطاقة المتنازل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="coConcessionFromId"></td>
+						<td><p style="float: right;">: ادخل رقم بطاقة المتنازل</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="coConcessionToName"></td>
-						<td>: ادخل اسم المتنازل إليه</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="coConcessionToName"></td>
+						<td><p style="float: right;">: ادخل اسم المتنازل إليه</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="coConcessionToId"></td>
-						<td>: ادخل رقم بطاقة المتنازل إليه</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="coConcessionToId"></td>
+						<td><p style="float: right;">: ادخل رقم بطاقة المتنازل إليه</td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="coConcessionDate"></td>
-						<td>: ادخل تاريخ التنازل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="coConcessionDate"></td>
+						<td><p style="float: right;">: ادخل تاريخ التنازل</p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">

@@ -81,40 +81,40 @@
 						<h2> اضافة توكيل جديد </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="maUnitBarcode"></td>
-						<td>: ادخل كود الوحدة/الشقة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="maUnitBarcode"></td>
+						<td><p style="float: right;">: ادخل كود الوحدة/الشقة</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="maDelegationNo"></td>
-						<td>: ادخل رقم التوكيل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="maDelegationNo"></td>
+						<td><p style="float: right;">: ادخل رقم التوكيل</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="maDelegationDate"></td>
-						<td>: ادخل تاريخ التوكيل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="maDelegationDate"></td>
+						<td><p style="float: right;">: ادخل تاريخ التوكيل</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="maDelegationIssuedPlace"></td>
-						<td>: ادخل جهة اصدار التوكيل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="maDelegationIssuedPlace"></td>
+						<td><p style="float: right;">: ادخل جهة اصدار التوكيل</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="maDelegationType"></td>
-						<td>: ادخل نوع التوكيل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="maDelegationType"></td>
+						<td><p style="float: right;">: ادخل نوع التوكيل</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="maDelegatorName"></td>
-						<td>: ادخل اسم الموكل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="maDelegatorName"></td>
+						<td><p style="float: right;">: ادخل اسم الموكل</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="maDelegatorId"></td>
-						<td>: ادخل رقم بطاقة الموكل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="maDelegatorId"></td>
+						<td><p style="float: right;">: ادخل رقم بطاقة الموكل</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="maDelegateToName"></td>
-						<td>: ادخل اسم الموكل إليه</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="maDelegateToName"></td>
+						<td><p style="float: right;">: ادخل اسم الموكل إليه</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="maDelegateToId"></td>
-						<td>: ادخل رقم بطاقة الموكل إليه</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="maDelegateToId"></td>
+						<td><p style="float: right;">: ادخل رقم بطاقة الموكل إليه</p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">

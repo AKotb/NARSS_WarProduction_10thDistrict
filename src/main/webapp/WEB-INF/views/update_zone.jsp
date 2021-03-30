@@ -81,24 +81,24 @@
 						<h2> تعديل بيانات المربع </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="zonCity"  value="${zone.zonCity}" readonly="readonly"></td>
-						<td>: كود المدينة / المحافظة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="zonCity"  value="${zone.zonCity}" readonly="readonly"></td>
+						<td><p style="float: right;">: كود المدينة / المحافظة</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="areaCode" value="${zone.areaCode}" readonly="readonly"></td>
-						<td>: كود الحي</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="areaCode" value="${zone.areaCode}" readonly="readonly"></td>
+						<td><p style="float: right;">: كود الحي</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="regionCode" value="${zone.regionCode}" readonly="readonly"></td>
-						<td>: كود المنطقة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="regionCode" value="${zone.regionCode}" readonly="readonly"></td>
+						<td><p style="float: right;">: كود المنطقة</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="zoneCode" value="${zone.zoneCode}" readonly="readonly"></td>
-						<td>: كود المربع</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="zoneCode" value="${zone.zoneCode}" readonly="readonly"></td>
+						<td><p style="float: right;">: كود المربع</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="zoneMap" value="${zone.zoneMap}"></td>
-						<td>: كود الخريطة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="zoneMap" value="${zone.zoneMap}"></td>
+						<td><p style="float: right;">: كود الخريطة</p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" حفظ ">

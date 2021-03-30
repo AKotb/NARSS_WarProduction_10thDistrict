@@ -81,52 +81,52 @@
 						<h2> (1) اضافة مبنى / عقار جديد </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="biBuildingBarcode"></td>
-						<td>: ادخل كود المبنى / العقار </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biBuildingBarcode"></td>
+						<td><p style="float: right;">: ادخل كود المبنى / العقار </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biBuildingNo"></td>
-						<td>: ادخل رقم المبنى / العقار طبقاً للمخطط </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biBuildingNo"></td>
+						<td><p style="float: right;">: ادخل رقم المبنى / العقار طبقاً للمخطط </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biBuidlingCurrentNo"></td>
-						<td>: ادخل رقم المبنى / العقار طبقاً للوضع الراهن </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biBuidlingCurrentNo"></td>
+						<td><p style="float: right;">: ادخل رقم المبنى / العقار طبقاً للوضع الراهن </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biBuildingModel"></td>
-						<td>: ادخل نموذج العقار / المبنى </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biBuildingModel"></td>
+						<td><p style="float: right;">: ادخل نموذج العقار / المبنى </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biNumberOfFloors"></td>
-						<td>: ادخل عدد الأدوار / الطوابق </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biNumberOfFloors"></td>
+						<td><p style="float: right;">: ادخل عدد الأدوار / الطوابق </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biNumberOfFlatsPerFloor"></td>
-						<td>: ادخل عدد الوحدات في كل طابق </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biNumberOfFlatsPerFloor"></td>
+						<td><p style="float: right;">: ادخل عدد الوحدات في كل طابق </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biNumberOfUnits"></td>
-						<td>: ادخل اجمالي عدد الوحدات </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biNumberOfUnits"></td>
+						<td><p style="float: right;">: ادخل اجمالي عدد الوحدات </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biUsage"></td>
-						<td>:   ادخل الغرض من العقار </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biUsage"></td>
+						<td><p style="float: right;">:   ادخل الغرض من العقار </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biArchitecturalStyle"></td>
-						<td>: ادخل الأسلوب الإنشائي </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biArchitecturalStyle"></td>
+						<td><p style="float: right;">: ادخل الأسلوب الإنشائي </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biStatus"></td>
-						<td>: ادخل حالة العقار </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biStatus"></td>
+						<td><p style="float: right;">: ادخل حالة العقار </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biViolations"></td>
-						<td>: ادخل المخالفات </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biViolations"></td>
+						<td><p style="float: right;">: ادخل المخالفات </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biTrespassingBuilding"></td>
-						<td>: ادخل التعديات على الأرض بمبنى </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biTrespassingBuilding"></td>
+						<td><p style="float: right;">: ادخل التعديات على الأرض بمبنى </p></td>
 					</tr>
 				</table>
 				<table
@@ -135,52 +135,52 @@
 						<h2> (2) اضافة مبنى / عقار جديد </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="biTrespassingFence"></td>
-						<td>: ادخل التعديات على الأرض بسور </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biTrespassingFence"></td>
+						<td><p style="float: right;">: ادخل التعديات على الأرض بسور </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biTrespassingWorks"></td>
-						<td>: ادخل التعديات على الأرض بإشغالات </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biTrespassingWorks"></td>
+						<td><p style="float: right;">: ادخل التعديات على الأرض بإشغالات </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biChangingActivity"></td>
-						<td>: ادخل تغيير النشاط </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biChangingActivity"></td>
+						<td><p style="float: right;">: ادخل تغيير النشاط </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biStreetName"></td>
-						<td>: ادخل اسم الشارع </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biStreetName"></td>
+						<td><p style="float: right;">: ادخل اسم الشارع </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biPropertyOwnership"></td>
-						<td>: ادخل ملكية العقار </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biPropertyOwnership"></td>
+						<td><p style="float: right;">: ادخل ملكية العقار </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biCityCode"></td>
-						<td>: ادخل كود المدينة / المحافظة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biCityCode"></td>
+						<td><p style="float: right;">: ادخل كود المدينة / المحافظة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biAreaCode"></td>
-						<td>: ادخل كود الحي</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biAreaCode"></td>
+						<td><p style="float: right;">: ادخل كود الحي</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biRegionCode"></td>
-						<td>: ادخل كود المنطقة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biRegionCode"></td>
+						<td><p style="float: right;">: ادخل كود المنطقة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biZoneCode"></td>
-						<td>: ادخل كود المربع الرئيسي </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biZoneCode"></td>
+						<td><p style="float: right;">: ادخل كود المربع الرئيسي </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biSubZoneCode"></td>
-						<td>: ادخل كود المربع الفرعي </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biSubZoneCode"></td>
+						<td><p style="float: right;">: ادخل كود المربع الفرعي </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biLastContractDate"></td>
-						<td>: ادخل تاريخ اخر تعاقد </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biLastContractDate"></td>
+						<td><p style="float: right;">: ادخل تاريخ اخر تعاقد </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="biChangeActivityDate"></td>
-						<td>: ادخل تاريخ تغيير النشاط </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="biChangeActivityDate"></td>
+						<td><p style="float: right;">: ادخل تاريخ تغيير النشاط </p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">

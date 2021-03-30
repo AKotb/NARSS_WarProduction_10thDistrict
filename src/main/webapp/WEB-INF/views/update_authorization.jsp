@@ -81,40 +81,40 @@
 						<h2> تعديل بيانات التوكيل </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="maUnitBarcode" value="${authorization.maUnitBarcode}"></td>
-						<td>: كود الوحدة/الشقة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="maUnitBarcode" value="${authorization.maUnitBarcode}"></td>
+						<td><p style="float: right;">: كود الوحدة/الشقة</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="maDelegationNo" value="${authorization.maDelegationNo}" readonly="readonly"></td>
-						<td>: رقم التوكيل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="maDelegationNo" value="${authorization.maDelegationNo}" readonly="readonly"></td>
+						<td><p style="float: right;">: رقم التوكيل</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="maDelegationDate" value="${authorization.maDelegationDate}"></td>
-						<td>: تاريخ التوكيل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="maDelegationDate" value="${authorization.maDelegationDate}"></td>
+						<td><p style="float: right;">: تاريخ التوكيل</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="maDelegationIssuedPlace" value="${authorization.maDelegationIssuedPlace}"></td>
-						<td>: جهة اصدار التوكيل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="maDelegationIssuedPlace" value="${authorization.maDelegationIssuedPlace}"></td>
+						<td><p style="float: right;">: جهة اصدار التوكيل</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="maDelegationType" value="${authorization.maDelegationType}"></td>
-						<td>: نوع التوكيل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="maDelegationType" value="${authorization.maDelegationType}"></td>
+						<td><p style="float: right;">: نوع التوكيل</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="maDelegatorName" value="${authorization.maDelegatorName}"></td>
-						<td>: اسم الموكل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="maDelegatorName" value="${authorization.maDelegatorName}"></td>
+						<td><p style="float: right;">: اسم الموكل</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="maDelegatorId" value="${authorization.maDelegatorId}"></td>
-						<td>: رقم بطاقة الموكل</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="maDelegatorId" value="${authorization.maDelegatorId}"></td>
+						<td><p style="float: right;">: رقم بطاقة الموكل</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="maDelegateToName" value="${authorization.maDelegateToName}"></td>
-						<td>: اسم الموكل إليه</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="maDelegateToName" value="${authorization.maDelegateToName}"></td>
+						<td><p style="float: right;">: اسم الموكل إليه</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="maDelegateToId" value="${authorization.maDelegateToId}"></td>
-						<td>: رقم بطاقة الموكل إليه</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="maDelegateToId" value="${authorization.maDelegateToId}"></td>
+						<td><p style="float: right;">: رقم بطاقة الموكل إليه</p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" حفظ ">

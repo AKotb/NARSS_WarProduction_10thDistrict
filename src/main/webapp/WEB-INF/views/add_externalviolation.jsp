@@ -81,44 +81,44 @@
 						<h2> اضافة عقار مخالف مستقل جديد </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="evNewViolationNo"></td>
-						<td>: ادخل رقم المخالفة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="evNewViolationNo"></td>
+						<td><p style="float: right;">: ادخل رقم المخالفة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="evRelatedBuildingBarcode"></td>
-						<td>: ادخل كود العقار / المبنى المجاور </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="evRelatedBuildingBarcode"></td>
+						<td><p style="float: right;">: ادخل كود العقار / المبنى المجاور </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="evViolationType"></td>
-						<td>: ادخل نوع المخالفة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="evViolationType"></td>
+						<td><p style="float: right;">: ادخل نوع المخالفة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="evViolationActivity"></td>
-						<td>: ادخل نشاط المخالفة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="evViolationActivity"></td>
+						<td><p style="float: right;">: ادخل نشاط المخالفة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="evNumberOfFloors"></td>
-						<td>: ادخل عدد طوابق المخالفة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="evNumberOfFloors"></td>
+						<td><p style="float: right;">: ادخل عدد طوابق المخالفة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="evArchitecturalStyle"></td>
-						<td>: ادخل الأسلوب الإنشائي </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="evArchitecturalStyle"></td>
+						<td><p style="float: right;">: ادخل الأسلوب الإنشائي </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="evStatus"></td>
-						<td>: ادخل حالة العقار </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="evStatus"></td>
+						<td><p style="float: right;">: ادخل حالة العقار </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="ezLandSize"></td>
-						<td>: ادخل مساحة الأرض  </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="ezLandSize"></td>
+						<td><p style="float: right;">: ادخل مساحة الأرض  </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="exRepeatedSize"></td>
-						<td>: ادخل مساحة المتكرر </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="exRepeatedSize"></td>
+						<td><p style="float: right;">: ادخل مساحة المتكرر </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="exRelatedBuildingNo"></td>
-						<td>: ادخل رقم العقار / المبنى المجاور </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="exRelatedBuildingNo"></td>
+						<td><p style="float: right;">: ادخل رقم العقار / المبنى المجاور </p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">

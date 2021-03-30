@@ -81,12 +81,12 @@
 						<h2> تعديل بيانات مدينة/محافظة </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="cityCode" value="${citycode.cityCode}" readonly="readonly"></td>
-						<td>: كود المدينة / المحافظة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="cityCode" value="${citycode.cityCode}" readonly="readonly"></td>
+						<td><p style="float: right;">: كود المدينة / المحافظة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="cityName" value="${citycode.cityName}"></td>
-						<td>: اسم المدينة / المحافظة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="cityName" value="${citycode.cityName}"></td>
+						<td><p style="float: right;">: اسم المدينة / المحافظة </p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" حفظ ">

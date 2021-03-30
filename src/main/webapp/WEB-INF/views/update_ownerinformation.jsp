@@ -80,28 +80,28 @@
 						<h2> تعديل بيانات مالك </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="oiUnitBarcode" value="${ownerinformation.oiUnitBarcode}"></td>
-						<td>: كود الوحدة / الشقة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="oiUnitBarcode" value="${ownerinformation.oiUnitBarcode}"></td>
+						<td><p style="float: right;">: كود الوحدة / الشقة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="oiBuildingNo" value="${ownerinformation.oiBuildingNo}"></td>
-						<td>: رقم بالمبنى / العقار </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="oiBuildingNo" value="${ownerinformation.oiBuildingNo}"></td>
+						<td><p style="float: right;">: رقم بالمبنى / العقار </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="oiUnitNo" value="${ownerinformation.oiUnitNo}"></td>
-						<td>: رقم الوحدة / الشقة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="oiUnitNo" value="${ownerinformation.oiUnitNo}"></td>
+						<td><p style="float: right;">: رقم الوحدة / الشقة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="oiOwnerSequence" value="${ownerinformation.oiOwnerSequence}" readonly="readonly"></td>
-						<td>: رقم مسلسل المالك </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="oiOwnerSequence" value="${ownerinformation.oiOwnerSequence}" readonly="readonly"></td>
+						<td><p style="float: right;">: رقم مسلسل المالك </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="oiOwnerName" value="${ownerinformation.oiOwnerName}"></td>
-						<td>: اسم المالك </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="oiOwnerName" value="${ownerinformation.oiOwnerName}"></td>
+						<td><p style="float: right;">: اسم المالك </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="oiOwnerId" value="${ownerinformation.oiOwnerId}"></td>
-						<td>: رقم بطاقة المالك </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="oiOwnerId" value="${ownerinformation.oiOwnerId}"></td>
+						<td><p style="float: right;">: رقم بطاقة المالك </p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" حفظ ">

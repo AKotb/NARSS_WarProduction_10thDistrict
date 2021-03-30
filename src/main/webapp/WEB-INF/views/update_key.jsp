@@ -81,40 +81,40 @@
 						<h2> تعديل بيانات عنصر ربط البيانات </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="keyCityCode" value="${key.keyCityCode}"></td>
-						<td>: كود المدينة / المحافظة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="keyCityCode" value="${key.keyCityCode}"></td>
+						<td><p style="float: right;">: كود المدينة / المحافظة</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="keyAreaCode" value="${key.keyAreaCode}"></td>
-						<td>: كود الحي</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="keyAreaCode" value="${key.keyAreaCode}"></td>
+						<td><p style="float: right;">: كود الحي</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="keyRegionCode" value="${key.keyRegionCode}"></td>
-						<td>: كود المنطقة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="keyRegionCode" value="${key.keyRegionCode}"></td>
+						<td><p style="float: right;">: كود المنطقة</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="keyZoneCode" value="${key.keyZoneCode}"></td>
-						<td>: كود المربع</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="keyZoneCode" value="${key.keyZoneCode}"></td>
+						<td><p style="float: right;">: كود المربع</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="keySubZoneCode" value="${key.keySubZoneCode}"></td>
-						<td>: كود المربع الفرعي</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="keySubZoneCode" value="${key.keySubZoneCode}"></td>
+						<td><p style="float: right;">: كود المربع الفرعي</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="keyBuildingNo" value="${key.keyBuildingNo}"></td>
-						<td>: رقم المبنى/العقار</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="keyBuildingNo" value="${key.keyBuildingNo}"></td>
+						<td><p style="float: right;">: رقم المبنى/العقار</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="keyAppartementNo" value="${key.keyAppartementNo}"></td>
-						<td>: رقم الوحدة/الشقة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="keyAppartementNo" value="${key.keyAppartementNo}"></td>
+						<td><p style="float: right;">: رقم الوحدة/الشقة</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="keyAll" value="${key.keyAll}" readonly="readonly"></td>
-						<td>: كود عنصر ربط البيانات</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="keyAll" value="${key.keyAll}" readonly="readonly"></td>
+						<td><p style="float: right;">: كود عنصر ربط البيانات</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="keyBuildingKey" value="${key.keyBuildingKey}"></td>
-						<td>: كود المبنى/العقار</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="keyBuildingKey" value="${key.keyBuildingKey}"></td>
+						<td><p style="float: right;">: كود المبنى/العقار</p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" حفظ ">

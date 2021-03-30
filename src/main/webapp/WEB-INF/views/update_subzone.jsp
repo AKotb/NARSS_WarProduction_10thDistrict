@@ -81,28 +81,28 @@
 						<h2> تعديل بيانات المربع الفرعي </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="azCity" value="${subzone.azCity}" readonly="readonly"></td>
-						<td>: كود المدينة / المحافظة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="azCity" value="${subzone.azCity}" readonly="readonly"></td>
+						<td><p style="float: right;">: كود المدينة / المحافظة</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="azAreaCode" value="${subzone.azAreaCode}" readonly="readonly"></td>
-						<td>: كود الحي</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="azAreaCode" value="${subzone.azAreaCode}" readonly="readonly"></td>
+						<td><p style="float: right;">: كود الحي</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="azRegionCode" value="${subzone.azRegionCode}" readonly="readonly"></td>
-						<td>: كود المنطقة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="azRegionCode" value="${subzone.azRegionCode}" readonly="readonly"></td>
+						<td><p style="float: right;">: كود المنطقة</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="azZoneCode" value="${subzone.azZoneCode}" readonly="readonly"></td>
-						<td>: كود المربع</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="azZoneCode" value="${subzone.azZoneCode}" readonly="readonly"></td>
+						<td><p style="float: right;">: كود المربع</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="azSubZoneCode" value="${subzone.azSubZoneCode}" readonly="readonly"></td>
-						<td>: كود المربع الفرعي</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="azSubZoneCode" value="${subzone.azSubZoneCode}" readonly="readonly"></td>
+						<td><p style="float: right;">: كود المربع الفرعي</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="azSubZoneMap" value="${subzone.azSubZoneMap}" ></td>
-						<td>: كود الخريطة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="azSubZoneMap" value="${subzone.azSubZoneMap}" ></td>
+						<td><p style="float: right;">: كود الخريطة</p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" حفظ ">

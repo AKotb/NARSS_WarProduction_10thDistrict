@@ -81,40 +81,40 @@
 						<h2> اضافة عنصر ربط بيانات جديد </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="keyCityCode"></td>
-						<td>: ادخل كود المدينة / المحافظة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="keyCityCode"></td>
+						<td><p style="float: right;">: ادخل كود المدينة / المحافظة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="keyAreaCode"></td>
-						<td>: ادخل كود الحي</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="keyAreaCode"></td>
+						<td><p style="float: right;">: ادخل كود الحي </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="keyRegionCode"></td>
-						<td>: ادخل كود المنطقة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="keyRegionCode"></td>
+						<td><p style="float: right;">: ادخل كود المنطقة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="keyZoneCode"></td>
-						<td>: ادخل كود المربع</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="keyZoneCode"></td>
+						<td><p style="float: right;">: ادخل كود المربع </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="keySubZoneCode"></td>
-						<td>: ادخل كود المربع الفرعي</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="keySubZoneCode"></td>
+						<td><p style="float: right;">: ادخل كود المربع الفرعي </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="keyBuildingNo"></td>
-						<td>: ادخل رقم المبنى/العقار</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="keyBuildingNo"></td>
+						<td><p style="float: right;">: ادخل رقم المبنى/العقار </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="keyAppartementNo"></td>
-						<td>: ادخل رقم الوحدة/الشقة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="keyAppartementNo"></td>
+						<td><p style="float: right;">: ادخل رقم الوحدة/الشقة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="keyAll"></td>
-						<td>: ادخل كود عنصر ربط البيانات</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="keyAll"></td>
+						<td><p style="float: right;">: ادخل كود عنصر ربط البيانات </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="keyBuildingKey"></td>
-						<td>: ادخل كود المبنى/العقار</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="keyBuildingKey"></td>
+						<td><p style="float: right;">: ادخل كود المبنى/العقار </p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">

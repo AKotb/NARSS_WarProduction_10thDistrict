@@ -81,24 +81,24 @@
 						<h2>اضافة مربع جديد</h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="zonCity"></td>
-						<td>: ادخل كود المدينة / المحافظة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="zonCity"></td>
+						<td><p style="float: right;">: ادخل كود المدينة / المحافظة</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="areaCode"></td>
-						<td>: ادخل كود الحي</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="areaCode"></td>
+						<td><p style="float: right;">: ادخل كود الحي</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="regionCode"></td>
-						<td>: ادخل كود المنطقة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="regionCode"></td>
+						<td><p style="float: right;">: ادخل كود المنطقة</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="zoneCode"></td>
-						<td>: ادخل كود المربع</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="zoneCode"></td>
+						<td><p style="float: right;">: ادخل كود المربع</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="zoneMap"></td>
-						<td>: ادخل كود الخريطة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="zoneMap"></td>
+						<td><p style="float: right;">: ادخل كود الخريطة</p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">

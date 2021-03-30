@@ -81,52 +81,52 @@
 						<h2> (1) تعديل بيانات الوحدة / الشقة </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltBuildingNo" value="${unitinformation.fltBuildingNo}"></td>
-						<td>: رقم المبنى </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltBuildingNo" value="${unitinformation.fltBuildingNo}"></td>
+						<td><p style="float: right;">: رقم المبنى </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltUnitNo" value="${unitinformation.fltUnitNo}"></td>
-						<td>: رقم الوحدة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltUnitNo" value="${unitinformation.fltUnitNo}"></td>
+						<td><p style="float: right;">: رقم الوحدة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltBuildType" value="${unitinformation.fltBuildType}"></td>
-						<td>: نوع المبنى </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltBuildType" value="${unitinformation.fltBuildType}"></td>
+						<td><p style="float: right;">: نوع المبنى </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltFloorNo" value="${unitinformation.fltFloorNo}"></td>
-						<td>: رقم الدور </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltFloorNo" value="${unitinformation.fltFloorNo}"></td>
+						<td><p style="float: right;">: رقم الدور </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltCurrentOwnerName" value="${unitinformation.fltCurrentOwnerName}"></td>
-						<td>: اسم المالك الحالي </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltCurrentOwnerName" value="${unitinformation.fltCurrentOwnerName}"></td>
+						<td><p style="float: right;">: اسم المالك الحالي </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltDeliverDate" value="${unitinformation.fltDeliverDate}"></td>
-						<td>: تاريخ الإستلام </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltDeliverDate" value="${unitinformation.fltDeliverDate}"></td>
+						<td><p style="float: right;">: تاريخ الإستلام </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltAssignedName" value="${unitinformation.fltAssignedName}"></td>
-						<td>: اسم المتنازل </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltAssignedName" value="${unitinformation.fltAssignedName}"></td>
+						<td><p style="float: right;">: اسم المتنازل </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltAssignDate" value="${unitinformation.fltAssignDate}"></td>
-						<td>: تاريخ التنازل </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltAssignDate" value="${unitinformation.fltAssignDate}"></td>
+						<td><p style="float: right;">: تاريخ التنازل </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltUnitSize" value="${unitinformation.fltUnitSize}"></td>
-						<td>: مساحة الوحدة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltUnitSize" value="${unitinformation.fltUnitSize}"></td>
+						<td><p style="float: right;">: مساحة الوحدة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltUnitPrice" value="${unitinformation.fltUnitPrice}"></td>
-						<td>: سعر الوحدة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltUnitPrice" value="${unitinformation.fltUnitPrice}"></td>
+						<td><p style="float: right;">: سعر الوحدة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltFloor" value="${unitinformation.fltFloor}"></td>
-						<td>: الدور </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltFloor" value="${unitinformation.fltFloor}"></td>
+						<td><p style="float: right;">: الدور </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltComments" value="${unitinformation.fltComments}"></td>
-						<td>: ملاحظات على الوحدة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltComments" value="${unitinformation.fltComments}"></td>
+						<td><p style="float: right;">: ملاحظات على الوحدة </p></td>
 					</tr>
 				</table>
 				<table
@@ -135,52 +135,52 @@
 						<h2> (2) تعديل بيانات الوحدة / الشقة  </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltBarcode" value="${unitinformation.fltBarcode}" readonly="readonly"></td>
-						<td>: كود الوحدة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltBarcode" value="${unitinformation.fltBarcode}" readonly="readonly"></td>
+						<td><p style="float: right;">: كود الوحدة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltChangeActivity" value="${unitinformation.fltChangeActivity}"></td>
-						<td>: تغيير النشاط </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltChangeActivity" value="${unitinformation.fltChangeActivity}"></td>
+						<td><p style="float: right;">: تغيير النشاط </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltTrespassingBuidling" value="${unitinformation.fltTrespassingBuidling}"></td>
-						<td>: التعديات على الأرض بمبنى </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltTrespassingBuidling" value="${unitinformation.fltTrespassingBuidling}"></td>
+						<td><p style="float: right;">: التعديات على الأرض بمبنى </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltExtendOfViolation" value="${unitinformation.fltExtendOfViolation}"></td>
-						<td>: امتداد عدد ادوار المخالفة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltExtendOfViolation" value="${unitinformation.fltExtendOfViolation}"></td>
+						<td><p style="float: right;">: امتداد عدد ادوار المخالفة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltViolationSize" value="${unitinformation.fltViolationSize}"></td>
-						<td>: مساحة المخالفة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltViolationSize" value="${unitinformation.fltViolationSize}"></td>
+						<td><p style="float: right;">: مساحة المخالفة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltTrespassingFence" value="${unitinformation.fltTrespassingFence}"></td>
-						<td>: التعديات على الأرض بسور </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltTrespassingFence" value="${unitinformation.fltTrespassingFence}"></td>
+						<td><p style="float: right;">: التعديات على الأرض بسور </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltTrespassingWorks" value="${unitinformation.fltTrespassingWorks}"></td>
-						<td>: التعديات على الأرض بإشغالات </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltTrespassingWorks" value="${unitinformation.fltTrespassingWorks}"></td>
+						<td><p style="float: right;">: التعديات على الأرض بإشغالات </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltMainActivity" value="${unitinformation.fltMainActivity}"></td>
-						<td>: ادخل نشاط الوحدة طبقاً للمخطط </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltMainActivity" value="${unitinformation.fltMainActivity}"></td>
+						<td><p style="float: right;">: ادخل نشاط الوحدة طبقاً للمخطط </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltBuildingBarcode" value="${unitinformation.fltBuildingBarcode}"></td>
-						<td>: كود المبنى / العقار </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltBuildingBarcode" value="${unitinformation.fltBuildingBarcode}"></td>
+						<td><p style="float: right;">: كود المبنى / العقار </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltCurrentOwnerID" value="${unitinformation.fltCurrentOwnerID}"></td>
-						<td>: رقم بطاقة المالك الحالي </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltCurrentOwnerID" value="${unitinformation.fltCurrentOwnerID}"></td>
+						<td><p style="float: right;">: رقم بطاقة المالك الحالي </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltTrespassingFenceSize" value="${unitinformation.fltTrespassingFenceSize}"></td>
-						<td>: مساحة التعديات على الأرض بمبنى </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltTrespassingFenceSize" value="${unitinformation.fltTrespassingFenceSize}"></td>
+						<td><p style="float: right;">: مساحة التعديات على الأرض بمبنى </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="fltTrespassingBuidlingSize" value="${unitinformation.fltTrespassingBuidlingSize}"></td>
-						<td>: مساحة التعديات على الأرض بمبنى </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="fltTrespassingBuidlingSize" value="${unitinformation.fltTrespassingBuidlingSize}"></td>
+						<td><p style="float: right;">: مساحة التعديات على الأرض بمبنى </p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" حفظ ">

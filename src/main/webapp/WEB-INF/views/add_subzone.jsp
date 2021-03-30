@@ -81,28 +81,28 @@
 						<h2> اضافة مربع فرعي جديد </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="azCity"></td>
-						<td>: ادخل كود المدينة / المحافظة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="azCity"></td>
+						<td><p style="float: right;">: ادخل كود المدينة / المحافظة</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="azAreaCode"></td>
-						<td>: ادخل كود الحي</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="azAreaCode"></td>
+						<td><p style="float: right;">: ادخل كود الحي</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="azRegionCode"></td>
-						<td>: ادخل كود المنطقة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="azRegionCode"></td>
+						<td><p style="float: right;">: ادخل كود المنطقة</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="azZoneCode"></td>
-						<td>: ادخل كود المربع</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="azZoneCode"></td>
+						<td><p style="float: right;">: ادخل كود المربع</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="azSubZoneCode"></td>
-						<td>: ادخل كود المربع الفرعي</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="azSubZoneCode"></td>
+						<td><p style="float: right;">: ادخل كود المربع الفرعي</p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="azSubZoneMap"></td>
-						<td>: ادخل كود الخريطة</td>
+						<td><input style="float: right;" dir="rtl" type="text" name="azSubZoneMap"></td>
+						<td><p style="float: right;">: ادخل كود الخريطة</p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">

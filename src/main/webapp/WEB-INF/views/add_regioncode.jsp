@@ -81,24 +81,24 @@
 						<h2> اضافة منطقة جديدة </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="rcCityCode"></td>
-						<td>: ادخل كود المدينة / المحافظة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="rcCityCode"></td>
+						<td><p style="float: right;">: ادخل كود المدينة / المحافظة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="rcAreaCode"></td>
-						<td>: ادخل كود الحي </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="rcAreaCode"></td>
+						<td><p style="float: right;">: ادخل كود الحي </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="rcRegionCode"></td>
-						<td>: ادخل كود المنطقة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="rcRegionCode"></td>
+						<td><p style="float: right;">: ادخل كود المنطقة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="rcRegionName"></td>
-						<td>: ادخل اسم المنطقة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="rcRegionName"></td>
+						<td><p style="float: right;">: ادخل اسم المنطقة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="rcRegionMap"></td>
-						<td>: ادخل كود الخريطة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="rcRegionMap"></td>
+						<td><p style="float: right;">: ادخل كود الخريطة </p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">

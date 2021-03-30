@@ -80,28 +80,28 @@
 						<h2> اضافة بيانات مالك جديد </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="oiUnitBarcode"></td>
-						<td>: ادخل كود الوحدة / الشقة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="oiUnitBarcode"></td>
+						<td><p style="float: right;">: ادخل كود الوحدة / الشقة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="oiBuildingNo"></td>
-						<td>: ادخل رقم بالمبنى / العقار </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="oiBuildingNo"></td>
+						<td><p style="float: right;">: ادخل رقم بالمبنى / العقار </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="oiUnitNo"></td>
-						<td>: ادخل رقم الوحدة / الشقة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="oiUnitNo"></td>
+						<td><p style="float: right;">: ادخل رقم الوحدة / الشقة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="oiOwnerSequence"></td>
-						<td>: ادخل رقم مسلسل المالك </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="oiOwnerSequence"></td>
+						<td><p style="float: right;">: ادخل رقم مسلسل المالك </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="oiOwnerName"></td>
-						<td>: ادخل اسم المالك </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="oiOwnerName"></td>
+						<td><p style="float: right;">: ادخل اسم المالك </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="oiOwnerId"></td>
-						<td>: ادخل رقم بطاقة المالك </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="oiOwnerId"></td>
+						<td><p style="float: right;">: ادخل رقم بطاقة المالك </p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">

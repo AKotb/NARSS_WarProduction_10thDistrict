@@ -81,12 +81,12 @@
 						<h2> اضافة مدينة / محافظة جديدة </h2>
 					</caption>
 					<tr>
-						<td><input dir="rtl" type="text" name="cityCode"></td>
-						<td>: ادخل كود المدينة / المحافظة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="cityCode"></td>
+						<td><p style="float: right;">: ادخل كود المدينة / المحافظة </p></td>
 					</tr>
 					<tr>
-						<td><input dir="rtl" type="text" name="cityName"></td>
-						<td>: ادخل اسم المدينة / المحافظة </td>
+						<td><input style="float: right;" dir="rtl" type="text" name="cityName"></td>
+						<td><p style="float: right;">: ادخل اسم المدينة / المحافظة </p></td>
 					</tr>
 				</table>
 				<input type="submit" value=" اضافة ">
