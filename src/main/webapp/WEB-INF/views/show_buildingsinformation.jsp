@@ -78,23 +78,23 @@
 					<th>اعدادات</th>
 					<th>تاريخ تغيير النشاط</th>
 					<th>تاريخ اخر تعاقد</th>
-					<th>كود المربع الفرعي</th>
+		<!-- 		<th>كود المربع الفرعي</th>
 					<th>كود المربع الرئيسي</th>
 					<th>كود المنطقة</th>
 					<th>كود الحي</th>
-					<th>كود المدينة / المحافظة</th>
+					<th>كود المدينة / المحافظة</th> 	-->
 					<th>ملكية العقار</th>
-					<th>اسم الشارع</th>
+		<!-- 		<th>اسم الشارع</th> 		-->
 					<th>تغيير النشاط</th>
-					<th>التعديات على الأرض بإشغالات</th>
+		<!--		<th>التعديات على الأرض بإشغالات</th>
 					<th>التعديات على الأرض بسور</th>
-					<th>التعديات على الأرض بمبنى</th>
+					<th>التعديات على الأرض بمبنى</th> 	-->
 					<th>المخالفات</th>
 					<th>حالة العقار</th>
 					<th>الأسلوب الإنشائي</th>
 					<th>الغرض من العقار</th>
 					<th>اجمالي عدد الوحدات</th>
-					<th>عدد الوحدات في كل طابق</th>
+		<!--		<th>عدد الوحدات في كل طابق</th> -->
 					<th>عدد الأدوار / الطوابق</th>
 					<th>نموذج العقار / المبنى</th>
 					<th>رقم المبنى / العقار طبقاً للوضع الراهن</th>
@@ -114,23 +114,23 @@
 						<td style="text-align: center"><a href="${deletelink}">حذف</a>&nbsp;&nbsp;&nbsp;<a href="${getbuildinginformationdatalink}">تعديل</a></td>
 						<td style="text-align: center"><c:out value="${buildingInformation.biChangeActivityDate}" /></td>
 						<td style="text-align: center"><c:out value="${buildingInformation.biLastContractDate}" /></td>
-						<td style="text-align: center"><c:out value="${buildingInformation.biSubZoneCode}" /></td>
+				<!-- 	<td style="text-align: center"><c:out value="${buildingInformation.biSubZoneCode}" /></td>
 						<td style="text-align: center"><c:out value="${buildingInformation.biZoneCode}" /></td>
 						<td style="text-align: center"><c:out value="${buildingInformation.biRegionCode}" /></td>
 						<td style="text-align: center"><c:out value="${buildingInformation.biAreaCode}" /></td>
-						<td style="text-align: center"><c:out value="${buildingInformation.biCityCode}" /></td>
+						<td style="text-align: center"><c:out value="${buildingInformation.biCityCode}" /></td>  -->
 						<td style="text-align: center"><c:out value="${buildingInformation.biPropertyOwnership}" /></td>
-						<td style="text-align: center"><c:out value="${buildingInformation.biStreetName}" /></td>
+				<!-- 	<td style="text-align: center"><c:out value="${buildingInformation.biStreetName}" /></td> -->
 						<td style="text-align: center"><c:out value="${buildingInformation.biChangingActivity}" /></td>
-						<td style="text-align: center"><c:out value="${buildingInformation.biTrespassingWorks}" /></td>
+				<!-- 	<td style="text-align: center"><c:out value="${buildingInformation.biTrespassingWorks}" /></td>
 						<td style="text-align: center"><c:out value="${buildingInformation.biTrespassingFence}" /></td>
-						<td style="text-align: center"><c:out value="${buildingInformation.biTrespassingBuilding}" /></td>
+						<td style="text-align: center"><c:out value="${buildingInformation.biTrespassingBuilding}" /></td>  -->
 						<td style="text-align: center"><c:out value="${buildingInformation.biViolations}" /></td>
 						<td style="text-align: center"><c:out value="${buildingInformation.biStatus}" /></td>
 						<td style="text-align: center"><c:out value="${buildingInformation.biArchitecturalStyle}" /></td>
 						<td style="text-align: center"><c:out value="${buildingInformation.biUsage}" /></td>
 						<td style="text-align: center"><c:out value="${buildingInformation.biNumberOfUnits}" /></td>
-						<td style="text-align: center"><c:out value="${buildingInformation.biNumberOfFlatsPerFloor}" /></td>
+				<!-- 	<td style="text-align: center"><c:out value="${buildingInformation.biNumberOfFlatsPerFloor}" /></td> -->
 						<td style="text-align: center"><c:out value="${buildingInformation.biNumberOfFloors}" /></td>
 						<td style="text-align: center"><c:out value="${buildingInformation.biBuildingModel}" /></td>
 						<td style="text-align: center"><c:out value="${buildingInformation.biBuidlingCurrentNo}" /></td>

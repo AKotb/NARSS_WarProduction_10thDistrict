@@ -76,24 +76,24 @@
 				</caption>
 				<tr>
 					<th>اعدادات</th>
-					<th>مساحة التعديات على الأرض بمبنى</th>
-					<th>مساحة التعديات على الأرض بمبنى</th>
+			<!-- 	<th>مساحة التعديات على الأرض بمبنى</th>
+					<th>مساحة التعديات على الأرض بمبنى</th> -->
 					<th>رقم بطاقة المالك الحالي</th>
 					<th>كود المبنى / العقار</th>
-					<th> نشاط الوحدة طبقاً للمخطط</th>
+			<!--	<th> نشاط الوحدة طبقاً للمخطط</th>
 					<th> التعديات على الأرض بإشغالات</th>
 					<th>التعديات على الأرض بسور</th>
 					<th>مساحة المخالفة</th>
 					<th>امتداد عدد ادوار المخالفة</th>
 					<th>التعديات على الأرض بمبنى</th>
-					<th> تغيير النشاط</th>
+					<th> تغيير النشاط</th>	-->
 					<th> كود الوحدة</th>
-					<th>ملاحظات على الوحدة</th>
+			<!--	<th>ملاحظات على الوحدة</th>	-->
 					<th> الدور</th>
 					<th> سعر الوحدة</th>
 					<th>مساحة الوحدة</th>
-					<th> تاريخ التنازل</th>
-					<th>اسم المتنازل</th>
+			<!--	<th> تاريخ التنازل</th>
+					<th>اسم المتنازل</th> -->
 					<th>تاريخ الإستلام</th>
 					<th> اسم المالك الحالي</th>
 					<th> رقم الدور</th>
@@ -110,24 +110,24 @@
 					</c:url>
 					<tr>
 						<td style="text-align: center"><a href="${deletelink}">حذف</a>&nbsp;&nbsp;&nbsp;<a href="${getunitinformationdatalink}">تعديل</a></td>
-						<td style="text-align: center"><c:out value="${unitInformation.fltTrespassingBuidlingSize}" /></td>
-						<td style="text-align: center"><c:out value="${unitInformation.fltTrespassingFenceSize}" /></td>
+						<!-- <td style="text-align: center"><c:out value="${unitInformation.fltTrespassingBuidlingSize}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltTrespassingFenceSize}" /></td> -->
 						<td style="text-align: center"><c:out value="${unitInformation.fltCurrentOwnerID}" /></td>
 						<td style="text-align: center"><c:out value="${unitInformation.fltBuildingBarcode}" /></td>
-						<td style="text-align: center"><c:out value="${unitInformation.fltMainActivity}" /></td>
+						<!-- <td style="text-align: center"><c:out value="${unitInformation.fltMainActivity}" /></td>
 						<td style="text-align: center"><c:out value="${unitInformation.fltTrespassingWorks}" /></td>
 						<td style="text-align: center"><c:out value="${unitInformation.fltTrespassingFence}" /></td>
 						<td style="text-align: center"><c:out value="${unitInformation.fltViolationSize}" /></td>
 						<td style="text-align: center"><c:out value="${unitInformation.fltExtendOfViolation}" /></td>
 						<td style="text-align: center"><c:out value="${unitInformation.fltTrespassingBuidling}" /></td>
-						<td style="text-align: center"><c:out value="${unitInformation.fltChangeActivity}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltChangeActivity}" /></td> -->
 						<td style="text-align: center"><c:out value="${unitInformation.fltBarcode}" /></td>
-						<td style="text-align: center"><c:out value="${unitInformation.fltComments}" /></td>
+						<!-- <td style="text-align: center"><c:out value="${unitInformation.fltComments}" /></td> -->
 						<td style="text-align: center"><c:out value="${unitInformation.fltFloor}" /></td>
 						<td style="text-align: center"><c:out value="${unitInformation.fltUnitPrice}" /></td>
 						<td style="text-align: center"><c:out value="${unitInformation.fltUnitSize}" /></td>
-						<td style="text-align: center"><c:out value="${unitInformation.fltAssignDate}" /></td>
-						<td style="text-align: center"><c:out value="${unitInformation.fltAssignedName}" /></td>
+						<!-- <td style="text-align: center"><c:out value="${unitInformation.fltAssignDate}" /></td>
+						<td style="text-align: center"><c:out value="${unitInformation.fltAssignedName}" /></td> -->
 						<td style="text-align: center"><c:out value="${unitInformation.fltDeliverDate}" /></td>
 						<td style="text-align: center"><c:out value="${unitInformation.fltCurrentOwnerName}" /></td>
 						<td style="text-align: center"><c:out value="${unitInformation.fltFloorNo}" /></td>
